@@ -14,9 +14,9 @@
 
     <meta property="og:title" content="Aftab Ahmed | Portfolio">
     <meta property="og:description" content="High-performance digital experiences crafted by Aftab Ahmed.">
-    <meta property="og:url" content="https://personal-portfolio-gamma-sand-32.vercel.app/">
+    <meta property="og:url" content="https://aftab-ahmed-soomro.vercel.app/">
     <meta property="og:image" content="profilePic.jpeg">
-    <link rel="canonical" href="https://personal-portfolio-gamma-sand-32.vercel.app/" />
+    <link rel="canonical" href="https://aftab-ahmed-soomro.vercel.app/" />
     <meta property="og:type" content="website">
     <link rel="icon" type="image/png" href="icon.png">
     <script src="https://cdn.tailwindcss.com"></script>
@@ -28,7 +28,7 @@
   "@context": "https://schema.org",
   "@type": "Person",
   "name": "Aftab Ahmed",
-  "url": "https://personal-portfolio-gamma-sand-32.vercel.app/",
+  "url": "https://aftab-ahmed-soomro.vercel.app/",
   "jobTitle": "Software Engineer",
   "sameAs": [
     "https://github.com/Aftab-Ahmed-Soomro",
@@ -1678,23 +1678,32 @@ Delivered in 2 days.
                     submitBtn.disabled = true;
                     submitBtn.innerText = "Sending...";
                 }
+
+                const formData = new FormData(event.target);
+                formData.append('_subject', `New Portfolio Message from ${formData.get('name') || 'Visitor'}`);
+                formData.append('_captcha', 'false');
+                formData.append('_template', 'table');
+
                 try {
-                    const response = await fetch("https://formspree.io/f/mrenznzq", {
+                    const response = await fetch("https://formsubmit.co/ajax/aftab.ahmedsoomrokhan@gmail.com", {
                         method: "POST",
-                        body: new FormData(event.target),
+                        body: formData,
                         headers: { 'Accept': 'application/json' }
                     });
-                    if (response.ok) {
+                    const result = await response.json();
+                    if (response.ok && result.success !== "false") {
                         if (status) {
-                            status.innerHTML = "✓ Success! Your message has been sent. ";
+                            status.innerHTML = "✓ Success! Your message has been sent to Aftab.";
                             status.className = "mt-4 text-center font-bold text-sm text-green-500";
                             status.classList.remove("hidden");
                         }
                         event.target.reset();
+                    } else {
+                        throw new Error(result.message || "Failed");
                     }
                 } catch (error) {
                     if (status) {
-                        status.innerHTML = "Error!";
+                        status.innerHTML = "Oops! Something went wrong. Please try again or email directly.";
                         status.className = "mt-4 text-center font-bold text-sm text-red-500";
                         status.classList.remove("hidden");
                     }
@@ -1704,7 +1713,7 @@ Delivered in 2 days.
                         submitBtn.innerText = "Send Message";
                     }
                     if (status) {
-                        setTimeout(() => { status.classList.add("hidden"); }, 5000);
+                        setTimeout(() => { status.classList.add("hidden"); }, 6000);
                     }
                 }
             });
@@ -1774,9 +1783,14 @@ Delivered in 2 days.
                 }
 
 
-                fetch("https://formspree.io/f/mrenznzq", {
+                const formData = new FormData(reviewSubmissionForm);
+                formData.append('_subject', `New Client Review Submitted on Portfolio!`);
+                formData.append('_captcha', 'false');
+                formData.append('_template', 'table');
+
+                fetch("https://formsubmit.co/ajax/aftab.ahmedsoomrokhan@gmail.com", {
                     method: "POST",
-                    body: new FormData(reviewSubmissionForm),
+                    body: formData,
                     headers: { 'Accept': 'application/json' }
                 })
                     .then(response => {
