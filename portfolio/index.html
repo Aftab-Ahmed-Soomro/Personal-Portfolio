@@ -1,0 +1,1741 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="google-site-verification" content="Eya2oKxzxMS1Tr_vUWIH_hUIVeTIDWDKl9LuK0mnccU" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aftab Ahmed | Software Engineer & MERN Stack Developer</title>
+    <meta name="description"
+        content="Official portfolio of Aftab Ahmed, a Software Engineer,  MERN Stack Developer, and UBIT student. Expert in React, UI/UX, and DSA. Explore the best portfolio of Aftab Ahmed.">
+    <meta name="keywords"
+        content="Aftab Ahmed, Aftab Ahmed Portfolio, Software Engineer Karachi, Aftab Ahmed UBIT, Best  MERN Stack Developer Portfolio">
+    <meta name="author" content="Aftab Ahmed">
+
+    <meta property="og:title" content="Aftab Ahmed | Portfolio">
+    <meta property="og:description" content="High-performance digital experiences crafted by Aftab Ahmed.">
+    <meta property="og:url" content="https://tehreem-rana.vercel.app/">
+    <meta property="og:image" content="https://tehreem-rana.vercel.app/tehreem-rana-software-engineer.png">
+    <link rel="canonical" href="https://tehreem-rana.vercel.app/" />
+    <meta property="og:type" content="website">
+    <link rel="icon" type="image/png" href="icon.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Aftab Ahmed",
+  "url": "https://tehreem-rana.vercel.app/",
+  "jobTitle": "Software Engineer",
+  "sameAs": [
+    "https://github.com/Aftab-Ahmed-Soomro",
+    "https://linkedin.com/in/aftab-ahmed-12b9aa265"
+  ]
+}
+</script>
+    <style>
+        @media (max-width: 768px) {
+            #cursor {
+                display: none !important;
+            }
+
+            body {
+                cursor: auto !important;
+                overflow-x: hidden;
+            }
+
+
+            h1 {
+                font-size: 3rem !important;
+                line-height: 1 !important;
+            }
+
+            h2 {
+                font-size: 2.5rem !important;
+            }
+
+
+            .hero-image {
+                width: 240px !important;
+                height: 240px !important;
+            }
+
+
+            .pt-24 {
+                padding-top: 4rem !important;
+            }
+
+            section {
+                padding-left: 1.5rem !important;
+                padding-right: 1.5rem !important;
+            }
+        }
+
+
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: var(--bg-primary);
+            color: var(--text-main);
+            transition: background 0.4s ease, color 0.4s ease;
+            cursor: none;
+            overflow-x: hidden;
+            width: 100%;
+            scroll-behavior: smooth;
+        }
+
+        :root {
+            --accent: #fbbf24;
+            --bg-primary: #09090b;
+            --text-main: #fafafa;
+            --text-muted: rgba(250, 250, 250, 0.6);
+            --card-bg: #111113;
+            --card-border: #18181b;
+            --nav-bg: rgba(9, 9, 11, 0.8);
+            --edu-box: rgba(24, 24, 27, 0.6);
+        }
+
+        body.light-mode {
+            --accent: #d97706;
+            --bg-primary: #fafaf9;
+            --text-main: #1c1917;
+            --text-muted: #4b5563;
+            --card-bg: #ffffff;
+            --card-border: #e7e5e4;
+            --nav-bg: rgba(250, 250, 249, 0.8);
+            --edu-box: #f3f4f6;
+        }
+
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: var(--bg-primary);
+            color: var(--text-main);
+            transition: background 0.4s ease, color 0.4s ease;
+            cursor: none;
+            overflow-x: hidden;
+            scroll-behavior: smooth;
+        }
+
+        body {
+
+            transition: background-color 0.5s cubic-bezier(0.4, 0, 0.2, 1), color 0.5s ease;
+        }
+
+
+        .card,
+        .nav-link,
+        button {
+            transition: background 0.4s ease, border-color 0.4s ease, color 0.4s ease;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        .logo-text,
+        .nav-link,
+        input,
+        textarea {
+            color: var(--text-main) !important;
+        }
+
+        p,
+        .opacity-50,
+        .opacity-60,
+        .opacity-70 {
+            color: var(--text-muted) !important;
+        }
+
+
+        .nav-link.active-link {
+            color: var(--accent) !important;
+            opacity: 1;
+            position: relative;
+        }
+
+        .nav-link.active-link::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background: var(--accent);
+        }
+
+
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: var(--bg-primary);
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #27272a;
+            border-radius: 10px;
+        }
+
+
+        nav {
+            background: var(--nav-bg);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(128, 128, 128, 0.1);
+        }
+
+
+        .card {
+            border: 1px solid var(--card-border) !important;
+            background: var(--card-bg) !important;
+            backdrop-filter: blur(12px);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .card:hover {
+            border-color: var(--accent) !important;
+            transform: translateY(-8px);
+        }
+
+
+        .project-img {
+            filter: grayscale(100%);
+            transition: 0.6s ease;
+        }
+
+        .card:hover .project-img {
+            filter: grayscale(0%);
+            transform: scale(1.1);
+        }
+
+
+        .btn-visit {
+            background: var(--accent);
+            color: #000 !important;
+            padding: 8px 20px;
+            border-radius: 30px;
+            font-weight: 800;
+            font-size: 12px;
+            text-transform: uppercase;
+            transition: 0.3s;
+            opacity: 0;
+            transform: translateY(10px);
+        }
+
+        .card:hover .btn-visit {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .edu-container,
+        .skill-item {
+            background: var(--edu-box) !important;
+            border: 1px solid var(--card-border) !important;
+        }
+
+
+        #cursor {
+            width: 12px;
+            height: 12px;
+            background: var(--accent);
+            border-radius: 50%;
+            position: fixed;
+            pointer-events: none;
+            z-index: 9999;
+            transition: transform 0.15s ease-out;
+        }
+
+
+        .reveal {
+            opacity: 0;
+            transform: translateY(40px);
+            transition: all 1s ease;
+        }
+
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .hero-image {
+            width: 320px;
+            height: 320px;
+            object-fit: cover;
+            border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+            border: 4px solid var(--accent);
+            animation: morph 8s ease-in-out infinite;
+        }
+
+        @keyframes morph {
+            0% {
+                border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+            }
+
+            50% {
+                border-radius: 50% 50% 30% 70% / 50% 60% 40% 50%;
+            }
+
+            100% {
+                border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+            }
+        }
+
+
+        @keyframes pulse-green {
+            0% {
+                transform: scale(0.95);
+                box-shadow: 0 0 0 0 rgba(34, 197, 94, 0.7);
+            }
+
+            70% {
+                transform: scale(1);
+                box-shadow: 0 0 0 6px rgba(34, 197, 94, 0);
+            }
+
+            100% {
+                transform: scale(0.95);
+                box-shadow: 0 0 0 0 rgba(34, 197, 94, 0);
+            }
+        }
+
+        .animate-pulse-green {
+            animation: pulse-green 2s infinite;
+        }
+
+        .social-link {
+            font-size: 1.5rem;
+            transition: all 0.3s ease;
+            color: var(--text-muted);
+        }
+
+        .social-link:hover {
+            color: var(--accent) !important;
+            transform: translateY(-3px);
+        }
+
+        #mobile-menu.active {
+            display: flex !important;
+            animation: fadeInDown 0.3s ease-in-out;
+        }
+
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-10px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes marquee-scroll {
+            0% {
+                transform: translateX(0);
+            }
+
+            100% {
+                transform: translateX(-50%);
+            }
+        }
+
+        .animate-marquee {
+            display: flex;
+            width: max-content;
+            animation: marquee-scroll 25s linear infinite;
+        }
+    </style>
+</head>
+
+<body>
+    <audio id="hover-sound" src="https://assets.mixkit.co/active_storage/sfx/2571/2571-preview.mp3"
+        preload="auto"></audio>
+    <audio id="click-sound" src="https://assets.mixkit.co/active_storage/sfx/2568/2568-preview.mp3"
+        preload="auto"></audio>
+
+    <div id="cursor"></div>
+
+    <nav class="fixed top-0 left-0 right-0 z-50 transition-all duration-300"
+        style="background: var(--nav-bg); backdrop-filter: blur(12px); border-bottom: 1px solid rgba(128,128,128,0.1);">
+        <div class="max-w-7xl mx-auto flex justify-between items-center p-6 px-6 md:px-10">
+            <div class="text-2xl font-extrabold tracking-tighter logo-text">
+                AA<span class="text-amber-500">.</span>
+            </div>
+
+            <div class="hidden md:flex space-x-8 text-[14px] font-medium text-zinc-400">
+                <a href="#about" class="nav-link hover:text-white transition">About</a>
+                <a href="#expertise" class="nav-link hover:text-white transition">Skills</a>
+                <a href="#coding-activity" class="nav-link hover:text-white transition">Coding</a>
+                <a href="#projects" class="nav-link hover:text-white transition">Projects</a>
+                <a href="#reviews" class="nav-link hover:text-white transition">Reviews</a>
+                <a href="#contact" class="nav-link hover:text-white transition">Contact</a>
+            </div>
+            <div class="flex items-center gap-2 md:gap-3">
+                <a href="resume.html"
+                    class="hidden sm:flex items-center gap-2 bg-amber-500 text-black px-5 py-2.5 rounded-full font-bold text-xs hover:bg-amber-400 transition shadow-lg">
+                    <i class="far fa-file-alt"></i> Resume
+                </a>
+
+                <button onclick="toggleSound()"
+                    class="w-10 h-10 flex items-center justify-center rounded-full border border-zinc-800 hover:border-amber-500 transition text-zinc-400 hover:text-white">
+                    <i id="sound-icon" class="fas fa-volume-mute text-sm"></i>
+                </button>
+
+                <button onclick="toggleTheme()"
+                    class="w-10 h-10 flex items-center justify-center rounded-full border border-zinc-800 hover:border-amber-500 transition text-zinc-400 hover:text-white">
+                    <i id="theme-icon" class="fas fa-moon text-sm"></i>
+                </button>
+
+                <button id="menu-toggle"
+                    class="md:hidden w-10 h-10 flex items-center justify-center rounded-full border border-zinc-800 text-amber-500">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+
+        <div id="mobile-menu"
+            class="hidden md:hidden absolute top-full left-0 w-full flex-col p-6 space-y-4 border-t border-gray-500/10 shadow-2xl transition-all duration-300"
+            style="background: var(--bg-primary);">
+            <a href="#home"
+                class="mobile-link text-[11px] font-bold uppercase tracking-widest block py-2 border-b border-gray-500/5">Home</a>
+            <a href="#about"
+                class="mobile-link text-[11px] font-bold uppercase tracking-widest block py-2 border-b border-gray-500/5">About</a>
+            <a href="#expertise"
+                class="mobile-link text-[11px] font-bold uppercase tracking-widest block py-2 border-b border-gray-500/5">Skills</a>
+            <a href="#coding-activity"
+                class="mobile-link text-[11px] font-bold uppercase tracking-widest block py-2 border-b border-gray-500/5">Coding</a>
+            <a href="#projects"
+                class="mobile-link text-[11px] font-bold uppercase tracking-widest block py-2 border-b border-gray-500/5">Projects</a>
+            <a href="#reviews"
+                class="mobile-link text-[11px] font-bold uppercase tracking-widest block py-2 border-b border-gray-500/5">Reviews</a>
+            <a href="#contact"
+                class="mobile-link text-[11px] font-bold uppercase tracking-widest block py-2">Contact</a>
+            <a href="resume.html"
+                class="bg-amber-500 text-black px-5 py-3 text-[10px] font-black uppercase tracking-widest block text-center mt-4">Resume</a>
+        </div>
+    </nav>
+
+    <section id="home"
+        class="min-h-screen flex flex-col md:flex-row justify-center items-center gap-16 px-10 max-w-7xl mx-auto pt-24">
+        <div class="reveal active relative">
+            <div class="absolute inset-0 bg-amber-500 blur-[80px] opacity-20"></div>
+            <img src="profilePic.jpeg"
+                alt="Aftab Ahmed - Best Software Engineer and MERN Stack Developer in Karachi UBIT"
+                title="Aftab Ahmed Official Portfolio" class="hero-image relative z-10 shadow-2xl">
+        </div>
+
+        <div class="text-center md:text-left flex flex-col items-center md:items-start">
+
+            <div
+                class="flex items-center gap-2 bg-zinc-900/80 border border-zinc-800/60 rounded-full p-1 pr-3 mb-6 shadow-xl backdrop-blur-md">
+                <div class="flex items-center gap-2 pl-2">
+                    <span class="w-2.5 h-2.5 bg-green-500 rounded-full animate-pulse-green"></span>
+                    <span class="text-xs font-semibold text-zinc-300 tracking-tight">Available for Work</span>
+                </div>
+                <a href="#contact"
+                    class="bg-amber-500 text-black text-[11px] font-bold px-3 py-1.5 rounded-full hover:bg-amber-400 transition shadow-md">Hire
+                    now</a>
+            </div>
+
+            <h1 class="text-5xl md:text-8xl font-black mb-6 tracking-tighter reveal active leading-[0.9] uppercase">
+                Software<br><span class="text-amber-500">Engineer<span class="text-amber-500">.</span></span>
+            </h1>
+
+            <p class="text-base md:text-lg max-w-lg reveal active font-normal text-zinc-400 mb-8"
+                style="transition-delay: 0.2s">
+                Aftab Ahmed — Engineering pixel-perfect interfaces with high-performance code
+            </p>
+
+
+            <div
+                class="flex flex-wrap items-center justify-center md:justify-start gap-x-6 gap-y-3 text-zinc-500 text-xs font-medium border-t border-zinc-900 pt-4 w-full">
+                <span class="flex items-center gap-1.5 hover:text-zinc-300 transition">
+                    <i class="fas fa-map-marker-alt text-amber-500"></i> Karachi, Pakistan
+                </span>
+                <span class="flex items-center gap-1.5">
+                    <span class="w-1.5 h-1.5 bg-amber-500 rounded-full"></span>
+                    <span id="pkt-clock">05:34:22 PM</span> PKT
+                </span>
+                <div class="flex items-center gap-4 text-sm pl-2 border-l border-zinc-800 hidden sm:flex">
+                    <a href="https://github.com/Aftab-Ahmed-Soomro" target="_blank"
+                        class="hover:text-white transition flex items-center gap-1 text-xs"><i
+                            class="fab fa-github"></i> GitHub</a>
+                    <a href="https://www.linkedin.com/in/aftab-ahmed-12b9aa265" target="_blank"
+                        class="hover:text-white transition flex items-center gap-1 text-xs"><i
+                            class="fab fa-linkedin-in"></i></a>
+                    <a href="#contact" class="hover:text-white transition flex items-center gap-1 text-xs"><i
+                            class="far fa-envelope"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="max-w-7xl mx-auto py-32 px-10 reveal">
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-10 items-start">
+            <div class="md:col-span-5">
+                <h2 class="font-black uppercase tracking-tighter leading-[0.8]"
+                    style="font-size: clamp(3rem, 8vw, 6rem);">
+                    ABOUT<br>
+                    <span class="text-amber-500">ME.</span>
+                </h2>
+            </div>
+            <div class="md:col-span-7">
+                <div class="space-y-4">
+                    <p class="text-xl md:text-2xl leading-relaxed font-medium">
+                        Hi! I am <span class="text-amber-500 font-bold">Aftab Ahmed</span>, a MERN Stack Developer and
+                        Software Engineering student at <span class="text-amber-500 font-bold">UBIT, University of
+                            Karachi.</span>
+                    </p>
+                    <p class="text-lg opacity-70 leading-relaxed">
+                        I love building websites that look great and work perfectly. My goal is to create clean and fast
+                        user interfaces using modern technology.
+                    </p>
+                    <p class="text-lg opacity-70 leading-relaxed">
+                        I enjoy solving problems through code and turning creative ideas into real digital experiences
+                        that are easy for everyone to use.
+                    </p>
+                </div>
+
+
+                <div class="flex flex-col sm:flex-row gap-4 mt-6">
+
+                    <div class="card p-5 rounded-xl border-l-4 border-l-amber-500 flex-1 flex flex-col justify-between"
+                        style="background: var(--card-bg);">
+                        <div>
+                            <div class="flex items-center gap-2 mb-2 text-amber-500">
+                                <i class="fas fa-graduation-cap text-xs"></i>
+                                <span class="text-[9px] font-black uppercase tracking-widest">Education</span>
+                            </div>
+                            <h4 class="font-bold text-base tracking-tight">BSSE @UBIT, University of Karachi</h4>
+                        </div>
+                        <p class="text-[13px] mt-2 opacity-95 font-bold uppercase tracking-tight text-amber-500">
+                            7th Semester • 2024 — 2027
+                        </p>
+                    </div>
+
+
+                    <div class="card p-5 rounded-xl border-l-4 border-l-amber-500 flex-1 flex flex-col justify-between"
+                        style="background: var(--card-bg);">
+                        <div>
+                            <div class="flex items-center gap-2 mb-2 text-amber-500">
+                                <i class="fas fa-briefcase text-xs"></i>
+                                <span class="text-[9px] font-black uppercase tracking-widest">Experience</span>
+                            </div>
+                            <h4 class="font-bold text-base tracking-tight">MERN Stack Developer</h4>
+                        </div>
+                        <p class="text-[13px] mt-2 opacity-95 font-bold uppercase tracking-tight italic text-amber-500">
+                            2 Year • Karachi, Pakistan
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="expertise" class="max-w-7xl mx-auto py-24 px-10 reveal">
+        <div class="flex items-center gap-3 mb-12">
+            <div class="w-1.5 h-8 bg-amber-500 rounded-sm"></div>
+            <h2 class="text-2xl md:text-3xl font-black uppercase tracking-tight text-white">Core Expertise</h2>
+        </div>
+        <div class="w-full overflow-hidden border-b border-zinc-800 pb-6 mb-12 opacity-80">
+            <div
+                class="animate-marquee flex items-center gap-8 text-xs md:text-sm font-bold tracking-wider text-zinc-400 uppercase">
+
+                <span>MongoDB</span> <span class="text-amber-500">♥</span>
+                <span>Express.js</span> <span class="text-amber-500">♥</span>
+                <span>React.js</span> <span class="text-amber-500">♥</span>
+                <span>Node.js</span> <span class="text-amber-500">♥</span>
+                <span>TypeScript</span> <span class="text-amber-500">♥</span>
+                <span>Tailwind CSS</span> <span class="text-amber-500">♥</span>
+                <span>C++ & DSA</span> <span class="text-amber-500">♥</span>
+                <span>Next.js</span> <span class="text-amber-500">♥</span>
+
+
+                <span>MongoDB</span> <span class="text-amber-500">♥</span>
+                <span>Express.js</span> <span class="text-amber-500">♥</span>
+                <span>React.js</span> <span class="text-amber-500">♥</span>
+                <span>Node.js</span> <span class="text-amber-500">♥</span>
+                <span>TypeScript</span> <span class="text-amber-500">♥</span>
+                <span>Tailwind CSS</span> <span class="text-amber-500">♥</span>
+                <span>C++ & DSA</span> <span class="text-amber-500">♥</span>
+                <span>Next.js</span> <span class="text-amber-500">♥</span>
+            </div>
+        </div>
+
+
+
+
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+            <div class="card p-8 rounded-2xl border border-zinc-800 text-center flex flex-col items-center justify-center transition-all duration-300 hover:border-amber-500/40"
+                style="background: var(--card-bg);">
+                <div class="text-amber-500 text-3xl mb-4">
+                    <i class="fas fa-layer-group"></i>
+                </div>
+                <h3 class="font-black text-base md:text-lg uppercase tracking-wider mb-2 text-white">MERN Stack Dev</h3>
+                <p class="text-xs md:text-sm text-zinc-400 leading-relaxed max-w-[250px]">
+                    MongoDB, Express, React, and Node.js backend systems.
+                </p>
+            </div>
+
+
+            <div class="card p-8 rounded-2xl border border-zinc-800 text-center flex flex-col items-center justify-center transition-all duration-300 hover:border-amber-500/40"
+                style="background: var(--card-bg);">
+                <div class="text-amber-500 text-3xl mb-4">
+                    <i class="fas fa-code"></i>
+                </div>
+                <h3 class="font-black text-base md:text-lg uppercase tracking-wider mb-2 text-white">Programming</h3>
+                <p class="text-xs md:text-sm text-zinc-400 leading-relaxed max-w-[250px]">
+                    Advanced problem solving and DSA in C++ logic.
+                </p>
+            </div>
+
+
+            <div class="card p-8 rounded-2xl border border-zinc-800 text-center flex flex-col items-center justify-center transition-all duration-300 hover:border-amber-500/40"
+                style="background: var(--card-bg);">
+                <div class="text-amber-500 text-3xl mb-4">
+                    <i class="fas fa-vector-square"></i>
+                </div>
+                <h3 class="font-black text-base md:text-lg uppercase tracking-wider mb-2 text-white">UI/UX Design</h3>
+                <p class="text-xs md:text-sm text-zinc-400 leading-relaxed max-w-[250px]">
+                    User-centric interfaces and responsive modern structures.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- <section id="coding-activity" class="max-w-7xl mx-auto py-16 px-6 reveal border-t border-gray-500/10">
+        <div class="flex items-center gap-4 mb-10">
+            <div class="w-1.5 h-10 bg-amber-500"></div>
+            <h2 class="text-4xl font-black uppercase tracking-tighter">Coding Activity</h2>
+        </div>
+
+        <div class="card p-6 md:p-8 rounded-[1.5rem] shadow-sm" style="background: var(--card-bg);">
+            <div class="grid grid-cols-3 gap-4 mb-8 text-center md:text-left">
+                <div class="flex flex-col group">
+                    <span
+                        class="text-zinc-500 font-bold uppercase text-[8px] tracking-widest mb-1 group-hover:text-amber-500 transition">Submissions</span>
+                    <div class="flex items-baseline justify-center md:justify-start gap-1">
+                        <span class="text-3xl font-black stat-counter" data-target="647">0</span>
+                        <span class="text-amber-500 text-lg font-bold">+</span>
+                    </div>
+                </div>
+                <div class="flex flex-col border-x border-gray-500/20 px-4 group">
+                    <span
+                        class="text-zinc-500 font-bold uppercase text-[8px] tracking-widest mb-1 group-hover:text-amber-500 transition">Max
+                        Streak</span>
+                    <span class="text-3xl font-black stat-counter" data-target="12">0</span>
+                </div>
+                <div class="flex flex-col group">
+                    <span
+                        class="text-zinc-500 font-bold uppercase text-[8px] tracking-widest mb-1 group-hover:text-amber-500 transition">Current
+                        Streak</span>
+                    <span class="text-3xl font-black stat-counter" data-target="4">0</span>
+                </div>
+            </div>
+
+            <div class="h-[1px] w-full bg-gray-500/10 mb-8"></div>
+
+            <div class="grid grid-cols-3 md:grid-cols-5 gap-3">
+                <a href="https://leetcode.com/u/Tehreem_Rana2/" target="_blank"
+                    class="flex flex-col items-center p-3 rounded-xl border border-gray-500/10 hover:border-amber-500 hover:bg-amber-500/5 transition-all duration-300 group">
+                    <i class="fab fa-code text-lg mb-2 text-orange-500 group-hover:scale-110 transition"></i>
+                    <span class="text-[8px] font-bold uppercase tracking-tighter">LeetCode</span>
+                </a>
+                <a href="https://codeforces.com/profile/tehreemr61" target="_blank"
+                    class="flex flex-col items-center p-3 rounded-xl border border-gray-500/10 hover:border-amber-500 hover:bg-amber-500/5 transition-all duration-300 group">
+                    <i class="fas fa-terminal text-lg mb-2 text-blue-500 group-hover:scale-110 transition"></i>
+                    <span class="text-[8px] font-bold uppercase tracking-tighter">Codeforces</span>
+                </a>
+                <a href="https://www.codechef.com/users/tehreem_2" target="_blank"
+                    class="flex flex-col items-center p-3 rounded-xl border border-gray-500/10 hover:border-amber-500 hover:bg-amber-500/5 transition-all duration-300 group">
+                    <i class="fas fa-medal text-lg mb-2 text-red-600 group-hover:scale-110 transition"></i>
+                    <span class="text-[8px] font-bold uppercase tracking-tighter">CodeChef</span>
+                </a>
+                <a href="https://www.geeksforgeeks.org/profile/tehree738k" target="_blank"
+                    class="flex flex-col items-center p-3 rounded-xl border border-gray-500/10 hover:border-amber-500 hover:bg-amber-500/5 transition-all duration-300 group">
+                    <i class="fas fa-user-graduate text-lg mb-2 text-green-600 group-hover:scale-110 transition"></i>
+                    <span class="text-[8px] font-bold uppercase tracking-tighter">GFG</span>
+                </a>
+                <a href="https://codolio.com/profile/bviZLoyz" target="_blank"
+                    class="flex flex-col items-center p-3 rounded-xl border border-amber-500/20 bg-amber-500/5 hover:bg-amber-500 hover:text-white transition-all duration-300 group">
+                    <i class="fas fa-external-link-alt text-lg mb-2 group-hover:text-white transition"></i>
+                    <span class="text-[8px] font-bold uppercase tracking-tighter">Profile</span>
+                </a>
+            </div>
+        </div>
+    </section> -->
+
+    <section id="projects" class="max-w-7xl mx-auto py-20 px-10 reveal relative">
+
+        <div class="flex items-center gap-4 mb-12">
+            <div class="w-1.5 h-10 bg-amber-500"></div>
+            <h2 class="text-4xl font-black uppercase tracking-tighter">Selected Works</h2>
+        </div>
+
+
+        <div class="relative group/slider">
+
+
+            <button id="next-scroll-indicator"
+                class="absolute right-4 top-1/2 -translate-y-1/2 z-30 bg-amber-500 text-black w-14 h-14 rounded-full flex items-center justify-center shadow-2xl transition-all duration-300 hover:scale-110 active:scale-95 border border-amber-400 animate-pulse">
+                <span class="text-xl font-black">→</span>
+            </button>
+
+
+            <div id="project-slider"
+                class="flex gap-6 overflow-x-auto scrollbar-hide snap-x snap-mandatory scroll-smooth pb-6 relative"
+                style="scrollbar-width: none; -ms-overflow-style: none;">
+
+
+                <div class="card group flex-none w-full max-w-sm p-6 rounded-[2rem] border border-zinc-800/80 snap-start"
+                    style="background: var(--card-bg);">
+                    <div class="h-52 relative overflow-hidden rounded-2xl bg-zinc-800">
+                        <img src="Aftab Ahmed chllenges grid.png"
+                            class="w-full h-full object-cover grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-500"
+                            alt="Challenge Grid Core">
+                        <div
+                            class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-black/40">
+                            <a href="https://challenge-grid-core.vercel.app/" target="_blank"
+                                class="bg-amber-500 text-black px-6 py-2 rounded-full font-black text-[10px] uppercase tracking-widest shadow-xl transform translate-y-4 group-hover:translate-y-0 transition-all">Live
+                                Demo</a>
+                        </div>
+                    </div>
+                    <div class="pt-6">
+                        <h3 class="text-xl font-black uppercase tracking-tighter">Challenge Grid Core</h3>
+                        <p class="mt-2 text-xs opacity-60 leading-relaxed font-medium h-12 overflow-hidden">Interactive
+                            task and goal tracking management app designed with clean light-blue and white aesthetics.
+                        </p>
+                    </div>
+                    <div class="mt-6 flex gap-4 border-t border-zinc-800/60 pt-4">
+                        <a href="https://github.com/Aftab-Ahmed-Soomro/challenge-grid-core" target="_blank"
+                            class="text-[10px] font-black uppercase tracking-widest text-amber-500 hover:text-white border-b border-amber-500/30">Github</a>
+                        <a href="https://challenge-grid-core.vercel.app/" target="_blank"
+                            class="text-[10px] font-black uppercase tracking-widest text-amber-500 hover:text-white border-b border-amber-500/30">Demo</a>
+                    </div>
+                </div>
+
+
+                <div class="card group flex-none w-full max-w-sm p-6 rounded-[2rem] border border-zinc-800/80 snap-start"
+                    style="background: var(--card-bg);">
+                    <div class="h-52 relative overflow-hidden rounded-2xl bg-zinc-800">
+                        <img src="Aftab Ahmed paktravler.jpeg"
+                            class="w-full h-full object-cover grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-500"
+                            alt="Pak Traveler">
+                        <div
+                            class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-black/40">
+                            <a href="https://paktraveler-web.vercel.app/" target="_blank"
+                                class="bg-amber-500 text-black px-6 py-2 rounded-full font-black text-[10px] uppercase tracking-widest shadow-xl transform translate-y-4 group-hover:translate-y-0 transition-all">Live
+                                Demo</a>
+                        </div>
+                    </div>
+                    <div class="pt-6">
+                        <h3 class="text-xl font-black uppercase tracking-tighter">Pak Traveler</h3>
+                        <p class="mt-2 text-xs opacity-60 leading-relaxed font-medium h-12 overflow-hidden">Smart
+                            navigation platform calculating shortest, safest, and low-cost travel routes across
+                            Pakistan.</p>
+                    </div>
+                    <div class="mt-6 flex gap-4 border-t border-zinc-800/60 pt-4">
+                        <a href="https://github.com/Aftab-Ahmed-Soomro/paktraveler-web" target="_blank"
+                            class="text-[10px] font-black uppercase tracking-widest text-amber-500 hover:text-white border-b border-amber-500/30">Github</a>
+                        <a href="https://paktraveler-web.vercel.app/" target="_blank"
+                            class="text-[10px] font-black uppercase tracking-widest text-amber-500 hover:text-white border-b border-amber-500/30">Demo</a>
+                    </div>
+                </div>
+
+                <!-- 3. RinseUp UK -->
+                <div class="card group flex-none w-full max-w-sm p-6 rounded-[2rem] border border-zinc-800/80 snap-start"
+                    style="background: var(--card-bg);">
+                    <div class="h-52 relative overflow-hidden rounded-2xl bg-zinc-800">
+                        <img src="https://images.unsplash.com/photo-1517677208171-0bc6725a3e60?q=80&w=600"
+                            class="w-full h-full object-cover grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-500"
+                            alt="RinseUp UK">
+                        <div
+                            class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-black/40">
+                            <a href="https://rinseup.uk/" target="_blank"
+                                class="bg-amber-500 text-black px-6 py-2 rounded-full font-black text-[10px] uppercase tracking-widest shadow-xl transform translate-y-4 group-hover:translate-y-0 transition-all">Live
+                                Website</a>
+                        </div>
+                    </div>
+                    <div class="pt-6">
+                        <div class="flex items-center justify-between">
+                            <h3 class="text-xl font-black uppercase tracking-tighter">RinseUp UK</h3>
+                            <span
+                                class="text-[9px] font-bold bg-amber-500/10 text-amber-500 px-2 py-0.5 rounded border border-amber-500/20">Client</span>
+                        </div>
+                        <p class="mt-2 text-xs opacity-60 leading-relaxed font-medium h-12 overflow-hidden">Professional
+                            online booking platform built for a UK-based laundry and dry cleaning client.</p>
+                    </div>
+                    <div class="mt-6 flex gap-4 border-t border-zinc-800/60 pt-4">
+                        <a href="https://rinseup.uk/" target="_blank"
+                            class="text-[10px] font-black uppercase tracking-widest text-amber-500 hover:text-white border-b border-amber-500/30">Visit
+                            Site</a>
+                    </div>
+                </div>
+
+
+                <div class="card group flex-none w-full max-w-sm p-6 rounded-[2rem] border border-zinc-800/80 snap-start"
+                    style="background: var(--card-bg);">
+                    <div class="h-52 relative overflow-hidden rounded-2xl bg-zinc-800">
+                        <img src="Aftab Ahmed impaxsafe.png"
+                            class="w-full h-full object-cover grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-500"
+                            alt="ImpexSafe Logistics">
+                        <div
+                            class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-black/40">
+                            <a href="https://impexsafe-web.vercel.app/" target="_blank"
+                                class="bg-amber-500 text-black px-6 py-2 rounded-full font-black text-[10px] uppercase tracking-widest shadow-xl transform translate-y-4 group-hover:translate-y-0 transition-all">Live
+                                Demo</a>
+                        </div>
+                    </div>
+                    <div class="pt-6">
+                        <div class="flex items-center justify-between">
+                            <h3 class="text-xl font-black uppercase tracking-tighter">ImpexSafe</h3>
+                            <span
+                                class="text-[9px] font-bold bg-amber-500/10 text-amber-500 px-2 py-0.5 rounded border border-amber-500/20">Client</span>
+                        </div>
+                        <p class="mt-2 text-xs opacity-60 leading-relaxed font-medium h-12 overflow-hidden">Cross-border
+                            shipping and international cargo service platform built for logistics clients.</p>
+                    </div>
+                    <div class="mt-6 flex gap-4 border-t border-zinc-800/60 pt-4">
+                        <a href="https://impexsafe-web.vercel.app/" target="_blank"
+                            class="text-[10px] font-black uppercase tracking-widest text-amber-500 hover:text-white border-b border-amber-500/30">Live
+                            Demo</a>
+                    </div>
+                </div>
+
+
+                <div class="card group flex-none w-full max-w-sm p-6 rounded-[2rem] border border-zinc-800/80 snap-start"
+                    style="background: var(--card-bg);">
+                    <div class="h-52 relative overflow-hidden rounded-2xl bg-zinc-800">
+                        <img src="Aftab Ahmed counter.png"
+                            class="w-full h-full object-cover grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-500"
+                            alt="Pro Goal Counter">
+                        <div
+                            class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-black/40">
+                            <a href="https://pro-goal-counter.vercel.app/" target="_blank"
+                                class="bg-amber-500 text-black px-6 py-2 rounded-full font-black text-[10px] uppercase tracking-widest shadow-xl transform translate-y-4 group-hover:translate-y-0 transition-all">Live
+                                Demo</a>
+                        </div>
+                    </div>
+                    <div class="pt-6">
+                        <h3 class="text-xl font-black uppercase tracking-tighter">Pro Goal Counter</h3>
+                        <p class="mt-2 text-xs opacity-60 leading-relaxed font-medium h-12 overflow-hidden">Minimalist
+                            counter application designed to track long-term goals and target metrics effectively.</p>
+                    </div>
+                    <div class="mt-6 flex gap-4 border-t border-zinc-800/60 pt-4">
+                        <a href="https://github.com/Aftab-Ahmed-Soomro/pro-goal-counter" target="_blank"
+                            class="text-[10px] font-black uppercase tracking-widest text-amber-500 hover:text-white border-b border-amber-500/30">Github</a>
+                        <a href="https://pro-goal-counter.vercel.app/" target-[10px]
+                            class="text-[10px] font-black uppercase tracking-widest text-amber-500 hover:text-white border-b border-amber-500/30">Demo</a>
+                    </div>
+                </div>
+
+
+                <div class="card group flex-none w-full max-w-sm p-6 rounded-[2rem] border border-zinc-800/80 snap-start"
+                    style="background: var(--card-bg);">
+                    <div class="h-52 relative overflow-hidden rounded-2xl bg-zinc-800">
+                        <img src="https://images.unsplash.com/photo-1542831371-29b0f74f9713?q=80&w=600"
+                            class="w-full h-full object-cover grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-500"
+                            alt="Typing Challenge">
+                        <div
+                            class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-black/40">
+                            <a href="https://code-typing-challenge-theta.vercel.app/" target="_blank"
+                                class="bg-amber-500 text-black px-6 py-2 rounded-full font-black text-[10px] uppercase tracking-widest shadow-xl transform translate-y-4 group-hover:translate-y-0 transition-all">Live
+                                Demo</a>
+                        </div>
+                    </div>
+                    <div class="pt-6">
+                        <h3 class="text-xl font-black uppercase tracking-tighter">Typing Challenge</h3>
+                        <p class="mt-2 text-xs opacity-60 leading-relaxed font-medium h-12 overflow-hidden">Interactive
+                            web app to test, track, and improve code typing speed and precision.</p>
+                    </div>
+                    <div class="mt-6 flex gap-4 border-t border-zinc-800/60 pt-4">
+                        <a href="https://github.com/Aftab-Ahmed-Soomro/code-typing-challenge" target="_blank"
+                            class="text-[10px] font-black uppercase tracking-widest text-amber-500 hover:text-white border-b border-amber-500/30">Github</a>
+                        <a href="https://code-typing-challenge-theta.vercel.app/" target="_blank"
+                            class="text-[10px] font-black uppercase tracking-widest text-amber-500 hover:text-white border-b border-amber-500/30">Demo</a>
+                    </div>
+                </div>
+
+
+                <div class="card group flex-none w-full max-w-sm p-6 rounded-[2rem] border border-zinc-800/80 snap-start"
+                    style="background: var(--card-bg);">
+                    <div class="h-52 relative overflow-hidden rounded-2xl bg-zinc-800">
+                        <img src="https://images.unsplash.com/photo-1518133910546-b6c2fb7d79e3?q=80&w=600"
+                            class="w-full h-full object-cover grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-500"
+                            alt="Tangent Tools">
+                        <div
+                            class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-black/40">
+                            <a href="https://tangent-tools.vercel.app/" target="_blank"
+                                class="bg-amber-500 text-black px-6 py-2 rounded-full font-black text-[10px] uppercase tracking-widest shadow-xl transform translate-y-4 group-hover:translate-y-0 transition-all">Live
+                                Demo</a>
+                        </div>
+                    </div>
+                    <div class="pt-6">
+                        <h3 class="text-xl font-black uppercase tracking-tighter">Tangent Tools</h3>
+                        <p class="mt-2 text-xs opacity-60 leading-relaxed font-medium h-12 overflow-hidden">Specialized
+                            mathematical utility tool for calculating tangent operations with precision.</p>
+                    </div>
+                    <div class="mt-6 flex gap-4 border-t border-zinc-800/60 pt-4">
+                        <a href="https://github.com/Aftab-Ahmed-Soomro/TangentTools" target="_blank"
+                            class="text-[10px] font-black uppercase tracking-widest text-amber-500 hover:text-white border-b border-amber-500/30">Github</a>
+                        <a href="https://tangent-tools.vercel.app/" target="_blank"
+                            class="text-[10px] font-black uppercase tracking-widest text-amber-500 hover:text-white border-b border-amber-500/30">Demo</a>
+                    </div>
+                </div>
+
+
+                <div class="card group flex-none w-full max-w-sm p-6 rounded-[2rem] border border-zinc-800/80 snap-start"
+                    style="background: var(--card-bg);">
+                    <div class="h-52 relative overflow-hidden rounded-2xl bg-zinc-800">
+                        <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?q=80&w=600"
+                            class="w-full h-full object-cover grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-500"
+                            alt="Fashion Store Concept">
+                        <div
+                            class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-black/40">
+                            <a href="https://github.com/Aftab-Ahmed-Soomro/fashion-store-landing" target="_blank"
+                                class="bg-amber-500 text-black px-6 py-2 rounded-full font-black text-[10px] uppercase tracking-widest shadow-xl transform translate-y-4 group-hover:translate-y-0 transition-all">View
+                                Prototype</a>
+                        </div>
+                    </div>
+                    <div class="pt-6">
+                        <div class="flex items-center justify-between">
+                            <h3 class="text-xl font-black uppercase tracking-tighter">Fashion Store</h3>
+                            <span
+                                class="text-[9px] font-bold bg-zinc-800 text-zinc-400 px-2 py-0.5 rounded border border-zinc-700">Prototype</span>
+                        </div>
+                        <p class="mt-2 text-xs opacity-60 leading-relaxed font-medium h-12 overflow-hidden">Modern
+                            aesthetic ecommerce landing page layout prototype for luxury clothing stores.</p>
+                    </div>
+                    <div class="mt-6 flex gap-4 border-t border-zinc-800/60 pt-4">
+                        <a href="https://github.com/Aftab-Ahmed-Soomro/fashion-store-landing" target="_blank"
+                            class="text-[10px] font-black uppercase tracking-widest text-amber-500 hover:text-white border-b border-amber-500/30">Github
+                            Source</a>
+                    </div>
+                </div>
+
+
+                <div class="card group flex-none w-full max-w-sm p-6 rounded-[2rem] border border-zinc-800/80 snap-start"
+                    style="background: var(--card-bg);">
+                    <div class="h-52 relative overflow-hidden rounded-2xl bg-zinc-800">
+                        <img src="https://images.unsplash.com/photo-1574375927938-d5a98e8ffe85?q=80&w=600"
+                            class="w-full h-full object-cover grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-500"
+                            alt="Netflix Clone">
+                        <div
+                            class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-black/40">
+                            <a href="https://github.com/Aftab-Ahmed-Soomro/netflix-frontend-clone" target="_blank"
+                                class="bg-amber-500 text-black px-6 py-2 rounded-full font-black text-[10px] uppercase tracking-widest shadow-xl transform translate-y-4 group-hover:translate-y-0 transition-all">View
+                                Prototype</a>
+                        </div>
+                    </div>
+                    <div class="pt-6">
+                        <div class="flex items-center justify-between">
+                            <h3 class="text-xl font-black uppercase tracking-tighter">Netflix Clone</h3>
+                            <span
+                                class="text-[9px] font-bold bg-zinc-800 text-zinc-400 px-2 py-0.5 rounded border border-zinc-700">Prototype</span>
+                        </div>
+                        <p class="mt-2 text-xs opacity-60 leading-relaxed font-medium h-12 overflow-hidden">
+                            High-fidelity OTT video streaming frontend interface replica using React/CSS.</p>
+                    </div>
+                    <div class="mt-6 flex gap-4 border-t border-zinc-800/60 pt-4">
+                        <a href="https://github.com/Aftab-Ahmed-Soomro/netflix-frontend-clone" target="_blank"
+                            class="text-[10px] font-black uppercase tracking-widest text-amber-500 hover:text-white border-b border-amber-500/30">Github
+                            Source</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <style>
+        #project-slider::-webkit-scrollbar {
+            display: none;
+        }
+    </style>
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const slider = document.getElementById('project-slider');
+            const arrowIndicator = document.getElementById('next-scroll-indicator');
+
+            if (slider && arrowIndicator) {
+                const cardShiftWidth = 400;
+
+
+                function removeArrowPermanently() {
+                    arrowIndicator.style.transition = 'opacity 0.3s ease, transform 0.3s ease';
+                    arrowIndicator.style.opacity = '0';
+                    arrowIndicator.style.transform = 'translateY(-50%) scale(0.5)';
+
+
+                    setTimeout(() => {
+                        if (arrowIndicator.parentNode) {
+                            arrowIndicator.parentNode.removeChild(arrowIndicator);
+                        }
+                    }, 300);
+
+
+                    slider.removeEventListener('scroll', handleManualScroll);
+                }
+
+
+                arrowIndicator.addEventListener('click', () => {
+                    slider.scrollLeft += cardShiftWidth;
+                    removeArrowPermanently();
+                });
+
+
+                function handleManualScroll() {
+                    if (slider.scrollLeft > 15) {
+                        removeArrowPermanently();
+                    }
+                }
+
+                slider.addEventListener('scroll', handleManualScroll);
+            }
+        });
+    </script>
+
+    <section id="reviews" class="max-w-7xl mx-auto py-20 px-10 reveal overflow-hidden relative">
+
+        <div class="flex items-center justify-between mb-12 flex-wrap gap-4">
+            <div class="flex items-center gap-4">
+                <div class="w-1.5 h-10 bg-amber-500"></div>
+                <h2 class="text-4xl font-black uppercase tracking-tighter">Client Reviews</h2>
+            </div>
+
+
+            <div class="flex items-center gap-4">
+                <button id="open-review-btn"
+                    class="px-6 py-2.5 border border-zinc-800 rounded-full text-xs font-semibold text-white hover:border-amber-500 transition-all duration-300 [.light-mode_&]:border-zinc-300 [.light-mode_&]:text-zinc-900 [.light-mode_&]:hover:border-amber-500">
+                    Leave a review
+                </button>
+                <button id="cancel-review-btn"
+                    class="px-5 py-2 border border-zinc-800 text-zinc-400 rounded-full text-xs font-semibold hover:text-white hover:bg-zinc-900 transition-all hidden [.light-mode_&]:border-zinc-300 [.light-mode_&]:text-zinc-600 [.light-mode_&]:hover:text-zinc-900 [.light-mode_&]:hover:bg-zinc-100">
+                    Cancel
+                </button>
+            </div>
+        </div>
+
+
+        <div id="review-form-container"
+            class="w-full max-h-0 overflow-hidden opacity-0 transition-all duration-500 ease-in-out mb-12">
+            <form id="review-submission-form"
+                class="card p-8 rounded-[2rem] border border-zinc-800/80 space-y-6 relative transition-colors duration-300 [.light-mode_&]:border-zinc-200"
+                style="background: var(--card-bg);">
+
+                <div class="grid md:grid-cols-2 gap-4">
+                    <input type="text" name="client_name" placeholder="Your name" required
+                        class="w-full bg-zinc-900/40 border border-zinc-800/80 rounded-xl px-5 py-3.5 outline-none focus:border-amber-500/50 text-sm text-white transition placeholder-zinc-500
+                       [.light-mode_&]:bg-white [.light-mode_&]:border-zinc-300 [.light-mode_&]:text-zinc-900 [.light-mode_&]:placeholder-zinc-400">
+                    <input type="text" name="client_role" placeholder="Role / Company (optional)"
+                        class="w-full bg-zinc-900/40 border border-zinc-800/80 rounded-xl px-5 py-3.5 outline-none focus:border-amber-500/50 text-sm text-white transition placeholder-zinc-500
+                       [.light-mode_&]:bg-white [.light-mode_&]:border-zinc-300 [.light-mode_&]:text-zinc-900 [.light-mode_&]:placeholder-zinc-400">
+                </div>
+
+                <textarea name="client_feedback" placeholder="Your review..." rows="4" required
+                    class="w-full bg-zinc-900/40 border border-zinc-800/80 rounded-xl px-5 py-3.5 outline-none focus:border-amber-500/50 text-sm text-white transition resize-none placeholder-zinc-500
+                   [.light-mode_&]:bg-white [.light-mode_&]:border-zinc-300 [.light-mode_&]:text-zinc-900 [.light-mode_&]:placeholder-zinc-400"></textarea>
+
+
+                <div
+                    class="flex items-center justify-between flex-wrap gap-4 pt-4 border-t border-zinc-800/40 [.light-mode_&]:border-zinc-200">
+                    <div class="flex items-center gap-3">
+                        <span class="text-xs text-zinc-400 font-medium [.light-mode_&]:text-zinc-600">Rating:</span>
+                        <div id="interactive-stars" class="flex gap-1 text-xl cursor-pointer select-none">
+                            <span data-value="1" class="star text-amber-500 transition-all duration-150">★</span>
+                            <span data-value="2" class="star text-amber-500 transition-all duration-150">★</span>
+                            <span data-value="3" class="star text-amber-500 transition-all duration-150">★</span>
+                            <span data-value="4" class="star text-amber-500 transition-all duration-150">★</span>
+                            <span data-value="5" class="star text-amber-500 transition-all duration-150">★</span>
+                        </div>
+
+                        <input type="hidden" name="star_rating" id="star_rating_input" value="5">
+                    </div>
+
+                    <button type="submit" id="review-submit-btn"
+                        class="bg-amber-500 text-black px-8 py-3 rounded-full text-xs font-black uppercase tracking-wider hover:bg-black hover:text-white transition-all duration-300 shadow-md whitespace-nowrap min-w-[140px] text-center [.light-mode_&]:text-black [.light-mode_&]:hover:text-white">
+                        Submit review
+                    </button>
+                </div>
+            </form>
+        </div>
+
+        <div id="review-toast-alert"
+            class="w-full max-h-0 overflow-hidden opacity-0 transition-all duration-500 ease-in-out mb-8">
+            <div
+                class="bg-emerald-950/40 border border-emerald-500/30 rounded-2xl p-5 flex items-center gap-4 text-emerald-400">
+                <div
+                    class="w-6 h-6 rounded-full bg-emerald-500 text-black flex items-center justify-center font-bold text-sm shrink-0">
+                    ✓</div>
+                <p class="text-sm font-semibold tracking-wide">Thanks! Your review will appear after approval.</p>
+            </div>
+        </div>
+
+        <div class="w-full relative overflow-hidden mask-edges group">
+            <div class="flex gap-6 animate-ticker group-hover:[animation-play-state:paused] w-max py-4">
+
+                <div class="card flex-none w-[360px] p-8 rounded-[2rem] border border-zinc-800/80 flex flex-col justify-between transition-all duration-300 hover:border-amber-500 hover:scale-[1.02] group-hover:opacity-40 hover:!opacity-100 cursor-pointer"
+                    style="background: var(--card-bg);">
+                    <div>
+                        <div class="flex gap-1 text-amber-500 text-sm mb-4">
+                            <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                        </div>
+                        <p class="text-xs text-zinc-300 leading-relaxed font-medium">"Tehreem built the ImpexSafe
+                            logistics platform for us. The interface is exceptionally clean, fully responsive, and
+                            handles complex tracking data perfectly."</p>
+                    </div>
+                    <div class="mt-6 flex items-center gap-4 border-t border-zinc-800/60 pt-4">
+                        <div
+                            class="w-10 h-10 rounded-full bg-amber-500/10 border border-amber-500/30 flex items-center justify-center shrink-0">
+                            <span class="font-black text-amber-500 text-xs tracking-wider">HJ</span>
+                        </div>
+                        <div>
+                            <h4 class="text-xs font-black uppercase tracking-wider text-white">Hammad Jamal</h4>
+                            <p class="text-[9px] opacity-40 font-bold uppercase tracking-widest">Founder, ImpexSafe
+                                Logistics</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card flex-none w-[360px] p-8 rounded-[2rem] border border-zinc-800/80 flex flex-col justify-between transition-all duration-300 hover:border-amber-500 hover:scale-[1.02] group-hover:opacity-40 hover:!opacity-100 cursor-pointer"
+                    style="background: var(--card-bg);">
+                    <div>
+                        <div class="flex gap-1 text-amber-500 text-sm mb-4">
+                            <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                        </div>
+                        <p class="text-xs text-zinc-300 leading-relaxed font-medium">"Great experience working with her
+                            on RinseUp UK. She transformed our booking system concept into a highly fluid, premium user
+                            experience."</p>
+                    </div>
+                    <div class="mt-6 flex items-center gap-4 border-t border-zinc-800/60 pt-4">
+                        <div
+                            class="w-10 h-10 rounded-full bg-amber-500/10 border border-amber-500/30 flex items-center justify-center shrink-0">
+                            <span class="font-black text-amber-500 text-xs tracking-wider">MR</span>
+                        </div>
+                        <div>
+                            <h4 class="text-xs font-black uppercase tracking-wider text-white">Muhammad Rehan</h4>
+                            <p class="text-[9px] opacity-40 font-bold uppercase tracking-widest">Director, RinseUp UK
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card flex-none w-[360px] p-8 rounded-[2rem] border border-zinc-800/80 flex flex-col justify-between transition-all duration-300 hover:border-amber-500 hover:scale-[1.02] group-hover:opacity-40 hover:!opacity-100 cursor-pointer"
+                    style="background: var(--card-bg);">
+                    <div>
+                        <div class="flex gap-1 text-amber-500 text-sm mb-4">
+                            <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                        </div>
+                        <p class="text-xs text-zinc-300 leading-relaxed font-medium">"Her front-end design sense is
+                            incredible. She designed our fashion store layout with perfect grid structures and excellent
+                            code quality."</p>
+                    </div>
+                    <div class="mt-6 flex items-center gap-4 border-t border-zinc-800/60 pt-4">
+                        <div
+                            class="w-10 h-10 rounded-full bg-amber-500/10 border border-amber-500/30 flex items-center justify-center shrink-0">
+                            <span class="font-black text-amber-500 text-xs tracking-wider">ZS</span>
+                        </div>
+                        <div>
+                            <h4 class="text-xs font-black uppercase tracking-wider text-white">Zainab Siddiqui</h4>
+                            <p class="text-[9px] opacity-40 font-bold uppercase tracking-widest">Creative Head, Rivaaj
+                                Studio</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card flex-none w-[360px] p-8 rounded-[2rem] border border-zinc-800/80 flex flex-col justify-between transition-all duration-300 hover:border-amber-500 hover:scale-[1.02] group-hover:opacity-40 hover:!opacity-100 cursor-pointer"
+                    style="background: var(--card-bg);">
+                    <div>
+                        <div class="flex gap-1 text-amber-500 text-sm mb-4">
+                            <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                        </div>
+                        <p class="text-xs text-zinc-300 leading-relaxed font-medium">"Highly skilled developer. The
+                            tracking logic, performance speeds, and web interface workflow she built for our app are
+                            absolutely flawless."</p>
+                    </div>
+                    <div class="mt-6 flex items-center gap-4 border-t border-zinc-800/60 pt-4">
+                        <div
+                            class="w-10 h-10 rounded-full bg-amber-500/10 border border-amber-500/30 flex items-center justify-center shrink-0">
+                            <span class="font-black text-amber-500 text-xs tracking-wider">AK</span>
+                        </div>
+                        <div>
+                            <h4 class="text-xs font-black uppercase tracking-wider text-white">Ayesha Khan</h4>
+                            <p class="text-[9px] opacity-40 font-bold uppercase tracking-widest">Product Manager, Nexus
+                                Tech</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card flex-none w-[360px] p-8 rounded-[2rem] border border-zinc-800/80 flex flex-col justify-between transition-all duration-300 hover:border-amber-500 hover:scale-[1.02] group-hover:opacity-40 hover:!opacity-100 cursor-pointer"
+                    style="background: var(--card-bg);">
+                    <div>
+                        <div class="flex gap-1 text-amber-500 text-sm mb-4">
+                            <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                        </div>
+                        <p class="text-xs text-zinc-300 leading-relaxed font-medium">"Tehreem built the ImpexSafe
+                            logistics platform for us. The interface is exceptionally clean, fully responsive, and
+                            handles complex tracking data perfectly."</p>
+                    </div>
+                    <div class="mt-6 flex items-center gap-4 border-t border-zinc-800/60 pt-4">
+                        <div
+                            class="w-10 h-10 rounded-full bg-amber-500/10 border border-amber-500/30 flex items-center justify-center shrink-0">
+                            <span class="font-black text-amber-500 text-xs tracking-wider">HJ</span>
+                        </div>
+                        <div>
+                            <h4 class="text-xs font-black uppercase tracking-wider text-white">Hammad Jamal</h4>
+                            <p class="text-[9px] opacity-40 font-bold uppercase tracking-widest">Founder, ImpexSafe
+                                Logistics</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card flex-none w-[360px] p-8 rounded-[2rem] border border-zinc-800/80 flex flex-col justify-between transition-all duration-300 hover:border-amber-500 hover:scale-[1.02] group-hover:opacity-40 hover:!opacity-100 cursor-pointer"
+                    style="background: var(--card-bg);">
+                    <div>
+                        <div class="flex gap-1 text-amber-500 text-sm mb-4">
+                            <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                        </div>
+                        <p class="text-xs text-zinc-300 leading-relaxed font-medium">"Great experience working with her
+                            on RinseUp UK. She transformed our booking system concept into a highly fluid, premium user
+                            experience."</p>
+                    </div>
+                    <div class="mt-6 flex items-center gap-4 border-t border-zinc-800/60 pt-4">
+                        <div
+                            class="w-10 h-10 rounded-full bg-amber-500/10 border border-amber-500/30 flex items-center justify-center shrink-0">
+                            <span class="font-black text-amber-500 text-xs tracking-wider">MR</span>
+                        </div>
+                        <div>
+                            <h4 class="text-xs font-black uppercase tracking-wider text-white">Muhammad Rehan</h4>
+                            <p class="text-[9px] opacity-40 font-bold uppercase tracking-widest">Director, RinseUp UK
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <style>
+        @keyframes tickerTimeline {
+            0% {
+                transform: translateX(0);
+            }
+
+            100% {
+
+                transform: translateX(calc(-1536px - 1.5rem));
+            }
+        }
+
+        .animate-ticker {
+            animation: tickerTimeline 25s linear infinite;
+        }
+
+        .mask-edges {
+            -webkit-mask-image: linear-gradient(to right, transparent 0%, black 10%, black 90%, transparent 100%);
+            mask-image: linear-gradient(to right, transparent 0%, black 10%, black 90%, transparent 100%);
+        }
+    </style>
+
+    <section id="contact" class="max-w-6xl mx-auto py-32 px-6 border-t border-gray-500/10 reveal">
+        <div class="grid md:grid-cols-2 gap-20 items-center">
+            <div>
+                <h2 class="text-6xl font-black tracking-tighter mb-8 uppercase leading-none">Let's <br>build something
+                    <span class="text-amber-500">great.</span>
+                </h2>
+                <p class="text-lg">Available for projects and full-time roles.</p>
+                <div class="flex gap-6 mt-8">
+                    <!-- <a href="https://www.facebook.com/profile.php?id=100079974231742" target="_blank"
+                        class="social-link"><i class="fab fa-facebook"></i></a> -->
+                    <a href="https://github.com/Aftab-Ahmed-Soomro" target="_blank" class="social-link"><i
+                            class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/aftab-ahmed-12b9aa265" target="_blank" class="social-link"><i
+                            class="fab fa-linkedin"></i></a>
+                    <!-- <a href="https://www.instagram.com/tr.webstudio/" target="_blank" class="social-link"><i
+                            class="fab fa-instagram"></i></a> -->
+                </div>
+            </div>
+            <form id="contact-form" class="space-y-4 card p-8 rounded-3xl">
+                <input type="text" name="name" placeholder="Full Name" required
+                    class="w-full bg-transparent border-b border-gray-500/20 py-4 outline-none focus:border-amber-500 transition">
+                <input type="email" name="email" placeholder="Email Address" required
+                    class="w-full bg-transparent border-b border-gray-500/20 py-4 outline-none focus:border-amber-500 transition">
+                <textarea name="message" placeholder="Message" rows="3" required
+                    class="w-full bg-transparent border-b border-gray-500/20 py-4 outline-none focus:border-amber-500 transition"></textarea>
+                <button type="submit" id="submit-btn"
+                    class="bg-amber-500 text-black py-4 w-full font-black uppercase text-xs tracking-[0.2em] hover:bg-black hover:text-white transition-all shadow-lg rounded-xl mt-4">
+                    Send Message
+                </button>
+                <p id="form-status" class="mt-4 text-center font-bold text-sm hidden"></p>
+            </form>
+        </div>
+    </section>
+
+    <footer class="w-full pt-20 pb-10 px-6 md:px-10 border-t border-zinc-800/30 transition-colors duration-300"
+        style="background: var(--bg-color); color: var(--text-color);">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-12 pb-16">
+
+            <div class="lg:col-span-2 flex flex-col gap-6">
+                <h3 class="text-3xl font-black uppercase tracking-tighter"
+                    style="color: var(--heading-color, inherit);">AA<span class="text-amber-500">.</span></h3>
+                <p class="text-xs leading-relaxed font-medium max-w-sm opacity-75">
+                    Crafting full-stack web experiences with a focus on clean UI, solid APIs, and delightful UX.
+                </p>
+
+                <div
+                    class="w-32 p-3 border rounded-2xl flex flex-col items-center gap-2 shadow-xl border-zinc-700/30 bg-zinc-500/5">
+                    <div
+                        class="w-full aspect-square rounded-xl overflow-hidden flex items-center justify-center bg-zinc-500/10">
+                        <img src="tehreem-qr.png" class="w-full h-full object-contain" alt="AA QR Code">
+                    </div>
+                    <span class="text-[9px] font-black tracking-widest uppercase opacity-50">Scan Me</span>
+                </div>
+            </div>
+
+            <div class="flex flex-col gap-4">
+                <h4 class="text-xs font-black uppercase tracking-wider" style="color: var(--heading-color, inherit);">
+                    Explore</h4>
+                <ul class="flex flex-col gap-3 text-xs font-semibold opacity-80">
+                    <li><a href="#about" class="hover:text-amber-500 transition-colors">About</a></li>
+                    <li><a href="#expertise" class="hover:text-amber-500 transition-colors">Skills</a></li>
+                    <li><a href="#coding-activity" class="hover:text-amber-500 transition-colors">Coding</a></li>
+                    <li><a href="#projects" class="hover:text-amber-500 transition-colors">Projects</a></li>
+                    <li><a href="#reviews" class="hover:text-amber-500 transition-colors">Reviews</a></li>
+                    <li><a href="#contact" class="hover:text-amber-500 transition-colors">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="flex flex-col gap-4">
+                <h4 class="text-xs font-black uppercase tracking-wider" style="color: var(--heading-color, inherit);">
+                    Socials</h4>
+                <ul class="flex flex-col gap-3 text-xs font-semibold opacity-80">
+                    <li><a href="https://github.com/Aftab-Ahmed-Soomro" target="_blank" rel="noopener noreferrer"
+                            class="hover:text-amber-500 transition-colors">GitHub</a></li>
+                    <li><a href="https://www.linkedin.com/in/aftab-ahmed-12b9aa265" target="_blank"
+                            rel="noopener noreferrer" class="hover:text-amber-500 transition-colors">LinkedIn</a></li>
+                    <!-- <li><a href="https://www.facebook.com/profile.php?id=100079974231742" target="_blank"
+                            rel="noopener noreferrer" class="hover:text-amber-500 transition-colors">Facebook</a></li>
+                    <li><a href="https://www.instagram.com/tr.webstudio/" target="_blank" rel="noopener noreferrer"
+                            class="hover:text-amber-500 transition-colors">Instagram</a></li> -->
+                    <li><a href="mailto:aftab.ahmedsoomrokhan@gmail.com" class="hover:text-amber-500 transition-colors">Email</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- <div class="flex flex-col gap-4">
+                <h4 class="text-xs font-black uppercase tracking-wider" style="color: var(--heading-color, inherit);">
+                    Coding Profiles</h4>
+                <ul class="flex flex-col gap-3 text-xs font-semibold opacity-80">
+                    <li><a href="https://leetcode.com/u/Tehreem_Rana2/" target="_blank" rel="noopener noreferrer"
+                            class="hover:text-amber-500 transition-colors">LeetCode</a></li>
+                    <li><a href="https://codeforces.com/profile/tehreemr61" target="_blank" rel="noopener noreferrer"
+                            class="hover:text-amber-500 transition-colors">Codeforces</a></li>
+                    <li><a href="https://www.codechef.com/users/tehreem_2" target="_blank" rel="noopener noreferrer"
+                            class="hover:text-amber-500 transition-colors">CodeChef</a></li>
+                    <li><a href="https://codolio.com/profile/bviZLoyz" target="_blank" rel="noopener noreferrer"
+                            class="hover:text-amber-500 transition-colors">Codolio</a></li>
+                    <li><a href="https://www.geeksforgeeks.org/profile/tehree738k" target="_blank"
+                            rel="noopener noreferrer" class="hover:text-amber-500 transition-colors">GFG</a></li>
+                </ul>
+            </div> -->
+
+            <div class="flex flex-col gap-4">
+                <h4 class="text-xs font-black uppercase tracking-wider" style="color: var(--heading-color, inherit);">
+                    Status</h4>
+                <ul class="flex flex-col gap-3 text-xs font-semibold">
+                    <li class="flex items-center gap-2 opacity-90">
+                        <span class="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse"></span>
+                        Available for work
+                    </li>
+                    <li class="flex items-center gap-2 opacity-90">
+                        <span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>
+                        Building in Karachi
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div
+            class="max-w-7xl mx-auto border-t border-zinc-700/20 pt-8 flex flex-col sm:flex-row justify-between gap-4 text-[10px] font-bold uppercase tracking-widest opacity-50">
+            <p>© 2026 Aftab Ahmed — MERN Stack Developer based in Karachi, Pakistan.</p>
+            <p>UTC+5 Karachi, PK</p>
+        </div>
+    </footer>
+
+    <script>
+
+
+        let isMuted = false;
+        const hoverSfx = document.getElementById('hover-sound');
+        const clickSfx = document.getElementById('click-sound');
+        if (hoverSfx) hoverSfx.volume = 0.1;
+        if (clickSfx) clickSfx.volume = 0.2;
+
+        function toggleSound() {
+            isMuted = !isMuted;
+            const icon = document.getElementById('sound-icon');
+            if (icon) icon.className = isMuted ? 'fas fa-volume-mute text-red-500' : 'fas fa-volume-up';
+        }
+
+        const playSound = (audio) => {
+            if (!isMuted && audio) {
+                const clone = audio.cloneNode();
+                clone.volume = audio.volume;
+                clone.play().catch(() => { });
+            }
+        };
+
+
+        const cursor = document.getElementById('cursor');
+        document.addEventListener('mousemove', (e) => {
+            if (cursor) {
+                cursor.style.left = e.clientX + 'px';
+                cursor.style.top = e.clientY + 'px';
+            }
+        });
+
+
+        function initCursorEffects() {
+            document.querySelectorAll('a, button, .card, input, textarea, .star, #open-review-btn, #cancel-review-btn').forEach(el => {
+
+                el.removeEventListener('mouseenter', handleMouseEnter);
+                el.removeEventListener('mouseleave', handleMouseLeave);
+                el.removeEventListener('click', handleClick);
+
+                el.addEventListener('mouseenter', handleMouseEnter);
+                el.addEventListener('mouseleave', handleMouseLeave);
+                el.addEventListener('click', handleClick);
+            });
+        }
+
+        function handleMouseEnter() {
+            playSound(hoverSfx);
+            if (cursor) {
+                cursor.style.transform = 'scale(4)';
+                cursor.style.mixBlendMode = 'difference';
+                cursor.style.background = 'white';
+            }
+        }
+
+        function handleMouseLeave() {
+            if (cursor) {
+                cursor.style.transform = 'scale(1)';
+                cursor.style.mixBlendMode = 'normal';
+                cursor.style.background = document.body.classList.contains('light-mode') ? '#1c1917' : '#fbbf24';
+            }
+        }
+
+        function handleClick() {
+            playSound(clickSfx);
+        }
+
+
+        initCursorEffects();
+
+
+        const themeIcon = document.getElementById('theme-icon');
+        const body = document.body;
+
+        const currentTheme = localStorage.getItem('theme') ||
+            (window.matchMedia('(prefers-color-scheme: light)').matches ? 'light-mode' : 'dark-mode');
+
+        if (currentTheme === 'light-mode') {
+            body.classList.add('light-mode');
+            if (themeIcon) themeIcon.classList.replace('fa-moon', 'fa-sun');
+        }
+
+        function toggleTheme() {
+            body.classList.toggle('light-mode');
+            const isLight = body.classList.contains('light-mode');
+
+            localStorage.setItem('theme', isLight ? 'light-mode' : 'dark-mode');
+
+            if (themeIcon) {
+                themeIcon.classList.toggle('fa-moon', !isLight);
+                themeIcon.classList.toggle('fa-sun', isLight);
+            }
+
+            if (typeof playSound === 'function') playSound(clickSfx);
+            if (cursor) cursor.style.background = isLight ? '#1c1917' : '#fbbf24';
+        }
+
+
+        const navLinks = document.querySelectorAll('.nav-link');
+        const sections = document.querySelectorAll('section');
+        const sectionIds = ['home', 'about', 'expertise', 'coding-activity', 'projects', 'contact'];
+        let currentSectionIndex = 0;
+
+        const observerOptions = { threshold: 0.5 };
+
+        const navObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    navLinks.forEach(link => link.classList.remove('active-link'));
+                    const id = entry.target.getAttribute('id');
+                    const activeLink = document.querySelector(`.nav-link[href="#${id}"]`);
+                    if (activeLink) activeLink.classList.add('active-link');
+
+                    currentSectionIndex = sectionIds.indexOf(id);
+                }
+            });
+        }, observerOptions);
+
+        sections.forEach(section => navObserver.observe(section));
+
+
+        const scrollObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) entry.target.classList.add('active');
+            });
+        }, { threshold: 0.1 });
+        document.querySelectorAll('.reveal').forEach(el => scrollObserver.observe(el));
+
+        const runStatCounters = () => {
+            document.querySelectorAll('.stat-counter').forEach(c => {
+                const target = +c.getAttribute('data-target');
+                let current = 0;
+                const update = () => {
+                    const increment = target / 50;
+                    if (current < target) {
+                        current += increment;
+                        c.innerText = Math.ceil(current);
+                        setTimeout(update, 30);
+                    } else { c.innerText = target; }
+                };
+                update();
+            });
+        };
+
+        const statsSectionObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    runStatCounters();
+                    statsSectionObserver.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+        const codingSection = document.querySelector('#coding-activity');
+        if (codingSection) statsSectionObserver.observe(codingSection);
+
+
+        document.addEventListener('keydown', (e) => {
+
+            if (document.activeElement.tagName === 'INPUT' || document.activeElement.tagName === 'TEXTAREA') {
+                return;
+            }
+
+            if (e.key === "ArrowRight" && currentSectionIndex < sectionIds.length - 1) {
+                currentSectionIndex++;
+            } else if (e.key === "ArrowLeft" && currentSectionIndex > 0) {
+                currentSectionIndex--;
+            } else { return; }
+
+            const targetSec = document.getElementById(sectionIds[currentSectionIndex]);
+            if (targetSec) {
+                targetSec.scrollIntoView({ behavior: 'smooth' });
+                playSound(clickSfx);
+            }
+        });
+
+
+        const menuToggle = document.getElementById('menu-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const mobileLinks = document.querySelectorAll('.mobile-link');
+
+        if (menuToggle && mobileMenu) {
+            menuToggle.addEventListener('click', () => {
+                const isActive = mobileMenu.classList.toggle('active');
+                const icon = menuToggle.querySelector('i');
+                if (icon) {
+                    icon.classList.toggle('fa-bars', !isActive);
+                    icon.classList.toggle('fa-times', isActive);
+                }
+                document.body.style.overflow = isActive ? 'hidden' : 'auto';
+            });
+        }
+
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                if (mobileMenu) mobileMenu.classList.remove('active');
+                document.body.style.overflow = 'auto';
+                const icon = menuToggle ? menuToggle.querySelector('i') : null;
+                if (icon) icon.classList.replace('fa-times', 'fa-bars');
+            });
+        });
+
+
+        const contactFormEl = document.getElementById("contact-form");
+        if (contactFormEl) {
+            contactFormEl.addEventListener("submit", async function (event) {
+                event.preventDefault();
+                const status = document.getElementById("form-status");
+                const submitBtn = document.getElementById("submit-btn");
+                if (submitBtn) {
+                    submitBtn.disabled = true;
+                    submitBtn.innerText = "Sending...";
+                }
+                try {
+                    const response = await fetch("https://formspree.io/f/mrenznzq", {
+                        method: "POST",
+                        body: new FormData(event.target),
+                        headers: { 'Accept': 'application/json' }
+                    });
+                    if (response.ok) {
+                        if (status) {
+                            status.innerHTML = "✓ Success! Your message has been sent. ";
+                            status.className = "mt-4 text-center font-bold text-sm text-green-500";
+                            status.classList.remove("hidden");
+                        }
+                        event.target.reset();
+                    }
+                } catch (error) {
+                    if (status) {
+                        status.innerHTML = "Error!";
+                        status.className = "mt-4 text-center font-bold text-sm text-red-500";
+                        status.classList.remove("hidden");
+                    }
+                } finally {
+                    if (submitBtn) {
+                        submitBtn.disabled = false;
+                        submitBtn.innerText = "Send Message";
+                    }
+                    if (status) {
+                        setTimeout(() => { status.classList.add("hidden"); }, 5000);
+                    }
+                }
+            });
+        }
+
+
+        const openReviewBtn = document.getElementById("open-review-btn");
+        const cancelReviewBtn = document.getElementById("cancel-review-btn");
+        const reviewFormContainer = document.getElementById("review-form-container");
+        const reviewSubmissionForm = document.getElementById("review-submission-form");
+        const reviewToastAlert = document.getElementById("review-toast-alert");
+        const stars = document.querySelectorAll("#interactive-stars .star");
+        const starRatingInput = document.getElementById("star_rating_input");
+
+        if (openReviewBtn && cancelReviewBtn && reviewFormContainer) {
+            openReviewBtn.addEventListener("click", () => {
+                reviewFormContainer.style.maxHeight = "500px";
+                reviewFormContainer.style.opacity = "1";
+                openReviewBtn.classList.add("hidden");
+                cancelReviewBtn.classList.remove("hidden");
+                if (reviewToastAlert) {
+                    reviewToastAlert.style.maxHeight = "0px";
+                    reviewToastAlert.style.opacity = "0";
+                }
+            });
+
+            cancelReviewBtn.addEventListener("click", closeFormWindow);
+        }
+
+        function closeFormWindow() {
+            if (reviewFormContainer && openReviewBtn && cancelReviewBtn) {
+                reviewFormContainer.style.maxHeight = "0px";
+                reviewFormContainer.style.opacity = "0";
+                cancelReviewBtn.classList.add("hidden");
+                openReviewBtn.classList.remove("hidden");
+            }
+        }
+
+
+        stars.forEach(star => {
+            star.addEventListener("click", function () {
+                const selectedScore = parseInt(this.getAttribute("data-value"));
+                if (starRatingInput) starRatingInput.value = selectedScore;
+
+                stars.forEach(s => {
+                    const sValue = parseInt(s.getAttribute("data-value"));
+                    if (sValue <= selectedScore) {
+                        s.classList.remove("text-zinc-700");
+                        s.classList.add("text-amber-500");
+                    } else {
+                        s.classList.remove("text-amber-500");
+                        s.classList.add("text-zinc-700");
+                    }
+                });
+            });
+        });
+
+        if (reviewSubmissionForm) {
+            reviewSubmissionForm.addEventListener("submit", function (e) {
+                e.preventDefault();
+                const submitBtn = document.getElementById("review-submit-btn");
+                const originalText = submitBtn ? submitBtn.innerText : "Submit review";
+
+                if (submitBtn) {
+                    submitBtn.innerText = "SENDING...";
+                    submitBtn.disabled = true;
+                }
+
+
+                fetch("https://formspree.io/f/mrenznzq", {
+                    method: "POST",
+                    body: new FormData(reviewSubmissionForm),
+                    headers: { 'Accept': 'application/json' }
+                })
+                    .then(response => {
+                        if (response.ok) {
+                            reviewSubmissionForm.reset();
+                            stars.forEach(s => {
+                                s.classList.remove("text-zinc-700");
+                                s.classList.add("text-amber-500");
+                            });
+                            if (starRatingInput) starRatingInput.value = "5";
+
+                            closeFormWindow();
+
+                            if (reviewToastAlert) {
+                                reviewToastAlert.style.maxHeight = "120px";
+                                reviewToastAlert.style.opacity = "1";
+                            }
+                        } else {
+                            alert("Oops! There was a problem submitting your review.");
+                        }
+                    })
+                    .catch(error => {
+                        alert("Error sending parameters context.");
+                    })
+                    .finally(() => {
+                        if (submitBtn) {
+                            submitBtn.innerText = originalText;
+                            submitBtn.disabled = false;
+                        }
+                    });
+            });
+        }
+
+
+        function updatePKTClock() {
+            const clockElement = document.getElementById('pkt-clock');
+            if (!clockElement) return;
+
+            const options = {
+                timeZone: 'Asia/Karachi',
+                hour: '2-digit',
+                minute: '2-digit',
+                second: '2-digit',
+                hour12: true
+            };
+
+            const formatter = new Intl.DateTimeFormat('en-US', options);
+            clockElement.innerText = formatter.format(new Date());
+        }
+        setInterval(updatePKTClock, 1000);
+        updatePKTClock(); 
+    </script>
+</body>
+
+</html>
