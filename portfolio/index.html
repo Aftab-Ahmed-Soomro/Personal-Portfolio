@@ -5,11 +5,11 @@
     <meta charset="UTF-8">
     <meta name="google-site-verification" content="Eya2oKxzxMS1Tr_vUWIH_hUIVeTIDWDKl9LuK0mnccU" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aftab Ahmed | Software Engineer & MERN Stack Developer</title>
+    <title>Aftab Ahmed | Software Engineer & Full Stack Developer</title>
     <meta name="description"
-        content="Official portfolio of Aftab Ahmed, a Software Engineer,  MERN Stack Developer, and UBIT student. Expert in React, UI/UX, and DSA. Explore the best portfolio of Aftab Ahmed.">
+        content="Official portfolio of Aftab Ahmed, a Software Engineer,  Full Stack Developer, and UBIT student. Expert in React, UI/UX, and DSA. Explore the best portfolio of Aftab Ahmed.">
     <meta name="keywords"
-        content="Aftab Ahmed, Aftab Ahmed Portfolio, Software Engineer Karachi, Aftab Ahmed UBIT, Best  MERN Stack Developer Portfolio">
+        content="Aftab Ahmed, Aftab Ahmed Portfolio, Software Engineer Karachi, Aftab Ahmed UBIT, Full Stack Developer, Python, Django, FastAPI, React, Full Stack Developer Portfolio">
     <meta name="author" content="Aftab Ahmed">
 
     <meta property="og:title" content="Aftab Ahmed | Portfolio">
@@ -347,7 +347,36 @@
         .animate-marquee {
             display: flex;
             width: max-content;
-            animation: marquee-scroll 25s linear infinite;
+            animation: marquee-scroll 50s linear infinite;
+        }
+
+        .animate-marquee:hover {
+            animation-play-state: paused;
+        }
+
+        .skill-pill {
+            background: var(--card-bg);
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            color: var(--text-main);
+            transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+            user-select: none;
+        }
+
+        body.light-mode .skill-pill {
+            border: 1px solid rgba(0, 0, 0, 0.15);
+            background: #ffffff;
+            color: #1c1917;
+        }
+
+        .skill-pill:hover {
+            border-color: var(--accent) !important;
+            color: var(--accent) !important;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 14px rgba(251, 191, 36, 0.15);
+        }
+
+        .aspect-video {
+            aspect-ratio: 16 / 9;
         }
     </style>
 </head>
@@ -425,7 +454,7 @@
         <div class="reveal active relative">
             <div class="absolute inset-0 bg-amber-500 blur-[80px] opacity-20"></div>
             <img src="profilePic.jpeg"
-                alt="Aftab Ahmed - Best Software Engineer and MERN Stack Developer in Karachi UBIT"
+                alt="Aftab Ahmed - Best Software Engineer and Full Stack Developer in Karachi UBIT"
                 title="Aftab Ahmed Official Portfolio" class="hero-image relative z-10 shadow-2xl">
         </div>
 
@@ -448,7 +477,7 @@
 
             <p class="text-base md:text-lg max-w-lg reveal active font-normal text-zinc-400 mb-8"
                 style="transition-delay: 0.2s">
-                Aftab Ahmed — Engineering pixel-perfect interfaces with high-performance code
+                Aftab Ahmed — Full Stack Developer with 2 years of experience building modern, scalable SaaS products and web applications using the MERN stack. Strong problem-solving approach with a solid understanding of product architecture and end-to-end user flows.
             </p>
 
 
@@ -464,7 +493,7 @@
                 <div class="flex items-center gap-4 text-sm pl-2 border-l border-zinc-800 hidden sm:flex">
                     <a href="https://github.com/Aftab-Ahmed-Soomro" target="_blank"
                         class="hover:text-white transition flex items-center gap-1 text-xs"><i
-                            class="fab fa-github"></i> GitHub</a>
+                            class="fab fa-github"></i></a>
                     <a href="https://www.linkedin.com/in/aftab-ahmed-12b9aa265" target="_blank"
                         class="hover:text-white transition flex items-center gap-1 text-xs"><i
                             class="fab fa-linkedin-in"></i></a>
@@ -475,7 +504,7 @@
         </div>
     </section>
 
-    <section id="about" class="max-w-7xl mx-auto py-32 px-10 reveal">
+    <section id="about" class="max-w-7xl mx-auto pt-32 pb-24 px-10 reveal">
         <div class="grid grid-cols-1 md:grid-cols-12 gap-10 items-start">
             <div class="md:col-span-5">
                 <h2 class="font-black uppercase tracking-tighter leading-[0.8]"
@@ -487,13 +516,12 @@
             <div class="md:col-span-7">
                 <div class="space-y-4">
                     <p class="text-xl md:text-2xl leading-relaxed font-medium">
-                        Hi! I am <span class="text-amber-500 font-bold">Aftab Ahmed</span>, a MERN Stack Developer and
+                        Hi! I am <span class="text-amber-500 font-bold">Aftab Ahmed</span>, a Full Stack Developer and
                         Software Engineering student at <span class="text-amber-500 font-bold">UBIT, University of
                             Karachi.</span>
                     </p>
                     <p class="text-lg opacity-70 leading-relaxed">
-                        I love building websites that look great and work perfectly. My goal is to create clean and fast
-                        user interfaces using modern technology.
+                        I love building robust, scalable web applications from end to end. From designing intuitive user interfaces to architecting high-performance backends and APIs, I focus on delivering seamless, reliable digital products.
                     </p>
                     <p class="text-lg opacity-70 leading-relaxed">
                         I enjoy solving problems through code and turning creative ideas into real digital experiences
@@ -526,7 +554,7 @@
                                 <i class="fas fa-briefcase text-xs"></i>
                                 <span class="text-[9px] font-black uppercase tracking-widest">Experience</span>
                             </div>
-                            <h4 class="font-bold text-base tracking-tight">MERN Stack Developer</h4>
+                            <h4 class="font-bold text-base tracking-tight">Full Stack Developer</h4>
                         </div>
                         <p class="text-[13px] mt-2 opacity-95 font-bold uppercase tracking-tight italic text-amber-500">
                             2 Year • Karachi, Pakistan
@@ -546,26 +574,85 @@
             <div
                 class="animate-marquee flex items-center gap-8 text-xs md:text-sm font-bold tracking-wider text-zinc-400 uppercase">
 
-                <span>MongoDB</span> <span class="text-amber-500">♥</span>
-                <span>Express.js</span> <span class="text-amber-500">♥</span>
-                <span>React.js</span> <span class="text-amber-500">♥</span>
-                <span>Node.js</span> <span class="text-amber-500">♥</span>
+                <span>HTML5</span> <span class="text-amber-500">♥</span>
+                <span>CSS3</span> <span class="text-amber-500">♥</span>
+                <span>TailwindCSS</span> <span class="text-amber-500">♥</span>
+                <span>JavaScript</span> <span class="text-amber-500">♥</span>
                 <span>TypeScript</span> <span class="text-amber-500">♥</span>
-                <span>Tailwind CSS</span> <span class="text-amber-500">♥</span>
-                <span>C++ & DSA</span> <span class="text-amber-500">♥</span>
-                <span>Next.js</span> <span class="text-amber-500">♥</span>
+                <span>Python</span> <span class="text-amber-500">♥</span>
+                <span>Django</span> <span class="text-amber-500">♥</span>
+                <span>React Js</span> <span class="text-amber-500">♥</span>
+                <span>Nextjs</span> <span class="text-amber-500">♥</span>
+                <span>Nodejs</span> <span class="text-amber-500">♥</span>
+                <span>Expressjs</span> <span class="text-amber-500">♥</span>
+                <span>FastApi</span> <span class="text-amber-500">♥</span>
+                <span>Mongodb</span> <span class="text-amber-500">♥</span>
+                <span>MySql</span> <span class="text-amber-500">♥</span>
+                <span>PostgreSql</span> <span class="text-amber-500">♥</span>
+                <span>Supabase</span> <span class="text-amber-500">♥</span>
+                <span>Firebase</span> <span class="text-amber-500">♥</span>
+                <span>Github</span> <span class="text-amber-500">♥</span>
+                <span>Domain & Hosting</span> <span class="text-amber-500">♥</span>
+                <span>CI/CD pipelines</span> <span class="text-amber-500">♥</span>
+                <span>Docker</span> <span class="text-amber-500">♥</span>
+                <span>Redis</span> <span class="text-amber-500">♥</span>
 
-
-                <span>MongoDB</span> <span class="text-amber-500">♥</span>
-                <span>Express.js</span> <span class="text-amber-500">♥</span>
-                <span>React.js</span> <span class="text-amber-500">♥</span>
-                <span>Node.js</span> <span class="text-amber-500">♥</span>
+                <span>HTML5</span> <span class="text-amber-500">♥</span>
+                <span>CSS3</span> <span class="text-amber-500">♥</span>
+                <span>TailwindCSS</span> <span class="text-amber-500">♥</span>
+                <span>JavaScript</span> <span class="text-amber-500">♥</span>
                 <span>TypeScript</span> <span class="text-amber-500">♥</span>
-                <span>Tailwind CSS</span> <span class="text-amber-500">♥</span>
-                <span>C++ & DSA</span> <span class="text-amber-500">♥</span>
-                <span>Next.js</span> <span class="text-amber-500">♥</span>
+                <span>Python</span> <span class="text-amber-500">♥</span>
+                <span>Django</span> <span class="text-amber-500">♥</span>
+                <span>React Js</span> <span class="text-amber-500">♥</span>
+                <span>Nextjs</span> <span class="text-amber-500">♥</span>
+                <span>Nodejs</span> <span class="text-amber-500">♥</span>
+                <span>Expressjs</span> <span class="text-amber-500">♥</span>
+                <span>FastApi</span> <span class="text-amber-500">♥</span>
+                <span>Mongodb</span> <span class="text-amber-500">♥</span>
+                <span>MySql</span> <span class="text-amber-500">♥</span>
+                <span>PostgreSql</span> <span class="text-amber-500">♥</span>
+                <span>Supabase</span> <span class="text-amber-500">♥</span>
+                <span>Firebase</span> <span class="text-amber-500">♥</span>
+                <span>Github</span> <span class="text-amber-500">♥</span>
+                <span>Domain & Hosting</span> <span class="text-amber-500">♥</span>
+                <span>CI/CD pipelines</span> <span class="text-amber-500">♥</span>
+                <span>Docker</span> <span class="text-amber-500">♥</span>
+                <span>Redis</span> <span class="text-amber-500">♥</span>
             </div>
         </div>
+
+        <!-- Tech Stack & Skills Badges -->
+        <!-- <div class="mb-14">
+            <div class="flex items-center gap-2 mb-6">
+                <span class="text-xs font-bold uppercase tracking-widest text-amber-500">Skills & Tech Stack</span>
+                <span class="h-[1px] flex-grow bg-zinc-800"></span>
+            </div>
+            <div class="flex flex-wrap gap-2.5 sm:gap-3 items-center">
+                <span class="skill-pill px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold tracking-wide cursor-pointer">HTML5</span>
+                <span class="skill-pill px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold tracking-wide cursor-pointer">CSS3</span>
+                <span class="skill-pill px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold tracking-wide cursor-pointer">TailwindCSS</span>
+                <span class="skill-pill px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold tracking-wide cursor-pointer">JavaScript</span>
+                <span class="skill-pill px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold tracking-wide cursor-pointer">TypeScript</span>
+                <span class="skill-pill px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold tracking-wide cursor-pointer">Python</span>
+                <span class="skill-pill px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold tracking-wide cursor-pointer">Django</span>
+                <span class="skill-pill px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold tracking-wide cursor-pointer">React Js</span>
+                <span class="skill-pill px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold tracking-wide cursor-pointer">Nextjs</span>
+                <span class="skill-pill px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold tracking-wide cursor-pointer">Nodejs</span>
+                <span class="skill-pill px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold tracking-wide cursor-pointer">Expressjs</span>
+                <span class="skill-pill px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold tracking-wide cursor-pointer">FastApi</span>
+                <span class="skill-pill px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold tracking-wide cursor-pointer">Mongodb</span>
+                <span class="skill-pill px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold tracking-wide cursor-pointer">MySql</span>
+                <span class="skill-pill px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold tracking-wide cursor-pointer">PostgreSql</span>
+                <span class="skill-pill px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold tracking-wide cursor-pointer">Supabase</span>
+                <span class="skill-pill px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold tracking-wide cursor-pointer">Firebase</span>
+                <span class="skill-pill px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold tracking-wide cursor-pointer">Github</span>
+                <span class="skill-pill px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold tracking-wide cursor-pointer">Domain & Hosting</span>
+                <span class="skill-pill px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold tracking-wide cursor-pointer">CI/CD pipelines</span>
+                <span class="skill-pill px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold tracking-wide cursor-pointer">Docker</span>
+                <span class="skill-pill px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold tracking-wide cursor-pointer">Redis</span>
+            </div>
+        </div> -->
 
 
 
@@ -592,7 +679,7 @@
                 </div>
                 <h3 class="font-black text-base md:text-lg uppercase tracking-wider mb-2 text-white">Programming</h3>
                 <p class="text-xs md:text-sm text-zinc-400 leading-relaxed max-w-[250px]">
-                    Advanced problem solving and DSA in C++ logic.
+                    Advanced problem solving and DSA in Java logic.
                 </p>
             </div>
 
@@ -674,18 +761,27 @@
 
     <section id="projects" class="max-w-7xl mx-auto py-20 px-10 reveal relative">
 
-        <div class="flex items-center gap-4 mb-12">
-            <div class="w-1.5 h-10 bg-amber-500"></div>
-            <h2 class="text-4xl font-black uppercase tracking-tighter">Selected Works</h2>
+        <div class="flex items-center justify-between gap-4 mb-12">
+            <div class="flex items-center gap-4">
+                <div class="w-1.5 h-10 bg-amber-500"></div>
+                <h2 class="text-3xl md:text-4xl font-black uppercase tracking-tighter">Selected Works</h2>
+            </div>
+
         </div>
 
 
         <div class="relative group/slider">
 
+            <!-- Floating Left / Prev Button -->
+            <button id="prev-scroll-indicator" aria-label="Scroll Left"
+                class="absolute -left-2 md:-left-5 top-1/2 -translate-y-1/2 z-30 bg-amber-500 hover:bg-amber-400 text-black w-12 h-12 rounded-full flex items-center justify-center shadow-2xl transition-all duration-300 hover:scale-110 active:scale-95 border border-amber-300 opacity-0 pointer-events-none">
+                <i class="fas fa-arrow-left text-sm font-bold"></i>
+            </button>
 
-            <button id="next-scroll-indicator"
-                class="absolute right-4 top-1/2 -translate-y-1/2 z-30 bg-amber-500 text-black w-14 h-14 rounded-full flex items-center justify-center shadow-2xl transition-all duration-300 hover:scale-110 active:scale-95 border border-amber-400 animate-pulse">
-                <span class="text-xl font-black">→</span>
+            <!-- Floating Right / Next Button -->
+            <button id="next-scroll-indicator" aria-label="Scroll Right"
+                class="absolute -right-2 md:-right-5 top-1/2 -translate-y-1/2 z-30 bg-amber-500 hover:bg-amber-400 text-black w-12 h-12 rounded-full flex items-center justify-center shadow-2xl transition-all duration-300 hover:scale-110 active:scale-95 border border-amber-300">
+                <i class="fas fa-arrow-right text-sm font-bold"></i>
             </button>
 
 
@@ -696,9 +792,9 @@
                 <!-- 1. Easy Speak Stories -->
                 <div class="card group flex-none w-full max-w-sm p-6 rounded-[2rem] border border-zinc-800/80 snap-start"
                     style="background: var(--card-bg);">
-                    <div class="h-52 relative overflow-hidden rounded-2xl bg-zinc-800">
+                    <div class="aspect-video w-full relative overflow-hidden rounded-2xl bg-zinc-800">
                         <img src="assets/projects/easyspeak.png"
-                            class="w-full h-full object-cover grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-500"
+                            class="w-full h-full object-cover object-top grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-500"
                             alt="Easy Speak Stories">
                         <div
                             class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-black/40">
@@ -710,8 +806,6 @@
                     <div class="pt-6">
                         <div class="flex items-center justify-between">
                             <h3 class="text-xl font-black uppercase tracking-tighter">Easy Speak Stories</h3>
-                            <span
-                                class="text-[9px] font-bold bg-amber-500/10 text-amber-500 px-2 py-0.5 rounded border border-amber-500/20">Client</span>
                         </div>
                         <p class="mt-2 text-xs opacity-60 leading-relaxed font-medium h-14 overflow-hidden">Developed AI-powered SaaS applications integrating OpenAI API and ElevenLabs for story generation, content enhancement, and voice cloning. </p>
                     </div>
@@ -726,10 +820,10 @@
                 <!-- 2. PropIQ -->
                 <div class="card group flex-none w-full max-w-sm p-6 rounded-[2rem] border border-zinc-800/80 snap-start"
                     style="background: var(--card-bg);">
-                    <div class="h-52 relative overflow-hidden rounded-2xl bg-zinc-800">
+                    <div class="aspect-video w-full relative overflow-hidden rounded-2xl bg-zinc-800">
                         <img src="assets/projects/propiq.png"
-                            class="w-full h-full object-cover grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-500"
-                            alt="Easy Speak Stories">
+                            class="w-full h-full object-cover object-top grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-500"
+                            alt="PropIQ">
                         <div
                             class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-black/40">
                             <a href="https://data.trypropiq.ai/" target="_blank"
@@ -740,8 +834,6 @@
                     <div class="pt-6">
                         <div class="flex items-center justify-between">
                             <h3 class="text-xl font-black uppercase tracking-tighter">PropIQ</h3>
-                            <span
-                                class="text-[9px] font-bold bg-amber-500/10 text-amber-500 px-2 py-0.5 rounded border border-amber-500/20">Client</span>
                         </div>
                         <p class="mt-2 text-xs opacity-60 leading-relaxed font-medium h-14 overflow-hidden">Worked on a Real Estate SaaS platform with scalable APIs,
 property data processing, subscriptions, skip tracing, and lead
@@ -758,9 +850,9 @@ generation features for U.S. markets.</p>
 
                 <div class="card group flex-none w-full max-w-sm p-6 rounded-[2rem] border border-zinc-800/80 snap-start"
                     style="background: var(--card-bg);">
-                    <div class="h-52 relative overflow-hidden rounded-2xl bg-zinc-800">
+                    <div class="aspect-video w-full relative overflow-hidden rounded-2xl bg-zinc-800">
                         <img src="assets/projects/cirvia.png"
-                            class="w-full h-full object-cover grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-500"
+                            class="w-full h-full object-cover object-top grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-500"
                             alt="Cirvia Tech">
                         <div
                             class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-black/40">
@@ -770,7 +862,11 @@ generation features for U.S. markets.</p>
                         </div>
                     </div>
                     <div class="pt-6">
+                        <div class="flex items-center justify-between">
                         <h3 class="text-xl font-black uppercase tracking-tighter">Cirvia Tech</h3>
+                            <span
+                                class="text-[9px] font-bold bg-amber-500/10 text-amber-500 px-2 py-0.5 rounded border border-amber-500/20">Client</span>
+                        </div>        
                         <p class="mt-2 text-xs opacity-60 leading-relaxed font-medium h-14 overflow-hidden">Developed a 20+ page responsive e-commerce frontend with React,
 TypeScript & Tailwind CSS, including auth, cart, checkout, and APIs.
 </p>
@@ -787,9 +883,9 @@ TypeScript & Tailwind CSS, including auth, cart, checkout, and APIs.
 
                 <div class="card group flex-none w-full max-w-sm p-6 rounded-[2rem] border border-zinc-800/80 snap-start"
                     style="background: var(--card-bg);">
-                    <div class="h-52 relative overflow-hidden rounded-2xl bg-zinc-800">
+                    <div class="aspect-video w-full relative overflow-hidden rounded-2xl bg-zinc-800">
                         <img src="assets/projects/uss.png"
-                            class="w-full h-full object-cover grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-500"
+                            class="w-full h-full object-cover object-top grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-500"
                             alt="United Strategic Solutions">
                         <div
                             class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-black/40">
@@ -819,9 +915,9 @@ growth-focused solutions.</p>
 
                 <div class="card group flex-none w-full max-w-sm p-6 rounded-[2rem] border border-zinc-800/80 snap-start"
                     style="background: var(--card-bg);">
-                    <div class="h-52 relative overflow-hidden rounded-2xl bg-zinc-800">
+                    <div class="aspect-video w-full relative overflow-hidden rounded-2xl bg-zinc-800">
                         <img src="assets/projects/dig.png"
-                            class="w-full h-full object-cover grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-500"
+                            class="w-full h-full object-cover object-top grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-500"
                             alt="Disturbed Innovations Group">
                         <div
                             class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-black/40">
@@ -852,9 +948,9 @@ Delivered in 2 days.
 
                 <div class="card group flex-none w-full max-w-sm p-6 rounded-[2rem] border border-zinc-800/80 snap-start"
                     style="background: var(--card-bg);">
-                    <div class="h-52 relative overflow-hidden rounded-2xl bg-zinc-800">
+                    <div class="aspect-video w-full relative overflow-hidden rounded-2xl bg-zinc-800">
                         <img src="assets/projects/mern.png"
-                            class="w-full h-full object-cover grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-500"
+                            class="w-full h-full object-cover object-top grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-500"
                             alt="MERN Ecommerce App">
                         <div
                             class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-black/40">
@@ -882,9 +978,9 @@ Delivered in 2 days.
 
                 <div class="card group flex-none w-full max-w-sm p-6 rounded-[2rem] border border-zinc-800/80 snap-start"
                     style="background: var(--card-bg);">
-                    <div class="h-52 relative overflow-hidden rounded-2xl bg-zinc-800">
+                    <div class="aspect-video w-full relative overflow-hidden rounded-2xl bg-zinc-800">
                         <img src="assets/projects/bookr.png"
-                            class="w-full h-full object-cover grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-500"
+                            class="w-full h-full object-cover object-top grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-500"
                             alt="Bookr">
                         <div
                             class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-black/40">
@@ -921,43 +1017,59 @@ Delivered in 2 days.
     <script>
         document.addEventListener("DOMContentLoaded", () => {
             const slider = document.getElementById('project-slider');
-            const arrowIndicator = document.getElementById('next-scroll-indicator');
+            const nextBtn = document.getElementById('next-scroll-indicator');
+            const prevBtn = document.getElementById('prev-scroll-indicator');
+            const headerNext = document.getElementById('header-next-btn');
+            const headerPrev = document.getElementById('header-prev-btn');
 
-            if (slider && arrowIndicator) {
-                const cardShiftWidth = 400;
+            if (!slider) return;
 
+            const getShiftWidth = () => {
+                const firstCard = slider.querySelector('.card');
+                return firstCard ? firstCard.offsetWidth + 24 : 380;
+            };
 
-                function removeArrowPermanently() {
-                    arrowIndicator.style.transition = 'opacity 0.3s ease, transform 0.3s ease';
-                    arrowIndicator.style.opacity = '0';
-                    arrowIndicator.style.transform = 'translateY(-50%) scale(0.5)';
+            function updateArrowStates() {
+                const atStart = slider.scrollLeft <= 15;
+                const atEnd = slider.scrollLeft >= (slider.scrollWidth - slider.clientWidth - 15);
 
-
-                    setTimeout(() => {
-                        if (arrowIndicator.parentNode) {
-                            arrowIndicator.parentNode.removeChild(arrowIndicator);
-                        }
-                    }, 300);
-
-
-                    slider.removeEventListener('scroll', handleManualScroll);
+                if (prevBtn) {
+                    prevBtn.style.opacity = atStart ? '0' : '1';
+                    prevBtn.style.pointerEvents = atStart ? 'none' : 'auto';
+                }
+                if (headerPrev) {
+                    headerPrev.disabled = atStart;
+                    headerPrev.style.opacity = atStart ? '0.3' : '1';
                 }
 
-
-                arrowIndicator.addEventListener('click', () => {
-                    slider.scrollLeft += cardShiftWidth;
-                    removeArrowPermanently();
-                });
-
-
-                function handleManualScroll() {
-                    if (slider.scrollLeft > 15) {
-                        removeArrowPermanently();
-                    }
+                if (nextBtn) {
+                    nextBtn.style.opacity = atEnd ? '0' : '1';
+                    nextBtn.style.pointerEvents = atEnd ? 'none' : 'auto';
                 }
-
-                slider.addEventListener('scroll', handleManualScroll);
+                if (headerNext) {
+                    headerNext.disabled = atEnd;
+                    headerNext.style.opacity = atEnd ? '0.3' : '1';
+                }
             }
+
+            const scrollNext = () => {
+                slider.scrollBy({ left: getShiftWidth(), behavior: 'smooth' });
+            };
+
+            const scrollPrev = () => {
+                slider.scrollBy({ left: -getShiftWidth(), behavior: 'smooth' });
+            };
+
+            if (nextBtn) nextBtn.addEventListener('click', scrollNext);
+            if (prevBtn) prevBtn.addEventListener('click', scrollPrev);
+            if (headerNext) headerNext.addEventListener('click', scrollNext);
+            if (headerPrev) headerPrev.addEventListener('click', scrollPrev);
+
+            slider.addEventListener('scroll', updateArrowStates);
+            window.addEventListener('resize', updateArrowStates);
+
+            // Initialize state
+            updateArrowStates();
         });
     </script>
 
@@ -1038,141 +1150,176 @@ Delivered in 2 days.
         </div>
 
         <div class="w-full relative overflow-hidden mask-edges group">
-            <div class="flex gap-6 animate-ticker group-hover:[animation-play-state:paused] w-max py-4">
+            <div class="flex animate-ticker w-max py-4 group-hover:[animation-play-state:paused]">
 
-                <div class="card flex-none w-[360px] p-8 rounded-[2rem] border border-zinc-800/80 flex flex-col justify-between transition-all duration-300 hover:border-amber-500 hover:scale-[1.02] group-hover:opacity-40 hover:!opacity-100 cursor-pointer"
-                    style="background: var(--card-bg);">
-                    <div>
-                        <div class="flex gap-1 text-amber-500 text-sm mb-4">
-                            <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
-                        </div>
-                        <p class="text-xs text-zinc-300 leading-relaxed font-medium">"Tehreem built the ImpexSafe
-                            logistics platform for us. The interface is exceptionally clean, fully responsive, and
-                            handles complex tracking data perfectly."</p>
-                    </div>
-                    <div class="mt-6 flex items-center gap-4 border-t border-zinc-800/60 pt-4">
-                        <div
-                            class="w-10 h-10 rounded-full bg-amber-500/10 border border-amber-500/30 flex items-center justify-center shrink-0">
-                            <span class="font-black text-amber-500 text-xs tracking-wider">HJ</span>
-                        </div>
+                <!-- Set 1 -->
+                <div class="flex gap-6 pr-6 shrink-0">
+                    <div class="card flex-none w-[360px] p-8 rounded-[2rem] border border-zinc-800/80 flex flex-col justify-between transition-all duration-300 hover:border-amber-500 hover:scale-[1.02] group-hover:opacity-40 hover:!opacity-100 cursor-pointer"
+                        style="background: var(--card-bg);">
                         <div>
-                            <h4 class="text-xs font-black uppercase tracking-wider text-white">Hammad Jamal</h4>
-                            <p class="text-[9px] opacity-40 font-bold uppercase tracking-widest">Founder, ImpexSafe
-                                Logistics</p>
+                            <div class="flex gap-1 text-amber-500 text-sm mb-4">
+                                <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                            </div>
+                            <p class="text-xs text-zinc-300 leading-relaxed font-medium">"Aftab built the United Strategic Solutions and Disturbed Innovations Group
+                                platform for us. The interface is exceptionally clean, and fully responsive."</p>
+                        </div>
+                        <div class="mt-6 flex items-center gap-4 border-t border-zinc-800/60 pt-4">
+                            <div
+                                class="w-10 h-10 rounded-full bg-amber-500/10 border border-amber-500/30 flex items-center justify-center shrink-0">
+                                <span class="font-black text-amber-500 text-xs tracking-wider">ECW</span>
+                            </div>
+                            <div>
+                                <h4 class="text-xs font-black uppercase tracking-wider text-white">Emmanuel Cole Williams</h4>
+                                <p class="text-[9px] opacity-40 font-bold uppercase tracking-widest">CEO, United Strategic Solutions</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card flex-none w-[360px] p-8 rounded-[2rem] border border-zinc-800/80 flex flex-col justify-between transition-all duration-300 hover:border-amber-500 hover:scale-[1.02] group-hover:opacity-40 hover:!opacity-100 cursor-pointer"
+                        style="background: var(--card-bg);">
+                        <div>
+                            <div class="flex gap-1 text-amber-500 text-sm mb-4">
+                                <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                            </div>
+                            <p class="text-xs text-zinc-300 leading-relaxed font-medium">"His front-end design sense is
+                                incredible. He designed our Bookr App layout with perfect structures and excellent
+                                code quality."</p>
+                        </div>
+                        <div class="mt-6 flex items-center gap-4 border-t border-zinc-800/60 pt-4">
+                            <div
+                                class="w-10 h-10 rounded-full bg-amber-500/10 border border-amber-500/30 flex items-center justify-center shrink-0">
+                                <span class="font-black text-amber-500 text-xs tracking-wider">ZS</span>
+                            </div>
+                            <div>
+                                <h4 class="text-xs font-black uppercase tracking-wider text-white">Zain Ur Rehman</h4>
+                                <p class="text-[9px] opacity-40 font-bold uppercase tracking-widest">CEO, Web Exaltia</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card flex-none w-[360px] p-8 rounded-[2rem] border border-zinc-800/80 flex flex-col justify-between transition-all duration-300 hover:border-amber-500 hover:scale-[1.02] group-hover:opacity-40 hover:!opacity-100 cursor-pointer"
+                        style="background: var(--card-bg);">
+                        <div>
+                            <div class="flex gap-1 text-amber-500 text-sm mb-4">
+                                <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                            </div>
+                            <p class="text-xs text-zinc-300 leading-relaxed font-medium">"A dedicated sole developer who built and delivered our real estate platform, PropIQ, from scratch. Reliable, technically sound, and fully committed to building high-quality, scalable products."</p>
+                        </div>
+                        <div class="mt-6 flex items-center gap-4 border-t border-zinc-800/60 pt-4">
+                            <div
+                                class="w-10 h-10 rounded-full bg-amber-500/10 border border-amber-500/30 flex items-center justify-center shrink-0">
+                                <span class="font-black text-amber-500 text-xs tracking-wider">RH</span>
+                            </div>
+                            <div>
+                                <h4 class="text-xs font-black uppercase tracking-wider text-white">Raza Haider</h4>
+                                <p class="text-[9px] opacity-40 font-bold uppercase tracking-widest">CEO, Higlax Solutions</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card flex-none w-[360px] p-8 rounded-[2rem] border border-zinc-800/80 flex flex-col justify-between transition-all duration-300 hover:border-amber-500 hover:scale-[1.02] group-hover:opacity-40 hover:!opacity-100 cursor-pointer"
+                        style="background: var(--card-bg);">
+                        <div>
+                            <div class="flex gap-1 text-amber-500 text-sm mb-4">
+                                <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                            </div>
+                            <p class="text-xs text-zinc-300 leading-relaxed font-medium">"Delivered a comprehensive 20+ page e-commerce platform with exceptional speed and precision. A sharp, smart-working developer who gets things done efficiently."</p>
+                        </div>
+                        <div class="mt-6 flex items-center gap-4 border-t border-zinc-800/60 pt-4">
+                            <div
+                                class="w-10 h-10 rounded-full bg-amber-500/10 border border-amber-500/30 flex items-center justify-center shrink-0">
+                                <span class="font-black text-amber-500 text-xs tracking-wider">ARS</span>
+                            </div>
+                            <div>
+                                <h4 class="text-xs font-black uppercase tracking-wider text-white">Ahmed Raza Shaikh</h4>
+                                <p class="text-[9px] opacity-40 font-bold uppercase tracking-widest">Team Lead, MUF Digital</p>
+                            </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="card flex-none w-[360px] p-8 rounded-[2rem] border border-zinc-800/80 flex flex-col justify-between transition-all duration-300 hover:border-amber-500 hover:scale-[1.02] group-hover:opacity-40 hover:!opacity-100 cursor-pointer"
-                    style="background: var(--card-bg);">
-                    <div>
-                        <div class="flex gap-1 text-amber-500 text-sm mb-4">
-                            <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
-                        </div>
-                        <p class="text-xs text-zinc-300 leading-relaxed font-medium">"Great experience working with her
-                            on RinseUp UK. She transformed our booking system concept into a highly fluid, premium user
-                            experience."</p>
-                    </div>
-                    <div class="mt-6 flex items-center gap-4 border-t border-zinc-800/60 pt-4">
-                        <div
-                            class="w-10 h-10 rounded-full bg-amber-500/10 border border-amber-500/30 flex items-center justify-center shrink-0">
-                            <span class="font-black text-amber-500 text-xs tracking-wider">MR</span>
-                        </div>
+                <!-- Set 2 (Seamless Infinite Clone) -->
+                <div class="flex gap-6 pr-6 shrink-0" aria-hidden="true">
+                    <div class="card flex-none w-[360px] p-8 rounded-[2rem] border border-zinc-800/80 flex flex-col justify-between transition-all duration-300 hover:border-amber-500 hover:scale-[1.02] group-hover:opacity-40 hover:!opacity-100 cursor-pointer"
+                        style="background: var(--card-bg);">
                         <div>
-                            <h4 class="text-xs font-black uppercase tracking-wider text-white">Muhammad Rehan</h4>
-                            <p class="text-[9px] opacity-40 font-bold uppercase tracking-widest">Director, RinseUp UK
-                            </p>
+                            <div class="flex gap-1 text-amber-500 text-sm mb-4">
+                                <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                            </div>
+                            <p class="text-xs text-zinc-300 leading-relaxed font-medium">"Aftab built the United Strategic Solutions and Disturbed Innovations Group
+                                platform for us. The interface is exceptionally clean, and fully responsive."</p>
+                        </div>
+                        <div class="mt-6 flex items-center gap-4 border-t border-zinc-800/60 pt-4">
+                            <div
+                                class="w-10 h-10 rounded-full bg-amber-500/10 border border-amber-500/30 flex items-center justify-center shrink-0">
+                                <span class="font-black text-amber-500 text-xs tracking-wider">ECW</span>
+                            </div>
+                            <div>
+                                <h4 class="text-xs font-black uppercase tracking-wider text-white">Emmanuel Cole Williams</h4>
+                                <p class="text-[9px] opacity-40 font-bold uppercase tracking-widest">CEO, United Strategic Solutions</p>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="card flex-none w-[360px] p-8 rounded-[2rem] border border-zinc-800/80 flex flex-col justify-between transition-all duration-300 hover:border-amber-500 hover:scale-[1.02] group-hover:opacity-40 hover:!opacity-100 cursor-pointer"
-                    style="background: var(--card-bg);">
-                    <div>
-                        <div class="flex gap-1 text-amber-500 text-sm mb-4">
-                            <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
-                        </div>
-                        <p class="text-xs text-zinc-300 leading-relaxed font-medium">"Her front-end design sense is
-                            incredible. She designed our fashion store layout with perfect grid structures and excellent
-                            code quality."</p>
-                    </div>
-                    <div class="mt-6 flex items-center gap-4 border-t border-zinc-800/60 pt-4">
-                        <div
-                            class="w-10 h-10 rounded-full bg-amber-500/10 border border-amber-500/30 flex items-center justify-center shrink-0">
-                            <span class="font-black text-amber-500 text-xs tracking-wider">ZS</span>
-                        </div>
+                    <div class="card flex-none w-[360px] p-8 rounded-[2rem] border border-zinc-800/80 flex flex-col justify-between transition-all duration-300 hover:border-amber-500 hover:scale-[1.02] group-hover:opacity-40 hover:!opacity-100 cursor-pointer"
+                        style="background: var(--card-bg);">
                         <div>
-                            <h4 class="text-xs font-black uppercase tracking-wider text-white">Zainab Siddiqui</h4>
-                            <p class="text-[9px] opacity-40 font-bold uppercase tracking-widest">Creative Head, Rivaaj
-                                Studio</p>
+                            <div class="flex gap-1 text-amber-500 text-sm mb-4">
+                                <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                            </div>
+                            <p class="text-xs text-zinc-300 leading-relaxed font-medium">"His front-end design sense is
+                                incredible. He designed our Bookr App layout with perfect structures and excellent
+                                code quality."</p>
+                        </div>
+                        <div class="mt-6 flex items-center gap-4 border-t border-zinc-800/60 pt-4">
+                            <div
+                                class="w-10 h-10 rounded-full bg-amber-500/10 border border-amber-500/30 flex items-center justify-center shrink-0">
+                                <span class="font-black text-amber-500 text-xs tracking-wider">ZS</span>
+                            </div>
+                            <div>
+                                <h4 class="text-xs font-black uppercase tracking-wider text-white">Zain Ur Rehman</h4>
+                                <p class="text-[9px] opacity-40 font-bold uppercase tracking-widest">CEO, Web Exaltia</p>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="card flex-none w-[360px] p-8 rounded-[2rem] border border-zinc-800/80 flex flex-col justify-between transition-all duration-300 hover:border-amber-500 hover:scale-[1.02] group-hover:opacity-40 hover:!opacity-100 cursor-pointer"
-                    style="background: var(--card-bg);">
-                    <div>
-                        <div class="flex gap-1 text-amber-500 text-sm mb-4">
-                            <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
-                        </div>
-                        <p class="text-xs text-zinc-300 leading-relaxed font-medium">"Highly skilled developer. The
-                            tracking logic, performance speeds, and web interface workflow she built for our app are
-                            absolutely flawless."</p>
-                    </div>
-                    <div class="mt-6 flex items-center gap-4 border-t border-zinc-800/60 pt-4">
-                        <div
-                            class="w-10 h-10 rounded-full bg-amber-500/10 border border-amber-500/30 flex items-center justify-center shrink-0">
-                            <span class="font-black text-amber-500 text-xs tracking-wider">AK</span>
-                        </div>
+                    <div class="card flex-none w-[360px] p-8 rounded-[2rem] border border-zinc-800/80 flex flex-col justify-between transition-all duration-300 hover:border-amber-500 hover:scale-[1.02] group-hover:opacity-40 hover:!opacity-100 cursor-pointer"
+                        style="background: var(--card-bg);">
                         <div>
-                            <h4 class="text-xs font-black uppercase tracking-wider text-white">Ayesha Khan</h4>
-                            <p class="text-[9px] opacity-40 font-bold uppercase tracking-widest">Product Manager, Nexus
-                                Tech</p>
+                            <div class="flex gap-1 text-amber-500 text-sm mb-4">
+                                <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                            </div>
+                            <p class="text-xs text-zinc-300 leading-relaxed font-medium">"A dedicated sole developer who built and delivered our real estate platform, PropIQ, from scratch. Reliable, technically sound, and fully committed to building high-quality, scalable products."</p>
+                        </div>
+                        <div class="mt-6 flex items-center gap-4 border-t border-zinc-800/60 pt-4">
+                            <div
+                                class="w-10 h-10 rounded-full bg-amber-500/10 border border-amber-500/30 flex items-center justify-center shrink-0">
+                                <span class="font-black text-amber-500 text-xs tracking-wider">RH</span>
+                            </div>
+                            <div>
+                                <h4 class="text-xs font-black uppercase tracking-wider text-white">Raza Haider</h4>
+                                <p class="text-[9px] opacity-40 font-bold uppercase tracking-widest">CEO, Higlax Solutions</p>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="card flex-none w-[360px] p-8 rounded-[2rem] border border-zinc-800/80 flex flex-col justify-between transition-all duration-300 hover:border-amber-500 hover:scale-[1.02] group-hover:opacity-40 hover:!opacity-100 cursor-pointer"
-                    style="background: var(--card-bg);">
-                    <div>
-                        <div class="flex gap-1 text-amber-500 text-sm mb-4">
-                            <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
-                        </div>
-                        <p class="text-xs text-zinc-300 leading-relaxed font-medium">"Tehreem built the ImpexSafe
-                            logistics platform for us. The interface is exceptionally clean, fully responsive, and
-                            handles complex tracking data perfectly."</p>
-                    </div>
-                    <div class="mt-6 flex items-center gap-4 border-t border-zinc-800/60 pt-4">
-                        <div
-                            class="w-10 h-10 rounded-full bg-amber-500/10 border border-amber-500/30 flex items-center justify-center shrink-0">
-                            <span class="font-black text-amber-500 text-xs tracking-wider">HJ</span>
-                        </div>
+                    <div class="card flex-none w-[360px] p-8 rounded-[2rem] border border-zinc-800/80 flex flex-col justify-between transition-all duration-300 hover:border-amber-500 hover:scale-[1.02] group-hover:opacity-40 hover:!opacity-100 cursor-pointer"
+                        style="background: var(--card-bg);">
                         <div>
-                            <h4 class="text-xs font-black uppercase tracking-wider text-white">Hammad Jamal</h4>
-                            <p class="text-[9px] opacity-40 font-bold uppercase tracking-widest">Founder, ImpexSafe
-                                Logistics</p>
+                            <div class="flex gap-1 text-amber-500 text-sm mb-4">
+                                <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                            </div>
+                            <p class="text-xs text-zinc-300 leading-relaxed font-medium">"Delivered a comprehensive 20+ page e-commerce platform with exceptional speed and precision. A sharp, smart-working developer who gets things done efficiently."</p>
                         </div>
-                    </div>
-                </div>
-                <div class="card flex-none w-[360px] p-8 rounded-[2rem] border border-zinc-800/80 flex flex-col justify-between transition-all duration-300 hover:border-amber-500 hover:scale-[1.02] group-hover:opacity-40 hover:!opacity-100 cursor-pointer"
-                    style="background: var(--card-bg);">
-                    <div>
-                        <div class="flex gap-1 text-amber-500 text-sm mb-4">
-                            <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
-                        </div>
-                        <p class="text-xs text-zinc-300 leading-relaxed font-medium">"Great experience working with her
-                            on RinseUp UK. She transformed our booking system concept into a highly fluid, premium user
-                            experience."</p>
-                    </div>
-                    <div class="mt-6 flex items-center gap-4 border-t border-zinc-800/60 pt-4">
-                        <div
-                            class="w-10 h-10 rounded-full bg-amber-500/10 border border-amber-500/30 flex items-center justify-center shrink-0">
-                            <span class="font-black text-amber-500 text-xs tracking-wider">MR</span>
-                        </div>
-                        <div>
-                            <h4 class="text-xs font-black uppercase tracking-wider text-white">Muhammad Rehan</h4>
-                            <p class="text-[9px] opacity-40 font-bold uppercase tracking-widest">Director, RinseUp UK
-                            </p>
+                        <div class="mt-6 flex items-center gap-4 border-t border-zinc-800/60 pt-4">
+                            <div
+                                class="w-10 h-10 rounded-full bg-amber-500/10 border border-amber-500/30 flex items-center justify-center shrink-0">
+                                <span class="font-black text-amber-500 text-xs tracking-wider">ARS</span>
+                            </div>
+                            <div>
+                                <h4 class="text-xs font-black uppercase tracking-wider text-white">Ahmed Raza Shaikh</h4>
+                                <p class="text-[9px] opacity-40 font-bold uppercase tracking-widest">Team Lead, MUF Digital</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -1188,13 +1335,16 @@ Delivered in 2 days.
             }
 
             100% {
-
-                transform: translateX(calc(-1536px - 1.5rem));
+                transform: translateX(-50%);
             }
         }
 
         .animate-ticker {
             animation: tickerTimeline 25s linear infinite;
+        }
+
+        .animate-ticker:hover {
+            animation-play-state: paused;
         }
 
         .mask-edges {
@@ -1237,11 +1387,11 @@ Delivered in 2 days.
         </div>
     </section>
 
-    <footer class="w-full pt-20 pb-10 px-6 md:px-10 border-t border-zinc-800/30 transition-colors duration-300"
+    <footer class="max-w-7xl mx-auto pt-20 pb-10 px-6 md:px-10 border-t border-zinc-800/30 transition-colors duration-300"
         style="background: var(--bg-color); color: var(--text-color);">
-        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-12 pb-16">
+        <div class="flex flex-col md:flex-row justify-between items-start flex-wrap gap-12 pb-16">
 
-            <div class="lg:col-span-2 flex flex-col gap-6">
+            <div class="flex flex-col gap-6 max-w-sm">
                 <h3 class="text-3xl font-black uppercase tracking-tighter"
                     style="color: var(--heading-color, inherit);">AA<span class="text-amber-500">.</span></h3>
                 <p class="text-xs leading-relaxed font-medium max-w-sm opacity-75">
@@ -1288,23 +1438,6 @@ Delivered in 2 days.
                 </ul>
             </div>
 
-            <!-- <div class="flex flex-col gap-4">
-                <h4 class="text-xs font-black uppercase tracking-wider" style="color: var(--heading-color, inherit);">
-                    Coding Profiles</h4>
-                <ul class="flex flex-col gap-3 text-xs font-semibold opacity-80">
-                    <li><a href="https://leetcode.com/u/Tehreem_Rana2/" target="_blank" rel="noopener noreferrer"
-                            class="hover:text-amber-500 transition-colors">LeetCode</a></li>
-                    <li><a href="https://codeforces.com/profile/tehreemr61" target="_blank" rel="noopener noreferrer"
-                            class="hover:text-amber-500 transition-colors">Codeforces</a></li>
-                    <li><a href="https://www.codechef.com/users/tehreem_2" target="_blank" rel="noopener noreferrer"
-                            class="hover:text-amber-500 transition-colors">CodeChef</a></li>
-                    <li><a href="https://codolio.com/profile/bviZLoyz" target="_blank" rel="noopener noreferrer"
-                            class="hover:text-amber-500 transition-colors">Codolio</a></li>
-                    <li><a href="https://www.geeksforgeeks.org/profile/tehree738k" target="_blank"
-                            rel="noopener noreferrer" class="hover:text-amber-500 transition-colors">GFG</a></li>
-                </ul>
-            </div> -->
-
             <div class="flex flex-col gap-4">
                 <h4 class="text-xs font-black uppercase tracking-wider" style="color: var(--heading-color, inherit);">
                     Status</h4>
@@ -1323,8 +1456,8 @@ Delivered in 2 days.
         </div>
 
         <div
-            class="max-w-7xl mx-auto border-t border-zinc-700/20 pt-8 flex flex-col sm:flex-row justify-between gap-4 text-[10px] font-bold uppercase tracking-widest opacity-50">
-            <p>© 2026 Aftab Ahmed — MERN Stack Developer based in Karachi, Pakistan.</p>
+            class="border-t border-zinc-700/20 pt-8 flex flex-col sm:flex-row justify-between gap-4 text-[10px] font-bold uppercase tracking-widest opacity-50">
+            <p>© 2026 Aftab Ahmed — Full Stack Developer based in Karachi, Pakistan.</p>
             <p>UTC+5 Karachi, PK</p>
         </div>
     </footer>
@@ -1363,7 +1496,7 @@ Delivered in 2 days.
 
 
         function initCursorEffects() {
-            document.querySelectorAll('a, button, .card, input, textarea, .star, #open-review-btn, #cancel-review-btn').forEach(el => {
+            document.querySelectorAll('a, button, .card, .skill-pill, input, textarea, .star, #open-review-btn, #cancel-review-btn').forEach(el => {
 
                 el.removeEventListener('mouseenter', handleMouseEnter);
                 el.removeEventListener('mouseleave', handleMouseLeave);
