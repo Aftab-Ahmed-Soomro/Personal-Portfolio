@@ -1,0 +1,250 @@
+@import "tailwindcss";
+
+:root {
+  --accent: #fbbf24;
+  --bg-primary: #09090b;
+  --text-main: #fafafa;
+  --text-muted: rgba(250, 250, 250, 0.65);
+  --card-bg: #111113;
+  --card-border: #18181b;
+  --nav-bg: rgba(9, 9, 11, 0.8);
+  --edu-box: rgba(24, 24, 27, 0.6);
+}
+
+.light-mode {
+  --accent: #d97706;
+  --bg-primary: #fafaf9;
+  --text-main: #1c1917;
+  --text-muted: #4b5563;
+  --card-bg: #ffffff;
+  --card-border: #e7e5e4;
+  --nav-bg: rgba(250, 250, 249, 0.88);
+  --edu-box: #f3f4f6;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: clip;
+}
+
+/* Clean smooth scrolling */
+
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-main);
+  transition: background-color 0.4s ease, color 0.4s ease;
+  overflow-x: clip;
+  width: 100%;
+}
+
+@media (min-width: 769px) {
+  body.custom-cursor-enabled,
+  body.custom-cursor-enabled a,
+  body.custom-cursor-enabled button,
+  body.custom-cursor-enabled input,
+  body.custom-cursor-enabled textarea {
+    cursor: none !important;
+  }
+}
+
+@media (max-width: 768px) {
+  #cursor {
+    display: none !important;
+  }
+  body {
+    cursor: auto !important;
+  }
+}
+
+/* Light mode global element overrides */
+.light-mode h1,
+.light-mode h2,
+.light-mode h3,
+.light-mode h4,
+.light-mode .text-main {
+  color: var(--text-main) !important;
+}
+
+.light-mode p,
+.light-mode .text-muted,
+.light-mode .text-zinc-300,
+.light-mode .text-zinc-400 {
+  color: var(--text-muted) !important;
+}
+
+.light-mode .portfolio-card {
+  background: var(--card-bg) !important;
+  border-color: var(--card-border) !important;
+  box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.05);
+}
+
+.light-mode input,
+.light-mode textarea {
+  color: var(--text-main) !important;
+  border-color: #d6d3d1 !important;
+}
+
+.light-mode input::placeholder,
+.light-mode textarea::placeholder {
+  color: #9ca3af !important;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-primary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #27272a;
+  border-radius: 10px;
+}
+
+.light-mode ::-webkit-scrollbar-thumb {
+  background: #d4d4d8;
+}
+
+/* Base Card Styling */
+.portfolio-card {
+  border: 1px solid var(--card-border);
+  background: var(--card-bg);
+  backdrop-filter: blur(12px);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+}
+
+.portfolio-card:hover {
+  border-color: var(--accent);
+  transform: translateY(-6px);
+}
+
+/* Hero morph animation */
+.hero-image-morph {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+  border: 4px solid var(--accent);
+  animation: morph 8s ease-in-out infinite;
+}
+
+@media (max-width: 768px) {
+  .hero-image-morph {
+    width: 230px;
+    height: 230px;
+  }
+}
+
+@keyframes morph {
+  0% {
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+  }
+  50% {
+    border-radius: 50% 50% 30% 70% / 50% 60% 40% 50%;
+  }
+  100% {
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+  }
+}
+
+/* Green status pulse */
+@keyframes pulse-green {
+  0% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(34, 197, 94, 0.7);
+  }
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 6px rgba(34, 197, 94, 0);
+  }
+  100% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(34, 197, 94, 0);
+  }
+}
+
+.animate-pulse-green {
+  animation: pulse-green 2s infinite;
+}
+
+/* Marquee Scroll for skills */
+@keyframes marquee-scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  display: flex;
+  width: max-content;
+  animation: marquee-scroll 45s linear infinite;
+}
+
+.animate-marquee:hover {
+  animation-play-state: paused;
+}
+
+/* Reviews Ticker */
+@keyframes tickerTimeline {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-ticker {
+  animation: tickerTimeline 28s linear infinite;
+}
+
+.animate-ticker:hover {
+  animation-play-state: paused;
+}
+
+/* Edge Masking for tickers */
+.mask-edges {
+  -webkit-mask-image: linear-gradient(
+    to right,
+    transparent 0%,
+    black 8%,
+    black 92%,
+    transparent 100%
+  );
+  mask-image: linear-gradient(
+    to right,
+    transparent 0%,
+    black 8%,
+    black 92%,
+    transparent 100%
+  );
+}
+
+/* Exact Original Interactive Cursor */
+#cursor {
+  width: 12px;
+  height: 12px;
+  background: var(--accent);
+  border-radius: 50%;
+  position: fixed;
+  pointer-events: none;
+  z-index: 99999;
+  transition: transform 0.15s ease-out;
+}
+
+/* Scroll hide */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
