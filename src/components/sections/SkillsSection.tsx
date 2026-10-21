@@ -10,7 +10,7 @@ export const SkillsSection: React.FC = () => {
   const { marqueeSkills, focusAreas } = portfolioData;
 
   const renderIcon = (iconName: string) => {
-    const cls = "w-8 h-8 text-amber-500";
+    const cls = "w-8 h-8 text-teal-500";
     switch (iconName) {
       case "layers":
         return <Layers className={cls} />;
@@ -30,7 +30,7 @@ export const SkillsSection: React.FC = () => {
       {/* Title */}
       <Reveal direction="right" className="flex items-center gap-3 mb-12">
         <motion.div
-          className="w-1.5 h-8 bg-amber-500 rounded-sm origin-top"
+          className="w-1.5 h-8 bg-teal-500 rounded-sm origin-top"
           initial={{ scaleY: 0 }}
           whileInView={{ scaleY: 1 }}
           viewport={{ once: true }}
@@ -51,7 +51,7 @@ export const SkillsSection: React.FC = () => {
             {marqueeSkills.concat(marqueeSkills).map((skill, idx) => (
               <React.Fragment key={`${skill}-${idx}`}>
                 <span>{skill}</span>
-                <span className="text-amber-500">♥</span>
+                <span className="text-teal-500">♥</span>
               </React.Fragment>
             ))}
           </div>
@@ -68,7 +68,7 @@ export const SkillsSection: React.FC = () => {
               initial="rest"
             >
               <div
-                className="portfolio-card p-8 rounded-2xl text-center flex flex-col items-center justify-center flex-1 transition-all duration-300 hover:border-amber-500/40"
+                className="portfolio-card p-8 rounded-2xl text-center flex flex-col items-center justify-center flex-1 transition-all duration-300 hover:border-teal-500/40"
                 style={{ background: "var(--card-bg)", borderColor: "var(--card-border)" }}
               >
                 <motion.div

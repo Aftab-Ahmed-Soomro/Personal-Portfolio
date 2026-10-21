@@ -32,7 +32,7 @@ export const HeroSection: React.FC = () => {
       >
         {/* Breathing glow */}
         <motion.div
-          className="absolute inset-0 bg-amber-500 blur-[80px] rounded-full pointer-events-none"
+          className="absolute inset-0 bg-teal-500 blur-[80px] rounded-full pointer-events-none"
           animate={{ opacity: [0.18, 0.38, 0.18], scale: [1, 1.12, 1] }}
           transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
         />
@@ -41,7 +41,10 @@ export const HeroSection: React.FC = () => {
           animate={{ y: [0, -14, 0] }}
           transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
         >
-          <div className="relative z-10 hero-image-morph shadow-2xl overflow-hidden">
+          <div
+            className="relative z-10 hero-image-morph shadow-2xl overflow-hidden border-4 border-teal-500"
+            style={{ borderColor: "#14b8a6" }}
+          >
             <Image
               src={personalInfo.avatarImage}
               alt={`${personalInfo.name} - ${personalInfo.title}`}
@@ -70,7 +73,7 @@ export const HeroSection: React.FC = () => {
           </div>
           <a
             href="#contact"
-            className="bg-amber-500 text-black text-[11px] font-bold px-3 py-1.5 rounded-full hover:bg-amber-400 transition shadow-md"
+            className="bg-teal-500 text-black text-[11px] font-bold px-3 py-1.5 rounded-full hover:bg-teal-400 transition shadow-md"
           >
             Hire now
           </a>
@@ -80,7 +83,7 @@ export const HeroSection: React.FC = () => {
         <h1 className="text-5xl md:text-8xl font-bold mb-6 tracking-tighter leading-[0.9] uppercase text-[var(--text-main)]">
           <WordReveal text="Software" immediate delay={0.35} />
           <br />
-          <span className="text-amber-500">
+          <span className="text-teal-500">
             <WordReveal text="Engineer." immediate delay={0.55} />
           </span>
         </h1>
@@ -100,12 +103,12 @@ export const HeroSection: React.FC = () => {
           style={{ borderColor: "var(--card-border)" }}
         >
           <span className="flex items-center gap-1.5 hover:text-[var(--text-main)] transition">
-            <MapPin className="w-3.5 h-3.5 text-amber-500" />
+            <MapPin className="w-3.5 h-3.5 text-teal-500" />
             {personalInfo.location}
           </span>
 
           <span className="flex items-center gap-1.5">
-            <span className="w-1.5 h-1.5 bg-amber-500 rounded-full" />
+            <span className="w-1.5 h-1.5 bg-teal-500 rounded-full" />
             <PktClock /> PKT
           </span>
 
@@ -126,7 +129,7 @@ export const HeroSection: React.FC = () => {
                 whileHover={{ y: -3, scale: 1.2 }}
                 whileTap={{ scale: 0.9 }}
                 transition={{ type: "spring", stiffness: 400, damping: 18 }}
-                className="hover:text-amber-500 text-[var(--text-muted)] transition-colors flex items-center gap-1 text-xs"
+                className="hover:text-teal-500 text-[var(--text-muted)] transition-colors flex items-center gap-1 text-xs"
               >
                 {item.icon}
               </motion.a>

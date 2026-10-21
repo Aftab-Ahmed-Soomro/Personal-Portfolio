@@ -82,7 +82,7 @@ export default function RootLayout({
       suppressHydrationWarning
     >
       <body
-        className="font-sans min-h-screen relative antialiased selection:bg-amber-500 selection:text-black"
+        className="font-sans min-h-screen relative antialiased selection:bg-teal-500 selection:text-black"
         suppressHydrationWarning
       >
         <script

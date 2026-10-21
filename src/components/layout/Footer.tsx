@@ -23,7 +23,7 @@ export const Footer: React.FC = () => {
               className="text-3xl font-bold uppercase tracking-tighter text-[var(--text-main)]"
             >
               {personalInfo.logoText}
-              <span className="text-amber-500">{personalInfo.titleSuffix}</span>
+              <span className="text-teal-500">{personalInfo.titleSuffix}</span>
             </Link>
 
             <p className="text-xs leading-relaxed font-medium max-w-sm opacity-85 text-[var(--text-muted)]">
@@ -57,7 +57,7 @@ export const Footer: React.FC = () => {
             <ul className="flex flex-col gap-3 text-xs font-semibold">
               {navLinks.map((link) => (
                 <li key={link.label}>
-                  <a href={link.href} className="hover:text-amber-500 transition-colors">
+                  <a href={link.href} className="hover:text-teal-500 transition-colors">
                     {link.label}
                   </a>
                 </li>
@@ -76,7 +76,7 @@ export const Footer: React.FC = () => {
                   href={personalInfo.githubUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="hover:text-amber-500 transition-colors"
+                  className="hover:text-teal-500 transition-colors"
                 >
                   GitHub
                 </a>
@@ -86,7 +86,7 @@ export const Footer: React.FC = () => {
                   href={personalInfo.linkedinUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="hover:text-amber-500 transition-colors"
+                  className="hover:text-teal-500 transition-colors"
                 >
                   LinkedIn
                 </a>
@@ -94,7 +94,7 @@ export const Footer: React.FC = () => {
               <li>
                 <a
                   href={"mailto:" + personalInfo.email}
-                  className="hover:text-amber-500 transition-colors"
+                  className="hover:text-teal-500 transition-colors"
                 >
                   Email
                 </a>
@@ -113,7 +113,7 @@ export const Footer: React.FC = () => {
                 {personalInfo.availability}
               </li>
               <li className="flex items-center gap-2 opacity-90 text-[var(--text-main)]">
-                <span className="w-1.5 h-1.5 rounded-full bg-amber-500" />
+                <span className="w-1.5 h-1.5 rounded-full bg-teal-500" />
                 Building in Karachi
               </li>
             </ul>

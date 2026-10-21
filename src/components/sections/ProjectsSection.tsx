@@ -99,7 +99,7 @@ export const ProjectsSection: React.FC = () => {
       >
         <div className="flex items-center gap-4">
           <motion.div
-            className="w-1.5 h-10 bg-amber-500 rounded-sm origin-top"
+            className="w-1.5 h-10 bg-teal-500 rounded-sm origin-top"
             initial={{ scaleY: 0 }}
             whileInView={{ scaleY: 1 }}
             viewport={{ once: true }}
@@ -117,11 +117,10 @@ export const ProjectsSection: React.FC = () => {
         <button
           onClick={() => scroll("left")}
           aria-label="Scroll Left"
-          className={`absolute -left-3 md:-left-5 top-1/2 -translate-y-1/2 z-30 bg-amber-500 hover:bg-amber-400 text-black w-12 h-12 rounded-full flex items-center justify-center shadow-2xl transition-all duration-300 hover:scale-110 active:scale-95 border border-amber-300 ${
-            canScrollLeft
-              ? "opacity-100 pointer-events-auto"
-              : "opacity-0 pointer-events-none"
-          }`}
+          className={`absolute -left-3 md:-left-5 top-1/2 -translate-y-1/2 z-30 bg-teal-500 hover:bg-teal-400 text-black w-12 h-12 rounded-full flex items-center justify-center shadow-2xl transition-all duration-300 hover:scale-110 active:scale-95 border border-teal-300 ${canScrollLeft
+            ? "opacity-100 pointer-events-auto"
+            : "opacity-0 pointer-events-none"
+            }`}
         >
           <ArrowLeft className="w-5 h-5 font-bold" />
         </button>
@@ -130,11 +129,10 @@ export const ProjectsSection: React.FC = () => {
         <button
           onClick={() => scroll("right")}
           aria-label="Scroll Right"
-          className={`absolute -right-3 md:-right-5 top-1/2 -translate-y-1/2 z-30 bg-amber-500 hover:bg-amber-400 text-black w-12 h-12 rounded-full flex items-center justify-center shadow-2xl transition-all duration-300 hover:scale-110 active:scale-95 border border-amber-300 ${
-            canScrollRight
-              ? "opacity-100 pointer-events-auto"
-              : "opacity-0 pointer-events-none"
-          }`}
+          className={`absolute -right-3 md:-right-5 top-1/2 -translate-y-1/2 z-30 bg-teal-500 hover:bg-teal-400 text-black w-12 h-12 rounded-full flex items-center justify-center shadow-2xl transition-all duration-300 hover:scale-110 active:scale-95 border border-teal-300 ${canScrollRight
+            ? "opacity-100 pointer-events-auto"
+            : "opacity-0 pointer-events-none"
+            }`}
         >
           <ArrowRight className="w-5 h-5 font-bold" />
         </button>
@@ -180,7 +178,7 @@ export const ProjectsSection: React.FC = () => {
                           href={project.liveUrl}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="pointer-events-auto bg-amber-500 text-black px-6 py-2 rounded-full font-bold text-[10px] uppercase tracking-widest shadow-xl transform translate-y-3 group-hover:translate-y-0 transition-all hover:bg-white"
+                          className="pointer-events-auto bg-teal-500 text-black px-6 py-2 rounded-full font-bold text-[10px] uppercase tracking-widest shadow-xl transform translate-y-3 group-hover:translate-y-0 transition-all hover:bg-white"
                         >
                           Live Website
                         </a>
@@ -195,7 +193,7 @@ export const ProjectsSection: React.FC = () => {
                         {project.title}
                       </h3>
                       {project.badge && (
-                        <span className="text-[9px] font-bold bg-amber-500/10 text-amber-500 px-2 py-0.5 rounded border border-amber-500/20">
+                        <span className="text-[9px] font-bold bg-teal-500/10 text-teal-500 px-2 py-0.5 rounded border border-teal-500/20">
                           {project.badge}
                         </span>
                       )}
@@ -216,7 +214,7 @@ export const ProjectsSection: React.FC = () => {
                       href={project.githubUrl}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-[10px] font-bold uppercase tracking-widest text-amber-500 hover:text-[var(--text-main)] border-b border-amber-500/30 flex items-center gap-1 transition"
+                      className="text-[10px] font-bold uppercase tracking-widest text-teal-500 hover:text-[var(--text-main)] border-b border-teal-500/30 flex items-center gap-1 transition"
                     >
                       <FaGithub className="w-3 h-3" />
                       Github
@@ -227,7 +225,7 @@ export const ProjectsSection: React.FC = () => {
                       href={project.liveUrl}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-[10px] font-bold uppercase tracking-widest text-amber-500 hover:text-[var(--text-main)] border-b border-amber-500/30 flex items-center gap-1 transition"
+                      className="text-[10px] font-bold uppercase tracking-widest text-teal-500 hover:text-[var(--text-main)] border-b border-teal-500/30 flex items-center gap-1 transition"
                     >
                       <ExternalLink className="w-3 h-3" />
                       Live Site

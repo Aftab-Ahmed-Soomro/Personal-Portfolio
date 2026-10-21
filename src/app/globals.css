@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 :root {
-  --accent: #fbbf24;
+  --accent: #14b8a6;
   --bg-primary: #09090b;
   --text-main: #fafafa;
   --text-muted: rgba(250, 250, 250, 0.65);
@@ -12,7 +12,7 @@
 }
 
 .light-mode {
-  --accent: #d97706;
+  --accent: #0d9488;
   --bg-primary: #fafaf9;
   --text-main: #1c1917;
   --text-muted: #4b5563;
@@ -119,7 +119,7 @@ body {
 }
 
 .portfolio-card:hover {
-  border-color: var(--accent);
+  border-color: #14b8a6;
   transform: translateY(-6px);
 }
 
@@ -129,7 +129,7 @@ body {
   height: 300px;
   object-fit: cover;
   border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
-  border: 4px solid var(--accent);
+  border: 4px solid #14b8a6;
   animation: morph 8s ease-in-out infinite;
 }
 

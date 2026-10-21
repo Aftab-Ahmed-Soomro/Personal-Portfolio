@@ -91,7 +91,7 @@
         }
 
         :root {
-            --accent: #fbbf24;
+            --accent: #14b8a6;
             --bg-primary: #09090b;
             --text-main: #fafafa;
             --text-muted: rgba(250, 250, 250, 0.6);
@@ -102,7 +102,7 @@
         }
 
         body.light-mode {
-            --accent: #d97706;
+            --accent: #0d9488;
             --bg-primary: #fafaf9;
             --text-main: #1c1917;
             --text-muted: #4b5563;
@@ -270,7 +270,7 @@
             height: 320px;
             object-fit: cover;
             border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
-            border: 4px solid var(--accent);
+            border: 4px solid #14b8a6;
             animation: morph 8s ease-in-out infinite;
         }
 
@@ -397,7 +397,7 @@
         style="background: var(--nav-bg); backdrop-filter: blur(12px); border-bottom: 1px solid rgba(128,128,128,0.1);">
         <div class="max-w-7xl mx-auto flex justify-between items-center p-6 px-6 md:px-10">
             <div class="text-2xl font-extrabold tracking-tighter logo-text">
-                AA<span class="text-amber-500">.</span>
+                AA<span class="text-teal-500">.</span>
             </div>
 
             <div class="hidden md:flex space-x-8 text-[14px] font-medium text-zinc-400">
@@ -410,22 +410,22 @@
             </div>
             <div class="flex items-center gap-2 md:gap-3">
                 <a href="resume.html"
-                    class="hidden sm:flex items-center gap-2 bg-amber-500 text-black px-5 py-2.5 rounded-full font-bold text-xs hover:bg-amber-400 transition shadow-lg">
+                    class="hidden sm:flex items-center gap-2 bg-teal-500 text-black px-5 py-2.5 rounded-full font-bold text-xs hover:bg-teal-400 transition shadow-lg">
                     <i class="far fa-file-alt"></i> Resume
                 </a>
 
                 <button onclick="toggleSound()"
-                    class="w-10 h-10 flex items-center justify-center rounded-full border border-zinc-800 hover:border-amber-500 transition text-zinc-400 hover:text-white">
+                    class="w-10 h-10 flex items-center justify-center rounded-full border border-zinc-800 hover:border-teal-500 transition text-zinc-400 hover:text-white">
                     <i id="sound-icon" class="fas fa-volume-mute text-sm"></i>
                 </button>
 
                 <button onclick="toggleTheme()"
-                    class="w-10 h-10 flex items-center justify-center rounded-full border border-zinc-800 hover:border-amber-500 transition text-zinc-400 hover:text-white">
+                    class="w-10 h-10 flex items-center justify-center rounded-full border border-zinc-800 hover:border-teal-500 transition text-zinc-400 hover:text-white">
                     <i id="theme-icon" class="fas fa-moon text-sm"></i>
                 </button>
 
                 <button id="menu-toggle"
-                    class="md:hidden w-10 h-10 flex items-center justify-center rounded-full border border-zinc-800 text-amber-500">
+                    class="md:hidden w-10 h-10 flex items-center justify-center rounded-full border border-zinc-800 text-teal-500">
                     <i class="fas fa-bars"></i>
                 </button>
             </div>
@@ -449,14 +449,14 @@
             <a href="#contact"
                 class="mobile-link text-[11px] font-bold uppercase tracking-widest block py-2">Contact</a>
             <a href="resume.html"
-                class="bg-amber-500 text-black px-5 py-3 text-[10px] font-black uppercase tracking-widest block text-center mt-4">Resume</a>
+                class="bg-teal-500 text-black px-5 py-3 text-[10px] font-black uppercase tracking-widest block text-center mt-4">Resume</a>
         </div>
     </nav>
 
     <section id="home"
         class="min-h-screen flex flex-col md:flex-row justify-start md:justify-center items-center gap-10 md:gap-16 px-6 md:px-10 max-w-7xl mx-auto pt-28 md:pt-24">
         <div class="reveal active relative">
-            <div class="absolute inset-0 bg-amber-500 blur-[80px] opacity-20"></div>
+            <div class="absolute inset-0 bg-teal-500 blur-[80px] opacity-20"></div>
             <img src="profilePic.jpeg"
                 alt="Aftab Ahmed - Best Software Engineer and Full Stack Developer in Karachi UBIT"
                 title="Aftab Ahmed Official Portfolio" class="hero-image relative z-10 shadow-2xl">
@@ -471,27 +471,29 @@
                     <span class="text-xs font-semibold text-zinc-300 tracking-tight">Available for Work</span>
                 </div>
                 <a href="#contact"
-                    class="bg-amber-500 text-black text-[11px] font-bold px-3 py-1.5 rounded-full hover:bg-amber-400 transition shadow-md">Hire
+                    class="bg-teal-500 text-black text-[11px] font-bold px-3 py-1.5 rounded-full hover:bg-teal-400 transition shadow-md">Hire
                     now</a>
             </div>
 
             <h1 class="text-5xl md:text-8xl font-black mb-6 tracking-tighter reveal active leading-[0.9] uppercase">
-                Software<br><span class="text-amber-500">Engineer<span class="text-amber-500">.</span></span>
+                Software<br><span class="text-teal-500">Engineer<span class="text-teal-500">.</span></span>
             </h1>
 
             <p class="text-base md:text-lg max-w-lg reveal active font-normal text-zinc-400 mb-8"
                 style="transition-delay: 0.2s">
-                Aftab Ahmed — Full Stack Developer with 2 years of experience building modern, scalable SaaS products and web applications using the MERN stack. Strong problem-solving approach with a solid understanding of product architecture and end-to-end user flows.
+                Aftab Ahmed — Full Stack Developer with 2 years of experience building modern, scalable SaaS products
+                and web applications using the MERN stack. Strong problem-solving approach with a solid understanding of
+                product architecture and end-to-end user flows.
             </p>
 
 
             <div
                 class="flex flex-wrap items-center justify-center md:justify-start gap-x-6 gap-y-3 text-zinc-500 text-xs font-medium border-t border-zinc-900 pt-4 w-full">
                 <span class="flex items-center gap-1.5 hover:text-zinc-300 transition">
-                    <i class="fas fa-map-marker-alt text-amber-500"></i> Karachi, Pakistan
+                    <i class="fas fa-map-marker-alt text-teal-500"></i> Karachi, Pakistan
                 </span>
                 <span class="flex items-center gap-1.5">
-                    <span class="w-1.5 h-1.5 bg-amber-500 rounded-full"></span>
+                    <span class="w-1.5 h-1.5 bg-teal-500 rounded-full"></span>
                     <span id="pkt-clock">05:34:22 PM</span> PKT
                 </span>
                 <div class="flex items-center gap-4 text-sm pl-2 border-l border-zinc-800 hidden sm:flex">
@@ -514,18 +516,20 @@
                 <h2 class="font-black uppercase tracking-tighter leading-[0.8]"
                     style="font-size: clamp(3rem, 8vw, 6rem);">
                     ABOUT<br>
-                    <span class="text-amber-500">ME.</span>
+                    <span class="text-teal-500">ME.</span>
                 </h2>
             </div>
             <div class="md:col-span-7">
                 <div class="space-y-4">
                     <p class="text-xl md:text-2xl leading-relaxed font-medium">
-                        Hi! I am <span class="text-amber-500 font-bold">Aftab Ahmed</span>, a Full Stack Developer and
-                        Software Engineering student at <span class="text-amber-500 font-bold">UBIT, University of
+                        Hi! I am <span class="text-teal-500 font-bold">Aftab Ahmed</span>, a Full Stack Developer and
+                        Software Engineering student at <span class="text-teal-500 font-bold">UBIT, University of
                             Karachi.</span>
                     </p>
                     <p class="text-lg opacity-70 leading-relaxed">
-                        I love building robust, scalable web applications from end to end. From designing intuitive user interfaces to architecting high-performance backends and APIs, I focus on delivering seamless, reliable digital products.
+                        I love building robust, scalable web applications from end to end. From designing intuitive user
+                        interfaces to architecting high-performance backends and APIs, I focus on delivering seamless,
+                        reliable digital products.
                     </p>
                     <p class="text-lg opacity-70 leading-relaxed">
                         I enjoy solving problems through code and turning creative ideas into real digital experiences
@@ -536,31 +540,31 @@
 
                 <div class="flex flex-col sm:flex-row gap-4 mt-6">
 
-                    <div class="card p-5 rounded-xl border-l-4 border-l-amber-500 flex-1 flex flex-col justify-between"
+                    <div class="card p-5 rounded-xl border-l-4 border-l-teal-500 flex-1 flex flex-col justify-between"
                         style="background: var(--card-bg);">
                         <div>
-                            <div class="flex items-center gap-2 mb-2 text-amber-500">
+                            <div class="flex items-center gap-2 mb-2 text-teal-500">
                                 <i class="fas fa-graduation-cap text-xs"></i>
                                 <span class="text-[9px] font-black uppercase tracking-widest">Education</span>
                             </div>
                             <h4 class="font-bold text-base tracking-tight">BSSE @UBIT, University of Karachi</h4>
                         </div>
-                        <p class="text-[13px] mt-2 opacity-95 font-bold uppercase tracking-tight text-amber-500">
+                        <p class="text-[13px] mt-2 opacity-95 font-bold uppercase tracking-tight text-teal-500">
                             7th Semester • 2024 — 2027
                         </p>
                     </div>
 
 
-                    <div class="card p-5 rounded-xl border-l-4 border-l-amber-500 flex-1 flex flex-col justify-between"
+                    <div class="card p-5 rounded-xl border-l-4 border-l-teal-500 flex-1 flex flex-col justify-between"
                         style="background: var(--card-bg);">
                         <div>
-                            <div class="flex items-center gap-2 mb-2 text-amber-500">
+                            <div class="flex items-center gap-2 mb-2 text-teal-500">
                                 <i class="fas fa-briefcase text-xs"></i>
                                 <span class="text-[9px] font-black uppercase tracking-widest">Experience</span>
                             </div>
                             <h4 class="font-bold text-base tracking-tight">Full Stack Developer</h4>
                         </div>
-                        <p class="text-[13px] mt-2 opacity-95 font-bold uppercase tracking-tight italic text-amber-500">
+                        <p class="text-[13px] mt-2 opacity-95 font-bold uppercase tracking-tight italic text-teal-500">
                             2 Year • Karachi, Pakistan
                         </p>
                     </div>
@@ -571,65 +575,65 @@
 
     <section id="expertise" class="max-w-7xl mx-auto py-24 px-10 reveal">
         <div class="flex items-center gap-3 mb-12">
-            <div class="w-1.5 h-8 bg-amber-500 rounded-sm"></div>
+            <div class="w-1.5 h-8 bg-teal-500 rounded-sm"></div>
             <h2 class="text-2xl md:text-3xl font-black uppercase tracking-tight text-white">Core Expertise</h2>
         </div>
         <div class="w-full overflow-hidden border-b border-zinc-800 pb-6 mb-12 opacity-80">
             <div
                 class="animate-marquee flex items-center gap-8 text-xs md:text-sm font-bold tracking-wider text-zinc-400 uppercase">
 
-                <span>HTML5</span> <span class="text-amber-500">♥</span>
-                <span>CSS3</span> <span class="text-amber-500">♥</span>
-                <span>TailwindCSS</span> <span class="text-amber-500">♥</span>
-                <span>JavaScript</span> <span class="text-amber-500">♥</span>
-                <span>TypeScript</span> <span class="text-amber-500">♥</span>
-                <span>Python</span> <span class="text-amber-500">♥</span>
-                <span>Django</span> <span class="text-amber-500">♥</span>
-                <span>React Js</span> <span class="text-amber-500">♥</span>
-                <span>Nextjs</span> <span class="text-amber-500">♥</span>
-                <span>Nodejs</span> <span class="text-amber-500">♥</span>
-                <span>Expressjs</span> <span class="text-amber-500">♥</span>
-                <span>FastApi</span> <span class="text-amber-500">♥</span>
-                <span>Mongodb</span> <span class="text-amber-500">♥</span>
-                <span>MySql</span> <span class="text-amber-500">♥</span>
-                <span>PostgreSql</span> <span class="text-amber-500">♥</span>
-                <span>Supabase</span> <span class="text-amber-500">♥</span>
-                <span>Firebase</span> <span class="text-amber-500">♥</span>
-                <span>Github</span> <span class="text-amber-500">♥</span>
-                <span>Domain & Hosting</span> <span class="text-amber-500">♥</span>
-                <span>CI/CD pipelines</span> <span class="text-amber-500">♥</span>
-                <span>Docker</span> <span class="text-amber-500">♥</span>
-                <span>Redis</span> <span class="text-amber-500">♥</span>
+                <span>HTML5</span> <span class="text-teal-500">♥</span>
+                <span>CSS3</span> <span class="text-teal-500">♥</span>
+                <span>TailwindCSS</span> <span class="text-teal-500">♥</span>
+                <span>JavaScript</span> <span class="text-teal-500">♥</span>
+                <span>TypeScript</span> <span class="text-teal-500">♥</span>
+                <span>Python</span> <span class="text-teal-500">♥</span>
+                <span>Django</span> <span class="text-teal-500">♥</span>
+                <span>React Js</span> <span class="text-teal-500">♥</span>
+                <span>Nextjs</span> <span class="text-teal-500">♥</span>
+                <span>Nodejs</span> <span class="text-teal-500">♥</span>
+                <span>Expressjs</span> <span class="text-teal-500">♥</span>
+                <span>FastApi</span> <span class="text-teal-500">♥</span>
+                <span>Mongodb</span> <span class="text-teal-500">♥</span>
+                <span>MySql</span> <span class="text-teal-500">♥</span>
+                <span>PostgreSql</span> <span class="text-teal-500">♥</span>
+                <span>Supabase</span> <span class="text-teal-500">♥</span>
+                <span>Firebase</span> <span class="text-teal-500">♥</span>
+                <span>Github</span> <span class="text-teal-500">♥</span>
+                <span>Domain & Hosting</span> <span class="text-teal-500">♥</span>
+                <span>CI/CD pipelines</span> <span class="text-teal-500">♥</span>
+                <span>Docker</span> <span class="text-teal-500">♥</span>
+                <span>Redis</span> <span class="text-teal-500">♥</span>
 
-                <span>HTML5</span> <span class="text-amber-500">♥</span>
-                <span>CSS3</span> <span class="text-amber-500">♥</span>
-                <span>TailwindCSS</span> <span class="text-amber-500">♥</span>
-                <span>JavaScript</span> <span class="text-amber-500">♥</span>
-                <span>TypeScript</span> <span class="text-amber-500">♥</span>
-                <span>Python</span> <span class="text-amber-500">♥</span>
-                <span>Django</span> <span class="text-amber-500">♥</span>
-                <span>React Js</span> <span class="text-amber-500">♥</span>
-                <span>Nextjs</span> <span class="text-amber-500">♥</span>
-                <span>Nodejs</span> <span class="text-amber-500">♥</span>
-                <span>Expressjs</span> <span class="text-amber-500">♥</span>
-                <span>FastApi</span> <span class="text-amber-500">♥</span>
-                <span>Mongodb</span> <span class="text-amber-500">♥</span>
-                <span>MySql</span> <span class="text-amber-500">♥</span>
-                <span>PostgreSql</span> <span class="text-amber-500">♥</span>
-                <span>Supabase</span> <span class="text-amber-500">♥</span>
-                <span>Firebase</span> <span class="text-amber-500">♥</span>
-                <span>Github</span> <span class="text-amber-500">♥</span>
-                <span>Domain & Hosting</span> <span class="text-amber-500">♥</span>
-                <span>CI/CD pipelines</span> <span class="text-amber-500">♥</span>
-                <span>Docker</span> <span class="text-amber-500">♥</span>
-                <span>Redis</span> <span class="text-amber-500">♥</span>
+                <span>HTML5</span> <span class="text-teal-500">♥</span>
+                <span>CSS3</span> <span class="text-teal-500">♥</span>
+                <span>TailwindCSS</span> <span class="text-teal-500">♥</span>
+                <span>JavaScript</span> <span class="text-teal-500">♥</span>
+                <span>TypeScript</span> <span class="text-teal-500">♥</span>
+                <span>Python</span> <span class="text-teal-500">♥</span>
+                <span>Django</span> <span class="text-teal-500">♥</span>
+                <span>React Js</span> <span class="text-teal-500">♥</span>
+                <span>Nextjs</span> <span class="text-teal-500">♥</span>
+                <span>Nodejs</span> <span class="text-teal-500">♥</span>
+                <span>Expressjs</span> <span class="text-teal-500">♥</span>
+                <span>FastApi</span> <span class="text-teal-500">♥</span>
+                <span>Mongodb</span> <span class="text-teal-500">♥</span>
+                <span>MySql</span> <span class="text-teal-500">♥</span>
+                <span>PostgreSql</span> <span class="text-teal-500">♥</span>
+                <span>Supabase</span> <span class="text-teal-500">♥</span>
+                <span>Firebase</span> <span class="text-teal-500">♥</span>
+                <span>Github</span> <span class="text-teal-500">♥</span>
+                <span>Domain & Hosting</span> <span class="text-teal-500">♥</span>
+                <span>CI/CD pipelines</span> <span class="text-teal-500">♥</span>
+                <span>Docker</span> <span class="text-teal-500">♥</span>
+                <span>Redis</span> <span class="text-teal-500">♥</span>
             </div>
         </div>
 
         <!-- Tech Stack & Skills Badges -->
         <!-- <div class="mb-14">
             <div class="flex items-center gap-2 mb-6">
-                <span class="text-xs font-bold uppercase tracking-widest text-amber-500">Skills & Tech Stack</span>
+                <span class="text-xs font-bold uppercase tracking-widest text-teal-500">Skills & Tech Stack</span>
                 <span class="h-[1px] flex-grow bg-zinc-800"></span>
             </div>
             <div class="flex flex-wrap gap-2.5 sm:gap-3 items-center">
@@ -664,9 +668,9 @@
 
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
 
-            <div class="card p-8 rounded-2xl border border-zinc-800 text-center flex flex-col items-center justify-center transition-all duration-300 hover:border-amber-500/40"
+            <div class="card p-8 rounded-2xl border border-zinc-800 text-center flex flex-col items-center justify-center transition-all duration-300 hover:border-teal-500/40"
                 style="background: var(--card-bg);">
-                <div class="text-amber-500 text-3xl mb-4">
+                <div class="text-teal-500 text-3xl mb-4">
                     <i class="fas fa-layer-group"></i>
                 </div>
                 <h3 class="font-black text-base md:text-lg uppercase tracking-wider mb-2 text-white">MERN Stack Dev</h3>
@@ -676,9 +680,9 @@
             </div>
 
 
-            <div class="card p-8 rounded-2xl border border-zinc-800 text-center flex flex-col items-center justify-center transition-all duration-300 hover:border-amber-500/40"
+            <div class="card p-8 rounded-2xl border border-zinc-800 text-center flex flex-col items-center justify-center transition-all duration-300 hover:border-teal-500/40"
                 style="background: var(--card-bg);">
-                <div class="text-amber-500 text-3xl mb-4">
+                <div class="text-teal-500 text-3xl mb-4">
                     <i class="fas fa-code"></i>
                 </div>
                 <h3 class="font-black text-base md:text-lg uppercase tracking-wider mb-2 text-white">Programming</h3>
@@ -688,9 +692,9 @@
             </div>
 
 
-            <div class="card p-8 rounded-2xl border border-zinc-800 text-center flex flex-col items-center justify-center transition-all duration-300 hover:border-amber-500/40"
+            <div class="card p-8 rounded-2xl border border-zinc-800 text-center flex flex-col items-center justify-center transition-all duration-300 hover:border-teal-500/40"
                 style="background: var(--card-bg);">
-                <div class="text-amber-500 text-3xl mb-4">
+                <div class="text-teal-500 text-3xl mb-4">
                     <i class="fas fa-vector-square"></i>
                 </div>
                 <h3 class="font-black text-base md:text-lg uppercase tracking-wider mb-2 text-white">UI/UX Design</h3>
@@ -703,7 +707,7 @@
 
     <!-- <section id="coding-activity" class="max-w-7xl mx-auto py-16 px-6 reveal border-t border-gray-500/10">
         <div class="flex items-center gap-4 mb-10">
-            <div class="w-1.5 h-10 bg-amber-500"></div>
+            <div class="w-1.5 h-10 bg-teal-500"></div>
             <h2 class="text-4xl font-black uppercase tracking-tighter">Coding Activity</h2>
         </div>
 
@@ -711,21 +715,21 @@
             <div class="grid grid-cols-3 gap-4 mb-8 text-center md:text-left">
                 <div class="flex flex-col group">
                     <span
-                        class="text-zinc-500 font-bold uppercase text-[8px] tracking-widest mb-1 group-hover:text-amber-500 transition">Submissions</span>
+                        class="text-zinc-500 font-bold uppercase text-[8px] tracking-widest mb-1 group-hover:text-teal-500 transition">Submissions</span>
                     <div class="flex items-baseline justify-center md:justify-start gap-1">
                         <span class="text-3xl font-black stat-counter" data-target="647">0</span>
-                        <span class="text-amber-500 text-lg font-bold">+</span>
+                        <span class="text-teal-500 text-lg font-bold">+</span>
                     </div>
                 </div>
                 <div class="flex flex-col border-x border-gray-500/20 px-4 group">
                     <span
-                        class="text-zinc-500 font-bold uppercase text-[8px] tracking-widest mb-1 group-hover:text-amber-500 transition">Max
+                        class="text-zinc-500 font-bold uppercase text-[8px] tracking-widest mb-1 group-hover:text-teal-500 transition">Max
                         Streak</span>
                     <span class="text-3xl font-black stat-counter" data-target="12">0</span>
                 </div>
                 <div class="flex flex-col group">
                     <span
-                        class="text-zinc-500 font-bold uppercase text-[8px] tracking-widest mb-1 group-hover:text-amber-500 transition">Current
+                        class="text-zinc-500 font-bold uppercase text-[8px] tracking-widest mb-1 group-hover:text-teal-500 transition">Current
                         Streak</span>
                     <span class="text-3xl font-black stat-counter" data-target="4">0</span>
                 </div>
@@ -735,27 +739,27 @@
 
             <div class="grid grid-cols-3 md:grid-cols-5 gap-3">
                 <a href="https://leetcode.com/u/Tehreem_Rana2/" target="_blank"
-                    class="flex flex-col items-center p-3 rounded-xl border border-gray-500/10 hover:border-amber-500 hover:bg-amber-500/5 transition-all duration-300 group">
+                    class="flex flex-col items-center p-3 rounded-xl border border-gray-500/10 hover:border-teal-500 hover:bg-teal-500/5 transition-all duration-300 group">
                     <i class="fab fa-code text-lg mb-2 text-orange-500 group-hover:scale-110 transition"></i>
                     <span class="text-[8px] font-bold uppercase tracking-tighter">LeetCode</span>
                 </a>
                 <a href="https://codeforces.com/profile/tehreemr61" target="_blank"
-                    class="flex flex-col items-center p-3 rounded-xl border border-gray-500/10 hover:border-amber-500 hover:bg-amber-500/5 transition-all duration-300 group">
+                    class="flex flex-col items-center p-3 rounded-xl border border-gray-500/10 hover:border-teal-500 hover:bg-teal-500/5 transition-all duration-300 group">
                     <i class="fas fa-terminal text-lg mb-2 text-blue-500 group-hover:scale-110 transition"></i>
                     <span class="text-[8px] font-bold uppercase tracking-tighter">Codeforces</span>
                 </a>
                 <a href="https://www.codechef.com/users/tehreem_2" target="_blank"
-                    class="flex flex-col items-center p-3 rounded-xl border border-gray-500/10 hover:border-amber-500 hover:bg-amber-500/5 transition-all duration-300 group">
+                    class="flex flex-col items-center p-3 rounded-xl border border-gray-500/10 hover:border-teal-500 hover:bg-teal-500/5 transition-all duration-300 group">
                     <i class="fas fa-medal text-lg mb-2 text-red-600 group-hover:scale-110 transition"></i>
                     <span class="text-[8px] font-bold uppercase tracking-tighter">CodeChef</span>
                 </a>
                 <a href="https://www.geeksforgeeks.org/profile/tehree738k" target="_blank"
-                    class="flex flex-col items-center p-3 rounded-xl border border-gray-500/10 hover:border-amber-500 hover:bg-amber-500/5 transition-all duration-300 group">
+                    class="flex flex-col items-center p-3 rounded-xl border border-gray-500/10 hover:border-teal-500 hover:bg-teal-500/5 transition-all duration-300 group">
                     <i class="fas fa-user-graduate text-lg mb-2 text-green-600 group-hover:scale-110 transition"></i>
                     <span class="text-[8px] font-bold uppercase tracking-tighter">GFG</span>
                 </a>
                 <a href="https://codolio.com/profile/bviZLoyz" target="_blank"
-                    class="flex flex-col items-center p-3 rounded-xl border border-amber-500/20 bg-amber-500/5 hover:bg-amber-500 hover:text-white transition-all duration-300 group">
+                    class="flex flex-col items-center p-3 rounded-xl border border-teal-500/20 bg-teal-500/5 hover:bg-teal-500 hover:text-white transition-all duration-300 group">
                     <i class="fas fa-external-link-alt text-lg mb-2 group-hover:text-white transition"></i>
                     <span class="text-[8px] font-bold uppercase tracking-tighter">Profile</span>
                 </a>
@@ -767,7 +771,7 @@
 
         <div class="flex items-center justify-between gap-4 mb-12">
             <div class="flex items-center gap-4">
-                <div class="w-1.5 h-10 bg-amber-500"></div>
+                <div class="w-1.5 h-10 bg-teal-500"></div>
                 <h2 class="text-3xl md:text-4xl font-black uppercase tracking-tighter">Selected Works</h2>
             </div>
 
@@ -778,13 +782,13 @@
 
             <!-- Floating Left / Prev Button -->
             <button id="prev-scroll-indicator" aria-label="Scroll Left"
-                class="absolute -left-2 md:-left-5 top-1/2 -translate-y-1/2 z-30 bg-amber-500 hover:bg-amber-400 text-black w-12 h-12 rounded-full flex items-center justify-center shadow-2xl transition-all duration-300 hover:scale-110 active:scale-95 border border-amber-300 opacity-0 pointer-events-none">
+                class="absolute -left-2 md:-left-5 top-1/2 -translate-y-1/2 z-30 bg-teal-500 hover:bg-teal-400 text-black w-12 h-12 rounded-full flex items-center justify-center shadow-2xl transition-all duration-300 hover:scale-110 active:scale-95 border border-teal-300 opacity-0 pointer-events-none">
                 <i class="fas fa-arrow-left text-sm font-bold"></i>
             </button>
 
             <!-- Floating Right / Next Button -->
             <button id="next-scroll-indicator" aria-label="Scroll Right"
-                class="absolute -right-2 md:-right-5 top-1/2 -translate-y-1/2 z-30 bg-amber-500 hover:bg-amber-400 text-black w-12 h-12 rounded-full flex items-center justify-center shadow-2xl transition-all duration-300 hover:scale-110 active:scale-95 border border-amber-300">
+                class="absolute -right-2 md:-right-5 top-1/2 -translate-y-1/2 z-30 bg-teal-500 hover:bg-teal-400 text-black w-12 h-12 rounded-full flex items-center justify-center shadow-2xl transition-all duration-300 hover:scale-110 active:scale-95 border border-teal-300">
                 <i class="fas fa-arrow-right text-sm font-bold"></i>
             </button>
 
@@ -803,7 +807,7 @@
                         <div
                             class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-black/40">
                             <a href="https://easyspeakstories.com/" target="_blank"
-                                class="bg-amber-500 text-black px-6 py-2 rounded-full font-black text-[10px] uppercase tracking-widest shadow-xl transform translate-y-4 group-hover:translate-y-0 transition-all">Live
+                                class="bg-teal-500 text-black px-6 py-2 rounded-full font-black text-[10px] uppercase tracking-widest shadow-xl transform translate-y-4 group-hover:translate-y-0 transition-all">Live
                                 Website</a>
                         </div>
                     </div>
@@ -811,11 +815,13 @@
                         <div class="flex items-center justify-between">
                             <h3 class="text-xl font-black uppercase tracking-tighter">Easy Speak Stories</h3>
                         </div>
-                        <p class="mt-2 text-xs opacity-60 leading-relaxed font-medium h-14 overflow-hidden">Developed AI-powered SaaS applications integrating OpenAI API and ElevenLabs for story generation, content enhancement, and voice cloning. </p>
+                        <p class="mt-2 text-xs opacity-60 leading-relaxed font-medium h-14 overflow-hidden">Developed
+                            AI-powered SaaS applications integrating OpenAI API and ElevenLabs for story generation,
+                            content enhancement, and voice cloning. </p>
                     </div>
                     <div class="mt-6 flex gap-4 border-t border-zinc-800/60 pt-4">
                         <a href="https://easyspeakstories.com/" target="_blank"
-                            class="text-[10px] font-black uppercase tracking-widest text-amber-500 hover:text-white border-b border-amber-500/30">Visit
+                            class="text-[10px] font-black uppercase tracking-widest text-teal-500 hover:text-white border-b border-teal-500/30">Visit
                             Site</a>
                     </div>
                 </div>
@@ -831,7 +837,7 @@
                         <div
                             class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-black/40">
                             <a href="https://data.trypropiq.ai/" target="_blank"
-                                class="bg-amber-500 text-black px-6 py-2 rounded-full font-black text-[10px] uppercase tracking-widest shadow-xl transform translate-y-4 group-hover:translate-y-0 transition-all">Live
+                                class="bg-teal-500 text-black px-6 py-2 rounded-full font-black text-[10px] uppercase tracking-widest shadow-xl transform translate-y-4 group-hover:translate-y-0 transition-all">Live
                                 Website</a>
                         </div>
                     </div>
@@ -839,13 +845,14 @@
                         <div class="flex items-center justify-between">
                             <h3 class="text-xl font-black uppercase tracking-tighter">PropIQ</h3>
                         </div>
-                        <p class="mt-2 text-xs opacity-60 leading-relaxed font-medium h-14 overflow-hidden">Worked on a Real Estate SaaS platform with scalable APIs,
-property data processing, subscriptions, skip tracing, and lead
-generation features for U.S. markets.</p>
+                        <p class="mt-2 text-xs opacity-60 leading-relaxed font-medium h-14 overflow-hidden">Worked on a
+                            Real Estate SaaS platform with scalable APIs,
+                            property data processing, subscriptions, skip tracing, and lead
+                            generation features for U.S. markets.</p>
                     </div>
                     <div class="mt-6 flex gap-4 border-t border-zinc-800/60 pt-4">
                         <a href="https://easyspeakstories.com/" target="_blank"
-                            class="text-[10px] font-black uppercase tracking-widest text-amber-500 hover:text-white border-b border-amber-500/30">Visit
+                            class="text-[10px] font-black uppercase tracking-widest text-teal-500 hover:text-white border-b border-teal-500/30">Visit
                             Site</a>
                     </div>
                 </div>
@@ -861,25 +868,26 @@ generation features for U.S. markets.</p>
                         <div
                             class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-black/40">
                             <a href="https://cirvia-tech-o1vm-ten.vercel.app/" target="_blank"
-                                class="bg-amber-500 text-black px-6 py-2 rounded-full font-black text-[10px] uppercase tracking-widest shadow-xl transform translate-y-4 group-hover:translate-y-0 transition-all">Live
+                                class="bg-teal-500 text-black px-6 py-2 rounded-full font-black text-[10px] uppercase tracking-widest shadow-xl transform translate-y-4 group-hover:translate-y-0 transition-all">Live
                                 Demo</a>
                         </div>
                     </div>
                     <div class="pt-6">
                         <div class="flex items-center justify-between">
-                        <h3 class="text-xl font-black uppercase tracking-tighter">Cirvia Tech</h3>
+                            <h3 class="text-xl font-black uppercase tracking-tighter">Cirvia Tech</h3>
                             <span
-                                class="text-[9px] font-bold bg-amber-500/10 text-amber-500 px-2 py-0.5 rounded border border-amber-500/20">Client</span>
-                        </div>        
-                        <p class="mt-2 text-xs opacity-60 leading-relaxed font-medium h-14 overflow-hidden">Developed a 20+ page responsive e-commerce frontend with React,
-TypeScript & Tailwind CSS, including auth, cart, checkout, and APIs.
-</p>
+                                class="text-[9px] font-bold bg-teal-500/10 text-teal-500 px-2 py-0.5 rounded border border-teal-500/20">Client</span>
+                        </div>
+                        <p class="mt-2 text-xs opacity-60 leading-relaxed font-medium h-14 overflow-hidden">Developed a
+                            20+ page responsive e-commerce frontend with React,
+                            TypeScript & Tailwind CSS, including auth, cart, checkout, and APIs.
+                        </p>
                     </div>
                     <div class="mt-6 flex gap-4 border-t border-zinc-800/60 pt-4">
                         <a href="https://github.com/Aftab-Ahmed-Soomro/cirvia-tech.git" target="_blank"
-                            class="text-[10px] font-black uppercase tracking-widest text-amber-500 hover:text-white border-b border-amber-500/30">Github</a>
+                            class="text-[10px] font-black uppercase tracking-widest text-teal-500 hover:text-white border-b border-teal-500/30">Github</a>
                         <a href="https://cirvia-tech-o1vm-ten.vercel.app/" target="_blank"
-                            class="text-[10px] font-black uppercase tracking-widest text-amber-500 hover:text-white border-b border-amber-500/30">Demo</a>
+                            class="text-[10px] font-black uppercase tracking-widest text-teal-500 hover:text-white border-b border-teal-500/30">Demo</a>
                     </div>
                 </div>
 
@@ -894,7 +902,7 @@ TypeScript & Tailwind CSS, including auth, cart, checkout, and APIs.
                         <div
                             class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-black/40">
                             <a href="https://unitedstrategicsolutions.com/" target="_blank"
-                                class="bg-amber-500 text-black px-6 py-2 rounded-full font-black text-[10px] uppercase tracking-widest shadow-xl transform translate-y-4 group-hover:translate-y-0 transition-all">Live
+                                class="bg-teal-500 text-black px-6 py-2 rounded-full font-black text-[10px] uppercase tracking-widest shadow-xl transform translate-y-4 group-hover:translate-y-0 transition-all">Live
                                 Demo</a>
                         </div>
                     </div>
@@ -902,15 +910,16 @@ TypeScript & Tailwind CSS, including auth, cart, checkout, and APIs.
                         <div class="flex items-center justify-between">
                             <h3 class="text-xl font-black uppercase tracking-tighter">United Strategic Solutions</h3>
                             <span
-                                class="text-[9px] font-bold bg-amber-500/10 text-amber-500 px-2 py-0.5 rounded border border-amber-500/20">Client</span>
+                                class="text-[9px] font-bold bg-teal-500/10 text-teal-500 px-2 py-0.5 rounded border border-teal-500/20">Client</span>
                         </div>
-                        <p class="mt-2 text-xs opacity-60 leading-relaxed font-medium h-14 overflow-hidden">Developed a modern responsive website for a digital marketing
-brand, showcasing its services, global presence, client work, and
-growth-focused solutions.</p>
+                        <p class="mt-2 text-xs opacity-60 leading-relaxed font-medium h-14 overflow-hidden">Developed a
+                            modern responsive website for a digital marketing
+                            brand, showcasing its services, global presence, client work, and
+                            growth-focused solutions.</p>
                     </div>
                     <div class="mt-6 flex gap-4 border-t border-zinc-800/60 pt-4">
                         <a href="https://unitedstrategicsolutions.com/" target="_blank"
-                            class="text-[10px] font-black uppercase tracking-widest text-amber-500 hover:text-white border-b border-amber-500/30">Live
+                            class="text-[10px] font-black uppercase tracking-widest text-teal-500 hover:text-white border-b border-teal-500/30">Live
                             Demo</a>
                     </div>
                 </div>
@@ -926,7 +935,7 @@ growth-focused solutions.</p>
                         <div
                             class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-black/40">
                             <a href="https://www.disturbedinnovationsgroup.com/" target="_blank"
-                                class="bg-amber-500 text-black px-6 py-2 rounded-full font-black text-[10px] uppercase tracking-widest shadow-xl transform translate-y-4 group-hover:translate-y-0 transition-all">Live
+                                class="bg-teal-500 text-black px-6 py-2 rounded-full font-black text-[10px] uppercase tracking-widest shadow-xl transform translate-y-4 group-hover:translate-y-0 transition-all">Live
                                 Demo</a>
                         </div>
                     </div>
@@ -934,16 +943,17 @@ growth-focused solutions.</p>
                         <div class="flex items-center justify-between">
                             <h3 class="text-xl font-black uppercase tracking-tighter">Disturbed Innovations</h3>
                             <span
-                                class="text-[9px] font-bold bg-amber-500/10 text-amber-500 px-2 py-0.5 rounded border border-amber-500/20">Client</span>
+                                class="text-[9px] font-bold bg-teal-500/10 text-teal-500 px-2 py-0.5 rounded border border-teal-500/20">Client</span>
                         </div>
-                        <p class="mt-2 text-xs opacity-60 leading-relaxed font-medium h-14 overflow-hidden">Built a responsive corporate website with Next.js & Framer Motion,
-featuring smooth animations and optimized performance.
-Delivered in 2 days.
-</p>
+                        <p class="mt-2 text-xs opacity-60 leading-relaxed font-medium h-14 overflow-hidden">Built a
+                            responsive corporate website with Next.js & Framer Motion,
+                            featuring smooth animations and optimized performance.
+                            Delivered in 2 days.
+                        </p>
                     </div>
                     <div class="mt-6 flex gap-4 border-t border-zinc-800/60 pt-4">
                         <a href="https://www.disturbedinnovationsgroup.com/" target="_blank"
-                            class="text-[10px] font-black uppercase tracking-widest text-amber-500 hover:text-white border-b border-amber-500/30">Live
+                            class="text-[10px] font-black uppercase tracking-widest text-teal-500 hover:text-white border-b border-teal-500/30">Live
                             Demo</a>
                     </div>
                 </div>
@@ -959,22 +969,23 @@ Delivered in 2 days.
                         <div
                             class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-black/40">
                             <a href="https://ecommerce-frontend-sigma-olive.vercel.app/" target="_blank"
-                                class="bg-amber-500 text-black px-6 py-2 rounded-full font-black text-[10px] uppercase tracking-widest shadow-xl transform translate-y-4 group-hover:translate-y-0 transition-all">Live
+                                class="bg-teal-500 text-black px-6 py-2 rounded-full font-black text-[10px] uppercase tracking-widest shadow-xl transform translate-y-4 group-hover:translate-y-0 transition-all">Live
                                 Demo</a>
                         </div>
                     </div>
                     <div class="pt-6">
                         <h3 class="text-xl font-black uppercase tracking-tighter">Aftab Ahmed Cart</h3>
-                        <p class="mt-2 text-xs opacity-60 leading-relaxed font-medium h-14 overflow-hidden">Built a full-stack e-commerce app with MERN during my learning
+                        <p class="mt-2 text-xs opacity-60 leading-relaxed font-medium h-14 overflow-hidden">Built a
+                            full-stack e-commerce app with MERN during my learning
                             phase, featuring authentication, products, cart, REST APIs, and
                             responsive UI.
                         </p>
                     </div>
                     <div class="mt-6 flex gap-4 border-t border-zinc-800/60 pt-4">
                         <a href="https://github.com/Aftab-Ahmed-Soomro/Ecommerce-App.git" target="_blank"
-                            class="text-[10px] font-black uppercase tracking-widest text-amber-500 hover:text-white border-b border-amber-500/30">Github</a>
+                            class="text-[10px] font-black uppercase tracking-widest text-teal-500 hover:text-white border-b border-teal-500/30">Github</a>
                         <a href="https://ecommerce-frontend-sigma-olive.vercel.app/" target="_blank"
-                            class="text-[10px] font-black uppercase tracking-widest text-amber-500 hover:text-white border-b border-amber-500/30">Demo</a>
+                            class="text-[10px] font-black uppercase tracking-widest text-teal-500 hover:text-white border-b border-teal-500/30">Demo</a>
                     </div>
                 </div>
 
@@ -989,20 +1000,21 @@ Delivered in 2 days.
                         <div
                             class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-black/40">
                             <a href="https://bookr-app-sj3t.vercel.app/" target="_blank"
-                                class="bg-amber-500 text-black px-6 py-2 rounded-full font-black text-[10px] uppercase tracking-widest shadow-xl transform translate-y-4 group-hover:translate-y-0 transition-all">Live
+                                class="bg-teal-500 text-black px-6 py-2 rounded-full font-black text-[10px] uppercase tracking-widest shadow-xl transform translate-y-4 group-hover:translate-y-0 transition-all">Live
                                 Demo</a>
                         </div>
                     </div>
                     <div class="pt-6">
                         <h3 class="text-xl font-black uppercase tracking-tighter">Bookr</h3>
-                        <p class="mt-2 text-xs opacity-60 leading-relaxed font-medium h-14 overflow-hidden">Bookr is a modern library management system built with React.js.
-                            </p>
+                        <p class="mt-2 text-xs opacity-60 leading-relaxed font-medium h-14 overflow-hidden">Bookr is a
+                            modern library management system built with React.js.
+                        </p>
                     </div>
                     <div class="mt-6 flex gap-4 border-t border-zinc-800/60 pt-4">
                         <a href="https://github.com/Aftab-Ahmed-Soomro/bookr-app.git" target="_blank"
-                            class="text-[10px] font-black uppercase tracking-widest text-amber-500 hover:text-white border-b border-amber-500/30">Github</a>
+                            class="text-[10px] font-black uppercase tracking-widest text-teal-500 hover:text-white border-b border-teal-500/30">Github</a>
                         <a href="https://bookr-app-sj3t.vercel.app/" target="_blank"
-                            class="text-[10px] font-black uppercase tracking-widest text-amber-500 hover:text-white border-b border-amber-500/30">Demo</a>
+                            class="text-[10px] font-black uppercase tracking-widest text-teal-500 hover:text-white border-b border-teal-500/30">Demo</a>
                     </div>
                 </div>
 
@@ -1081,14 +1093,14 @@ Delivered in 2 days.
 
         <div class="flex items-center justify-between mb-12 flex-wrap gap-4">
             <div class="flex items-center gap-4">
-                <div class="w-1.5 h-10 bg-amber-500"></div>
+                <div class="w-1.5 h-10 bg-teal-500"></div>
                 <h2 class="text-4xl font-black uppercase tracking-tighter">Client Reviews</h2>
             </div>
 
 
             <div class="flex items-center gap-4">
                 <button id="open-review-btn"
-                    class="px-6 py-2.5 border border-zinc-800 rounded-full text-xs font-semibold text-white hover:border-amber-500 transition-all duration-300 [.light-mode_&]:border-zinc-300 [.light-mode_&]:text-zinc-900 [.light-mode_&]:hover:border-amber-500">
+                    class="px-6 py-2.5 border border-zinc-800 rounded-full text-xs font-semibold text-white hover:border-teal-500 transition-all duration-300 [.light-mode_&]:border-zinc-300 [.light-mode_&]:text-zinc-900 [.light-mode_&]:hover:border-teal-500">
                     Leave a review
                 </button>
                 <button id="cancel-review-btn"
@@ -1107,15 +1119,15 @@ Delivered in 2 days.
 
                 <div class="grid md:grid-cols-2 gap-4">
                     <input type="text" name="client_name" placeholder="Your name" required
-                        class="w-full bg-zinc-900/40 border border-zinc-800/80 rounded-xl px-5 py-3.5 outline-none focus:border-amber-500/50 text-sm text-white transition placeholder-zinc-500
+                        class="w-full bg-zinc-900/40 border border-zinc-800/80 rounded-xl px-5 py-3.5 outline-none focus:border-teal-500/50 text-sm text-white transition placeholder-zinc-500
                        [.light-mode_&]:bg-white [.light-mode_&]:border-zinc-300 [.light-mode_&]:text-zinc-900 [.light-mode_&]:placeholder-zinc-400">
                     <input type="text" name="client_role" placeholder="Role / Company (optional)"
-                        class="w-full bg-zinc-900/40 border border-zinc-800/80 rounded-xl px-5 py-3.5 outline-none focus:border-amber-500/50 text-sm text-white transition placeholder-zinc-500
+                        class="w-full bg-zinc-900/40 border border-zinc-800/80 rounded-xl px-5 py-3.5 outline-none focus:border-teal-500/50 text-sm text-white transition placeholder-zinc-500
                        [.light-mode_&]:bg-white [.light-mode_&]:border-zinc-300 [.light-mode_&]:text-zinc-900 [.light-mode_&]:placeholder-zinc-400">
                 </div>
 
                 <textarea name="client_feedback" placeholder="Your review..." rows="4" required
-                    class="w-full bg-zinc-900/40 border border-zinc-800/80 rounded-xl px-5 py-3.5 outline-none focus:border-amber-500/50 text-sm text-white transition resize-none placeholder-zinc-500
+                    class="w-full bg-zinc-900/40 border border-zinc-800/80 rounded-xl px-5 py-3.5 outline-none focus:border-teal-500/50 text-sm text-white transition resize-none placeholder-zinc-500
                    [.light-mode_&]:bg-white [.light-mode_&]:border-zinc-300 [.light-mode_&]:text-zinc-900 [.light-mode_&]:placeholder-zinc-400"></textarea>
 
 
@@ -1124,18 +1136,18 @@ Delivered in 2 days.
                     <div class="flex items-center gap-3">
                         <span class="text-xs text-zinc-400 font-medium [.light-mode_&]:text-zinc-600">Rating:</span>
                         <div id="interactive-stars" class="flex gap-1 text-xl cursor-pointer select-none">
-                            <span data-value="1" class="star text-amber-500 transition-all duration-150">★</span>
-                            <span data-value="2" class="star text-amber-500 transition-all duration-150">★</span>
-                            <span data-value="3" class="star text-amber-500 transition-all duration-150">★</span>
-                            <span data-value="4" class="star text-amber-500 transition-all duration-150">★</span>
-                            <span data-value="5" class="star text-amber-500 transition-all duration-150">★</span>
+                            <span data-value="1" class="star text-teal-500 transition-all duration-150">★</span>
+                            <span data-value="2" class="star text-teal-500 transition-all duration-150">★</span>
+                            <span data-value="3" class="star text-teal-500 transition-all duration-150">★</span>
+                            <span data-value="4" class="star text-teal-500 transition-all duration-150">★</span>
+                            <span data-value="5" class="star text-teal-500 transition-all duration-150">★</span>
                         </div>
 
                         <input type="hidden" name="star_rating" id="star_rating_input" value="5">
                     </div>
 
                     <button type="submit" id="review-submit-btn"
-                        class="bg-amber-500 text-black px-8 py-3 rounded-full text-xs font-black uppercase tracking-wider hover:bg-black hover:text-white transition-all duration-300 shadow-md whitespace-nowrap min-w-[140px] text-center [.light-mode_&]:text-black [.light-mode_&]:hover:text-white">
+                        class="bg-teal-500 text-black px-8 py-3 rounded-full text-xs font-black uppercase tracking-wider hover:bg-black hover:text-white transition-all duration-300 shadow-md whitespace-nowrap min-w-[140px] text-center [.light-mode_&]:text-black [.light-mode_&]:hover:text-white">
                         Submit review
                     </button>
                 </div>
@@ -1158,31 +1170,34 @@ Delivered in 2 days.
 
                 <!-- Set 1 -->
                 <div class="flex gap-6 pr-6 shrink-0">
-                    <div class="card flex-none w-[360px] p-8 rounded-[2rem] border border-zinc-800/80 flex flex-col justify-between transition-all duration-300 hover:border-amber-500 hover:scale-[1.02] group-hover:opacity-40 hover:!opacity-100 cursor-pointer"
+                    <div class="card flex-none w-[360px] p-8 rounded-[2rem] border border-zinc-800/80 flex flex-col justify-between transition-all duration-300 hover:border-teal-500 hover:scale-[1.02] group-hover:opacity-40 hover:!opacity-100 cursor-pointer"
                         style="background: var(--card-bg);">
                         <div>
-                            <div class="flex gap-1 text-amber-500 text-sm mb-4">
+                            <div class="flex gap-1 text-teal-500 text-sm mb-4">
                                 <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
                             </div>
-                            <p class="text-xs text-zinc-300 leading-relaxed font-medium">"Aftab built the United Strategic Solutions and Disturbed Innovations Group
+                            <p class="text-xs text-zinc-300 leading-relaxed font-medium">"Aftab built the United
+                                Strategic Solutions and Disturbed Innovations Group
                                 platform for us. The interface is exceptionally clean, and fully responsive."</p>
                         </div>
                         <div class="mt-6 flex items-center gap-4 border-t border-zinc-800/60 pt-4">
                             <div
-                                class="w-10 h-10 rounded-full bg-amber-500/10 border border-amber-500/30 flex items-center justify-center shrink-0">
-                                <span class="font-black text-amber-500 text-xs tracking-wider">ECW</span>
+                                class="w-10 h-10 rounded-full bg-teal-500/10 border border-teal-500/30 flex items-center justify-center shrink-0">
+                                <span class="font-black text-teal-500 text-xs tracking-wider">ECW</span>
                             </div>
                             <div>
-                                <h4 class="text-xs font-black uppercase tracking-wider text-white">Emmanuel Cole Williams</h4>
-                                <p class="text-[9px] opacity-40 font-bold uppercase tracking-widest">CEO, United Strategic Solutions</p>
+                                <h4 class="text-xs font-black uppercase tracking-wider text-white">Emmanuel Cole
+                                    Williams</h4>
+                                <p class="text-[9px] opacity-40 font-bold uppercase tracking-widest">CEO, United
+                                    Strategic Solutions</p>
                             </div>
                         </div>
                     </div>
 
-                    <div class="card flex-none w-[360px] p-8 rounded-[2rem] border border-zinc-800/80 flex flex-col justify-between transition-all duration-300 hover:border-amber-500 hover:scale-[1.02] group-hover:opacity-40 hover:!opacity-100 cursor-pointer"
+                    <div class="card flex-none w-[360px] p-8 rounded-[2rem] border border-zinc-800/80 flex flex-col justify-between transition-all duration-300 hover:border-teal-500 hover:scale-[1.02] group-hover:opacity-40 hover:!opacity-100 cursor-pointer"
                         style="background: var(--card-bg);">
                         <div>
-                            <div class="flex gap-1 text-amber-500 text-sm mb-4">
+                            <div class="flex gap-1 text-teal-500 text-sm mb-4">
                                 <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
                             </div>
                             <p class="text-xs text-zinc-300 leading-relaxed font-medium">"His front-end design sense is
@@ -1191,52 +1206,60 @@ Delivered in 2 days.
                         </div>
                         <div class="mt-6 flex items-center gap-4 border-t border-zinc-800/60 pt-4">
                             <div
-                                class="w-10 h-10 rounded-full bg-amber-500/10 border border-amber-500/30 flex items-center justify-center shrink-0">
-                                <span class="font-black text-amber-500 text-xs tracking-wider">ZS</span>
+                                class="w-10 h-10 rounded-full bg-teal-500/10 border border-teal-500/30 flex items-center justify-center shrink-0">
+                                <span class="font-black text-teal-500 text-xs tracking-wider">ZS</span>
                             </div>
                             <div>
                                 <h4 class="text-xs font-black uppercase tracking-wider text-white">Zain Ur Rehman</h4>
-                                <p class="text-[9px] opacity-40 font-bold uppercase tracking-widest">CEO, Web Exaltia</p>
+                                <p class="text-[9px] opacity-40 font-bold uppercase tracking-widest">CEO, Web Exaltia
+                                </p>
                             </div>
                         </div>
                     </div>
 
-                    <div class="card flex-none w-[360px] p-8 rounded-[2rem] border border-zinc-800/80 flex flex-col justify-between transition-all duration-300 hover:border-amber-500 hover:scale-[1.02] group-hover:opacity-40 hover:!opacity-100 cursor-pointer"
+                    <div class="card flex-none w-[360px] p-8 rounded-[2rem] border border-zinc-800/80 flex flex-col justify-between transition-all duration-300 hover:border-teal-500 hover:scale-[1.02] group-hover:opacity-40 hover:!opacity-100 cursor-pointer"
                         style="background: var(--card-bg);">
                         <div>
-                            <div class="flex gap-1 text-amber-500 text-sm mb-4">
+                            <div class="flex gap-1 text-teal-500 text-sm mb-4">
                                 <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
                             </div>
-                            <p class="text-xs text-zinc-300 leading-relaxed font-medium">"A dedicated sole developer who built and delivered our real estate platform, PropIQ, from scratch. Reliable, technically sound, and fully committed to building high-quality, scalable products."</p>
+                            <p class="text-xs text-zinc-300 leading-relaxed font-medium">"A dedicated sole developer who
+                                built and delivered our real estate platform, PropIQ, from scratch. Reliable,
+                                technically sound, and fully committed to building high-quality, scalable products."</p>
                         </div>
                         <div class="mt-6 flex items-center gap-4 border-t border-zinc-800/60 pt-4">
                             <div
-                                class="w-10 h-10 rounded-full bg-amber-500/10 border border-amber-500/30 flex items-center justify-center shrink-0">
-                                <span class="font-black text-amber-500 text-xs tracking-wider">RH</span>
+                                class="w-10 h-10 rounded-full bg-teal-500/10 border border-teal-500/30 flex items-center justify-center shrink-0">
+                                <span class="font-black text-teal-500 text-xs tracking-wider">RH</span>
                             </div>
                             <div>
                                 <h4 class="text-xs font-black uppercase tracking-wider text-white">Raza Haider</h4>
-                                <p class="text-[9px] opacity-40 font-bold uppercase tracking-widest">CEO, Higlax Solutions</p>
+                                <p class="text-[9px] opacity-40 font-bold uppercase tracking-widest">CEO, Higlax
+                                    Solutions</p>
                             </div>
                         </div>
                     </div>
 
-                    <div class="card flex-none w-[360px] p-8 rounded-[2rem] border border-zinc-800/80 flex flex-col justify-between transition-all duration-300 hover:border-amber-500 hover:scale-[1.02] group-hover:opacity-40 hover:!opacity-100 cursor-pointer"
+                    <div class="card flex-none w-[360px] p-8 rounded-[2rem] border border-zinc-800/80 flex flex-col justify-between transition-all duration-300 hover:border-teal-500 hover:scale-[1.02] group-hover:opacity-40 hover:!opacity-100 cursor-pointer"
                         style="background: var(--card-bg);">
                         <div>
-                            <div class="flex gap-1 text-amber-500 text-sm mb-4">
+                            <div class="flex gap-1 text-teal-500 text-sm mb-4">
                                 <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
                             </div>
-                            <p class="text-xs text-zinc-300 leading-relaxed font-medium">"Delivered a comprehensive 20+ page e-commerce platform with exceptional speed and precision. A sharp, smart-working developer who gets things done efficiently."</p>
+                            <p class="text-xs text-zinc-300 leading-relaxed font-medium">"Delivered a comprehensive 20+
+                                page e-commerce platform with exceptional speed and precision. A sharp, smart-working
+                                developer who gets things done efficiently."</p>
                         </div>
                         <div class="mt-6 flex items-center gap-4 border-t border-zinc-800/60 pt-4">
                             <div
-                                class="w-10 h-10 rounded-full bg-amber-500/10 border border-amber-500/30 flex items-center justify-center shrink-0">
-                                <span class="font-black text-amber-500 text-xs tracking-wider">ARS</span>
+                                class="w-10 h-10 rounded-full bg-teal-500/10 border border-teal-500/30 flex items-center justify-center shrink-0">
+                                <span class="font-black text-teal-500 text-xs tracking-wider">ARS</span>
                             </div>
                             <div>
-                                <h4 class="text-xs font-black uppercase tracking-wider text-white">Ahmed Raza Shaikh</h4>
-                                <p class="text-[9px] opacity-40 font-bold uppercase tracking-widest">Team Lead, MUF Digital</p>
+                                <h4 class="text-xs font-black uppercase tracking-wider text-white">Ahmed Raza Shaikh
+                                </h4>
+                                <p class="text-[9px] opacity-40 font-bold uppercase tracking-widest">Team Lead, MUF
+                                    Digital</p>
                             </div>
                         </div>
                     </div>
@@ -1244,31 +1267,34 @@ Delivered in 2 days.
 
                 <!-- Set 2 (Seamless Infinite Clone) -->
                 <div class="flex gap-6 pr-6 shrink-0" aria-hidden="true">
-                    <div class="card flex-none w-[360px] p-8 rounded-[2rem] border border-zinc-800/80 flex flex-col justify-between transition-all duration-300 hover:border-amber-500 hover:scale-[1.02] group-hover:opacity-40 hover:!opacity-100 cursor-pointer"
+                    <div class="card flex-none w-[360px] p-8 rounded-[2rem] border border-zinc-800/80 flex flex-col justify-between transition-all duration-300 hover:border-teal-500 hover:scale-[1.02] group-hover:opacity-40 hover:!opacity-100 cursor-pointer"
                         style="background: var(--card-bg);">
                         <div>
-                            <div class="flex gap-1 text-amber-500 text-sm mb-4">
+                            <div class="flex gap-1 text-teal-500 text-sm mb-4">
                                 <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
                             </div>
-                            <p class="text-xs text-zinc-300 leading-relaxed font-medium">"Aftab built the United Strategic Solutions and Disturbed Innovations Group
+                            <p class="text-xs text-zinc-300 leading-relaxed font-medium">"Aftab built the United
+                                Strategic Solutions and Disturbed Innovations Group
                                 platform for us. The interface is exceptionally clean, and fully responsive."</p>
                         </div>
                         <div class="mt-6 flex items-center gap-4 border-t border-zinc-800/60 pt-4">
                             <div
-                                class="w-10 h-10 rounded-full bg-amber-500/10 border border-amber-500/30 flex items-center justify-center shrink-0">
-                                <span class="font-black text-amber-500 text-xs tracking-wider">ECW</span>
+                                class="w-10 h-10 rounded-full bg-teal-500/10 border border-teal-500/30 flex items-center justify-center shrink-0">
+                                <span class="font-black text-teal-500 text-xs tracking-wider">ECW</span>
                             </div>
                             <div>
-                                <h4 class="text-xs font-black uppercase tracking-wider text-white">Emmanuel Cole Williams</h4>
-                                <p class="text-[9px] opacity-40 font-bold uppercase tracking-widest">CEO, United Strategic Solutions</p>
+                                <h4 class="text-xs font-black uppercase tracking-wider text-white">Emmanuel Cole
+                                    Williams</h4>
+                                <p class="text-[9px] opacity-40 font-bold uppercase tracking-widest">CEO, United
+                                    Strategic Solutions</p>
                             </div>
                         </div>
                     </div>
 
-                    <div class="card flex-none w-[360px] p-8 rounded-[2rem] border border-zinc-800/80 flex flex-col justify-between transition-all duration-300 hover:border-amber-500 hover:scale-[1.02] group-hover:opacity-40 hover:!opacity-100 cursor-pointer"
+                    <div class="card flex-none w-[360px] p-8 rounded-[2rem] border border-zinc-800/80 flex flex-col justify-between transition-all duration-300 hover:border-teal-500 hover:scale-[1.02] group-hover:opacity-40 hover:!opacity-100 cursor-pointer"
                         style="background: var(--card-bg);">
                         <div>
-                            <div class="flex gap-1 text-amber-500 text-sm mb-4">
+                            <div class="flex gap-1 text-teal-500 text-sm mb-4">
                                 <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
                             </div>
                             <p class="text-xs text-zinc-300 leading-relaxed font-medium">"His front-end design sense is
@@ -1277,52 +1303,60 @@ Delivered in 2 days.
                         </div>
                         <div class="mt-6 flex items-center gap-4 border-t border-zinc-800/60 pt-4">
                             <div
-                                class="w-10 h-10 rounded-full bg-amber-500/10 border border-amber-500/30 flex items-center justify-center shrink-0">
-                                <span class="font-black text-amber-500 text-xs tracking-wider">ZS</span>
+                                class="w-10 h-10 rounded-full bg-teal-500/10 border border-teal-500/30 flex items-center justify-center shrink-0">
+                                <span class="font-black text-teal-500 text-xs tracking-wider">ZS</span>
                             </div>
                             <div>
                                 <h4 class="text-xs font-black uppercase tracking-wider text-white">Zain Ur Rehman</h4>
-                                <p class="text-[9px] opacity-40 font-bold uppercase tracking-widest">CEO, Web Exaltia</p>
+                                <p class="text-[9px] opacity-40 font-bold uppercase tracking-widest">CEO, Web Exaltia
+                                </p>
                             </div>
                         </div>
                     </div>
 
-                    <div class="card flex-none w-[360px] p-8 rounded-[2rem] border border-zinc-800/80 flex flex-col justify-between transition-all duration-300 hover:border-amber-500 hover:scale-[1.02] group-hover:opacity-40 hover:!opacity-100 cursor-pointer"
+                    <div class="card flex-none w-[360px] p-8 rounded-[2rem] border border-zinc-800/80 flex flex-col justify-between transition-all duration-300 hover:border-teal-500 hover:scale-[1.02] group-hover:opacity-40 hover:!opacity-100 cursor-pointer"
                         style="background: var(--card-bg);">
                         <div>
-                            <div class="flex gap-1 text-amber-500 text-sm mb-4">
+                            <div class="flex gap-1 text-teal-500 text-sm mb-4">
                                 <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
                             </div>
-                            <p class="text-xs text-zinc-300 leading-relaxed font-medium">"A dedicated sole developer who built and delivered our real estate platform, PropIQ, from scratch. Reliable, technically sound, and fully committed to building high-quality, scalable products."</p>
+                            <p class="text-xs text-zinc-300 leading-relaxed font-medium">"A dedicated sole developer who
+                                built and delivered our real estate platform, PropIQ, from scratch. Reliable,
+                                technically sound, and fully committed to building high-quality, scalable products."</p>
                         </div>
                         <div class="mt-6 flex items-center gap-4 border-t border-zinc-800/60 pt-4">
                             <div
-                                class="w-10 h-10 rounded-full bg-amber-500/10 border border-amber-500/30 flex items-center justify-center shrink-0">
-                                <span class="font-black text-amber-500 text-xs tracking-wider">RH</span>
+                                class="w-10 h-10 rounded-full bg-teal-500/10 border border-teal-500/30 flex items-center justify-center shrink-0">
+                                <span class="font-black text-teal-500 text-xs tracking-wider">RH</span>
                             </div>
                             <div>
                                 <h4 class="text-xs font-black uppercase tracking-wider text-white">Raza Haider</h4>
-                                <p class="text-[9px] opacity-40 font-bold uppercase tracking-widest">CEO, Higlax Solutions</p>
+                                <p class="text-[9px] opacity-40 font-bold uppercase tracking-widest">CEO, Higlax
+                                    Solutions</p>
                             </div>
                         </div>
                     </div>
 
-                    <div class="card flex-none w-[360px] p-8 rounded-[2rem] border border-zinc-800/80 flex flex-col justify-between transition-all duration-300 hover:border-amber-500 hover:scale-[1.02] group-hover:opacity-40 hover:!opacity-100 cursor-pointer"
+                    <div class="card flex-none w-[360px] p-8 rounded-[2rem] border border-zinc-800/80 flex flex-col justify-between transition-all duration-300 hover:border-teal-500 hover:scale-[1.02] group-hover:opacity-40 hover:!opacity-100 cursor-pointer"
                         style="background: var(--card-bg);">
                         <div>
-                            <div class="flex gap-1 text-amber-500 text-sm mb-4">
+                            <div class="flex gap-1 text-teal-500 text-sm mb-4">
                                 <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
                             </div>
-                            <p class="text-xs text-zinc-300 leading-relaxed font-medium">"Delivered a comprehensive 20+ page e-commerce platform with exceptional speed and precision. A sharp, smart-working developer who gets things done efficiently."</p>
+                            <p class="text-xs text-zinc-300 leading-relaxed font-medium">"Delivered a comprehensive 20+
+                                page e-commerce platform with exceptional speed and precision. A sharp, smart-working
+                                developer who gets things done efficiently."</p>
                         </div>
                         <div class="mt-6 flex items-center gap-4 border-t border-zinc-800/60 pt-4">
                             <div
-                                class="w-10 h-10 rounded-full bg-amber-500/10 border border-amber-500/30 flex items-center justify-center shrink-0">
-                                <span class="font-black text-amber-500 text-xs tracking-wider">ARS</span>
+                                class="w-10 h-10 rounded-full bg-teal-500/10 border border-teal-500/30 flex items-center justify-center shrink-0">
+                                <span class="font-black text-teal-500 text-xs tracking-wider">ARS</span>
                             </div>
                             <div>
-                                <h4 class="text-xs font-black uppercase tracking-wider text-white">Ahmed Raza Shaikh</h4>
-                                <p class="text-[9px] opacity-40 font-bold uppercase tracking-widest">Team Lead, MUF Digital</p>
+                                <h4 class="text-xs font-black uppercase tracking-wider text-white">Ahmed Raza Shaikh
+                                </h4>
+                                <p class="text-[9px] opacity-40 font-bold uppercase tracking-widest">Team Lead, MUF
+                                    Digital</p>
                             </div>
                         </div>
                     </div>
@@ -1361,7 +1395,7 @@ Delivered in 2 days.
         <div class="grid md:grid-cols-2 gap-20 items-center">
             <div>
                 <h2 class="text-6xl font-black tracking-tighter mb-8 uppercase leading-none">Let's <br>build something
-                    <span class="text-amber-500">great.</span>
+                    <span class="text-teal-500">great.</span>
                 </h2>
                 <p class="text-lg">Available for projects and full-time roles.</p>
                 <div class="flex gap-6 mt-8">
@@ -1377,13 +1411,13 @@ Delivered in 2 days.
             </div>
             <form id="contact-form" class="space-y-4 card p-8 rounded-3xl">
                 <input type="text" name="name" placeholder="Full Name" required
-                    class="w-full bg-transparent border-b border-gray-500/20 py-4 outline-none focus:border-amber-500 transition">
+                    class="w-full bg-transparent border-b border-gray-500/20 py-4 outline-none focus:border-teal-500 transition">
                 <input type="email" name="email" placeholder="Email Address" required
-                    class="w-full bg-transparent border-b border-gray-500/20 py-4 outline-none focus:border-amber-500 transition">
+                    class="w-full bg-transparent border-b border-gray-500/20 py-4 outline-none focus:border-teal-500 transition">
                 <textarea name="message" placeholder="Message" rows="3" required
-                    class="w-full bg-transparent border-b border-gray-500/20 py-4 outline-none focus:border-amber-500 transition"></textarea>
+                    class="w-full bg-transparent border-b border-gray-500/20 py-4 outline-none focus:border-teal-500 transition"></textarea>
                 <button type="submit" id="submit-btn"
-                    class="bg-amber-500 text-black py-4 w-full font-black uppercase text-xs tracking-[0.2em] hover:bg-black hover:text-white transition-all shadow-lg rounded-xl mt-4">
+                    class="bg-teal-500 text-black py-4 w-full font-black uppercase text-xs tracking-[0.2em] hover:bg-black hover:text-white transition-all shadow-lg rounded-xl mt-4">
                     Send Message
                 </button>
                 <p id="form-status" class="mt-4 text-center font-bold text-sm hidden"></p>
@@ -1391,13 +1425,14 @@ Delivered in 2 days.
         </div>
     </section>
 
-    <footer class="max-w-7xl mx-auto pt-20 pb-10 px-6 md:px-10 border-t border-zinc-800/30 transition-colors duration-300"
+    <footer
+        class="max-w-7xl mx-auto pt-20 pb-10 px-6 md:px-10 border-t border-zinc-800/30 transition-colors duration-300"
         style="background: var(--bg-color); color: var(--text-color);">
         <div class="flex flex-col md:flex-row justify-between items-start flex-wrap gap-12 pb-16">
 
             <div class="flex flex-col gap-6 max-w-sm">
                 <h3 class="text-3xl font-black uppercase tracking-tighter"
-                    style="color: var(--heading-color, inherit);">AA<span class="text-amber-500">.</span></h3>
+                    style="color: var(--heading-color, inherit);">AA<span class="text-teal-500">.</span></h3>
                 <p class="text-xs leading-relaxed font-medium max-w-sm opacity-75">
                     Crafting full-stack web experiences with a focus on clean UI, solid APIs, and delightful UX.
                 </p>
@@ -1416,12 +1451,12 @@ Delivered in 2 days.
                 <h4 class="text-xs font-black uppercase tracking-wider" style="color: var(--heading-color, inherit);">
                     Explore</h4>
                 <ul class="flex flex-col gap-3 text-xs font-semibold opacity-80">
-                    <li><a href="#about" class="hover:text-amber-500 transition-colors">About</a></li>
-                    <li><a href="#expertise" class="hover:text-amber-500 transition-colors">Skills</a></li>
-                    <!-- <li><a href="#coding-activity" class="hover:text-amber-500 transition-colors">Coding</a></li> -->
-                    <li><a href="#projects" class="hover:text-amber-500 transition-colors">Projects</a></li>
-                    <li><a href="#reviews" class="hover:text-amber-500 transition-colors">Reviews</a></li>
-                    <li><a href="#contact" class="hover:text-amber-500 transition-colors">Contact</a></li>
+                    <li><a href="#about" class="hover:text-teal-500 transition-colors">About</a></li>
+                    <li><a href="#expertise" class="hover:text-teal-500 transition-colors">Skills</a></li>
+                    <!-- <li><a href="#coding-activity" class="hover:text-teal-500 transition-colors">Coding</a></li> -->
+                    <li><a href="#projects" class="hover:text-teal-500 transition-colors">Projects</a></li>
+                    <li><a href="#reviews" class="hover:text-teal-500 transition-colors">Reviews</a></li>
+                    <li><a href="#contact" class="hover:text-teal-500 transition-colors">Contact</a></li>
                 </ul>
             </div>
 
@@ -1430,14 +1465,15 @@ Delivered in 2 days.
                     Socials</h4>
                 <ul class="flex flex-col gap-3 text-xs font-semibold opacity-80">
                     <li><a href="https://github.com/Aftab-Ahmed-Soomro" target="_blank" rel="noopener noreferrer"
-                            class="hover:text-amber-500 transition-colors">GitHub</a></li>
+                            class="hover:text-teal-500 transition-colors">GitHub</a></li>
                     <li><a href="https://www.linkedin.com/in/aftab-ahmed-12b9aa265" target="_blank"
-                            rel="noopener noreferrer" class="hover:text-amber-500 transition-colors">LinkedIn</a></li>
+                            rel="noopener noreferrer" class="hover:text-teal-500 transition-colors">LinkedIn</a></li>
                     <!-- <li><a href="https://www.facebook.com/profile.php?id=100079974231742" target="_blank"
-                            rel="noopener noreferrer" class="hover:text-amber-500 transition-colors">Facebook</a></li>
+                            rel="noopener noreferrer" class="hover:text-teal-500 transition-colors">Facebook</a></li>
                     <li><a href="https://www.instagram.com/tr.webstudio/" target="_blank" rel="noopener noreferrer"
-                            class="hover:text-amber-500 transition-colors">Instagram</a></li> -->
-                    <li><a href="mailto:aftab.ahmedsoomrokhan@gmail.com" class="hover:text-amber-500 transition-colors">Email</a>
+                            class="hover:text-teal-500 transition-colors">Instagram</a></li> -->
+                    <li><a href="mailto:aftab.ahmedsoomrokhan@gmail.com"
+                            class="hover:text-teal-500 transition-colors">Email</a>
                     </li>
                 </ul>
             </div>
@@ -1451,7 +1487,7 @@ Delivered in 2 days.
                         Available for work
                     </li>
                     <li class="flex items-center gap-2 opacity-90">
-                        <span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>
+                        <span class="w-1.5 h-1.5 rounded-full bg-teal-500"></span>
                         Building in Karachi
                     </li>
                 </ul>
@@ -1525,7 +1561,7 @@ Delivered in 2 days.
             if (cursor) {
                 cursor.style.transform = 'scale(1)';
                 cursor.style.mixBlendMode = 'normal';
-                cursor.style.background = document.body.classList.contains('light-mode') ? '#1c1917' : '#fbbf24';
+                cursor.style.background = document.body.classList.contains('light-mode') ? '#0d9488' : '#14b8a6';
             }
         }
 
@@ -1560,7 +1596,7 @@ Delivered in 2 days.
             }
 
             if (typeof playSound === 'function') playSound(clickSfx);
-            if (cursor) cursor.style.background = isLight ? '#1c1917' : '#fbbf24';
+            if (cursor) cursor.style.background = isLight ? '#0d9488' : '#14b8a6';
         }
 
 
@@ -1762,9 +1798,9 @@ Delivered in 2 days.
                     const sValue = parseInt(s.getAttribute("data-value"));
                     if (sValue <= selectedScore) {
                         s.classList.remove("text-zinc-700");
-                        s.classList.add("text-amber-500");
+                        s.classList.add("text-teal-500");
                     } else {
-                        s.classList.remove("text-amber-500");
+                        s.classList.remove("text-teal-500");
                         s.classList.add("text-zinc-700");
                     }
                 });
@@ -1798,7 +1834,7 @@ Delivered in 2 days.
                             reviewSubmissionForm.reset();
                             stars.forEach(s => {
                                 s.classList.remove("text-zinc-700");
-                                s.classList.add("text-amber-500");
+                                s.classList.add("text-teal-500");
                             });
                             if (starRatingInput) starRatingInput.value = "5";
 

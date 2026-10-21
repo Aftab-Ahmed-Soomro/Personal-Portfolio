@@ -50,7 +50,7 @@ export const portfolioData = {
     aboutHeading: "ABOUT",
     aboutHeadingHighlight: "ME.",
     aboutParagraphs: [
-      "Hi! I am <span class='text-amber-500 font-bold'>Aftab Ahmed</span>, a Full Stack Developer and Software Engineering student at <span class='text-amber-500 font-bold'>UBIT, University of Karachi.</span>",
+      "Hi! I am <span class='text-teal-500 font-bold'>Aftab Ahmed</span>, a Full Stack Developer and Software Engineering student at <span class='text-teal-500 font-bold'>UBIT, University of Karachi.</span>",
       "I love building robust, scalable web applications from end to end. From designing intuitive user interfaces to architecting high-performance backends and APIs, I focus on delivering seamless, reliable digital products.",
       "I enjoy solving problems through code and turning creative ideas into real digital experiences that are easy for everyone to use.",
     ],

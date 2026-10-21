@@ -22,7 +22,7 @@ export const AboutSection: React.FC = () => {
           >
             <WordReveal text={personalInfo.aboutHeading} />
             <br />
-            <span className="text-amber-500">
+            <span className="text-teal-500">
               <WordReveal text={personalInfo.aboutHeadingHighlight} delay={0.2} />
             </span>
           </h2>
@@ -50,11 +50,11 @@ export const AboutSection: React.FC = () => {
             {/* Education Card */}
             <StaggerItem className="flex-1 flex" direction="right">
               <div
-                className="portfolio-card p-6 rounded-2xl border-l-4 border-l-amber-500 flex-1 flex flex-col justify-between"
+                className="portfolio-card p-6 rounded-2xl border-l-4 border-l-teal-500 flex-1 flex flex-col justify-between"
                 style={{ background: "var(--card-bg)", borderColor: "var(--card-border)" }}
               >
                 <div>
-                  <div className="flex items-center gap-2 mb-2 text-amber-500">
+                  <div className="flex items-center gap-2 mb-2 text-teal-500">
                     <GraduationCap className="w-4 h-4" />
                     <span className="text-[10px] font-bold uppercase tracking-widest">
                       Education
@@ -64,7 +64,7 @@ export const AboutSection: React.FC = () => {
                     {education.degree}
                   </h4>
                 </div>
-                <p className="text-[13px] mt-4 font-bold uppercase tracking-tight text-amber-500">
+                <p className="text-[13px] mt-4 font-bold uppercase tracking-tight text-teal-500">
                   {education.status}
                 </p>
               </div>
@@ -73,11 +73,11 @@ export const AboutSection: React.FC = () => {
             {/* Experience Card */}
             <StaggerItem className="flex-1 flex" direction="right">
               <div
-                className="portfolio-card p-6 rounded-2xl border-l-4 border-l-amber-500 flex-1 flex flex-col justify-between"
+                className="portfolio-card p-6 rounded-2xl border-l-4 border-l-teal-500 flex-1 flex flex-col justify-between"
                 style={{ background: "var(--card-bg)", borderColor: "var(--card-border)" }}
               >
                 <div>
-                  <div className="flex items-center gap-2 mb-2 text-amber-500">
+                  <div className="flex items-center gap-2 mb-2 text-teal-500">
                     <Briefcase className="w-4 h-4" />
                     <span className="text-[10px] font-bold uppercase tracking-widest">
                       Experience
@@ -87,7 +87,7 @@ export const AboutSection: React.FC = () => {
                     {experience.role}
                   </h4>
                 </div>
-                <p className="text-[13px] mt-4 font-bold uppercase tracking-tight text-amber-500 italic">
+                <p className="text-[13px] mt-4 font-bold uppercase tracking-tight text-teal-500 italic">
                   {experience.type}
                 </p>
               </div>

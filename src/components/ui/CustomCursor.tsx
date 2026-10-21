@@ -29,7 +29,7 @@ export const CustomCursor: React.FC = () => {
     document.body.classList.add("custom-cursor-enabled");
 
     const restColor = () =>
-      document.body.classList.contains("light-mode") ? "#1c1917" : "#fbbf24";
+      document.body.classList.contains("light-mode") ? "#0d9488" : "#14b8a6";
 
     const onMove = (e: MouseEvent) => {
       cursor.style.left = e.clientX + "px";
@@ -84,7 +84,7 @@ export const CustomCursor: React.FC = () => {
   useEffect(() => {
     const cursor = cursorRef.current;
     if (cursor && cursor.style.mixBlendMode !== "difference") {
-      cursor.style.background = isLightMode ? "#1c1917" : "#fbbf24";
+      cursor.style.background = isLightMode ? "#0d9488" : "#14b8a6";
     }
   }, [isLightMode]);
 
@@ -99,7 +99,7 @@ export const CustomCursor: React.FC = () => {
         width: 12,
         height: 12,
         borderRadius: "50%",
-        background: "#fbbf24",
+        background: "#14b8a6",
         pointerEvents: "none",
         zIndex: 2147483647,
         opacity: 0,

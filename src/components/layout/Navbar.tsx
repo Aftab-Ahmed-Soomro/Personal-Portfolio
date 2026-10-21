@@ -66,7 +66,7 @@ export const Navbar: React.FC = () => {
           style={{ color: "var(--text-main)" }}
         >
           {portfolioData.personalInfo.logoText}
-          <span className="text-amber-500">{portfolioData.personalInfo.titleSuffix}</span>
+          <span className="text-teal-500">{portfolioData.personalInfo.titleSuffix}</span>
         </Link>
 
         {/* Desktop Navigation Links */}
@@ -78,16 +78,15 @@ export const Navbar: React.FC = () => {
               <a
                 key={link.label}
                 href={link.href}
-                className={`text-white duration-200 hover:text-amber-500 relative py-1 ${
-                  isActive ? "text-amber-500 font-semibold" : ""
-                }`}
+                className={`text-white duration-200 hover:text-teal-500 relative py-1 ${isActive ? "text-teal-500 font-semibold" : ""
+                  }`}
               >
                 {link.label}
                 {isActive && (
                   <motion.span
                     layoutId="nav-underline"
                     transition={{ type: "spring", stiffness: 380, damping: 30 }}
-                    className="absolute bottom-0 left-0 w-full h-[2px] bg-amber-500 rounded-full"
+                    className="absolute bottom-0 left-0 w-full h-[2px] bg-teal-500 rounded-full"
                   />
                 )}
               </a>
@@ -100,7 +99,7 @@ export const Navbar: React.FC = () => {
           {/* Resume Button */}
           <Link
             href={portfolioData.personalInfo.resumeUrl}
-            className="hidden sm:flex items-center gap-2 bg-amber-500 text-black px-5 py-2.5 rounded-full font-bold text-xs hover:bg-amber-400 transition shadow-lg"
+            className="hidden sm:flex items-center gap-2 bg-teal-500 text-black px-5 py-2.5 rounded-full font-bold text-xs hover:bg-teal-400 transition shadow-lg"
           >
             <FileText className="w-3.5 h-3.5" />
             Resume
@@ -110,7 +109,7 @@ export const Navbar: React.FC = () => {
           <button
             onClick={toggleSound}
             aria-label="Toggle Sound Effects"
-            className="w-10 h-10 flex items-center justify-center rounded-full border transition hover:border-amber-500 hover:text-amber-500"
+            className="w-10 h-10 flex items-center justify-center rounded-full border transition hover:border-teal-500 hover:text-teal-500"
             style={{
               borderColor: "var(--card-border)",
               color: "var(--text-muted)",
@@ -128,7 +127,7 @@ export const Navbar: React.FC = () => {
           <button
             onClick={toggleTheme}
             aria-label="Toggle Dark/Light Theme"
-            className="w-10 h-10 flex items-center justify-center rounded-full border transition hover:border-amber-500 hover:text-amber-500"
+            className="w-10 h-10 flex items-center justify-center rounded-full border transition hover:border-teal-500 hover:text-teal-500"
             style={{
               borderColor: "var(--card-border)",
               color: "var(--text-muted)",
@@ -136,7 +135,7 @@ export const Navbar: React.FC = () => {
             }}
           >
             {isLightMode ? (
-              <Sun className="w-4 h-4 text-amber-500" />
+              <Sun className="w-4 h-4 text-teal-500" />
             ) : (
               <Moon className="w-4 h-4" />
             )}
@@ -146,7 +145,7 @@ export const Navbar: React.FC = () => {
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             aria-label="Toggle Navigation Menu"
-            className="md:hidden w-10 h-10 flex items-center justify-center rounded-full border text-amber-500 hover:border-amber-500 transition"
+            className="md:hidden w-10 h-10 flex items-center justify-center rounded-full border text-teal-500 hover:border-teal-500 transition"
             style={{ borderColor: "var(--card-border)" }}
           >
             {mobileMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
@@ -156,51 +155,51 @@ export const Navbar: React.FC = () => {
 
       {/* Mobile Dropdown Menu */}
       <AnimatePresence>
-      {mobileMenuOpen && (
-        <motion.div
-          initial={{ height: 0, opacity: 0 }}
-          animate={{ height: "auto", opacity: 1 }}
-          exit={{ height: 0, opacity: 0 }}
-          transition={{ duration: 0.4, ease: [0.16, 1, 0.3, 1] }}
-          style={{ overflow: "hidden" }}
-          className="md:hidden w-full"
-        >
-        <div
-          className="md:hidden w-full flex flex-col p-6 space-y-4 border-t shadow-2xl transition-all duration-300 animate-fadeInDown"
-          style={{
-            background: "var(--bg-primary)",
-            borderColor: "var(--card-border)",
-          }}
-        >
-          <a
-            href="#home"
-            onClick={closeMobileMenu}
-            className="text-[11px] font-bold uppercase tracking-widest block py-2 border-b text-[var(--text-main)] hover:text-amber-500"
-            style={{ borderColor: "var(--card-border)" }}
+        {mobileMenuOpen && (
+          <motion.div
+            initial={{ height: 0, opacity: 0 }}
+            animate={{ height: "auto", opacity: 1 }}
+            exit={{ height: 0, opacity: 0 }}
+            transition={{ duration: 0.4, ease: [0.16, 1, 0.3, 1] }}
+            style={{ overflow: "hidden" }}
+            className="md:hidden w-full"
           >
-            Home
-          </a>
-          {portfolioData.navLinks.map((link) => (
-            <a
-              key={link.label}
-              href={link.href}
-              onClick={closeMobileMenu}
-              className="text-[11px] font-bold uppercase tracking-widest block py-2 border-b text-[var(--text-main)] hover:text-amber-500"
-              style={{ borderColor: "var(--card-border)" }}
+            <div
+              className="md:hidden w-full flex flex-col p-6 space-y-4 border-t shadow-2xl transition-all duration-300 animate-fadeInDown"
+              style={{
+                background: "var(--bg-primary)",
+                borderColor: "var(--card-border)",
+              }}
             >
-              {link.label}
-            </a>
-          ))}
-          <Link
-            href={portfolioData.personalInfo.resumeUrl}
-            onClick={closeMobileMenu}
-            className="bg-amber-500 text-black px-5 py-3 text-[10px] font-bold uppercase tracking-widest block text-center mt-4 rounded-xl"
-          >
-            Resume
-          </Link>
-        </div>
-        </motion.div>
-      )}
+              <a
+                href="#home"
+                onClick={closeMobileMenu}
+                className="text-[11px] font-bold uppercase tracking-widest block py-2 border-b text-[var(--text-main)] hover:text-teal-500"
+                style={{ borderColor: "var(--card-border)" }}
+              >
+                Home
+              </a>
+              {portfolioData.navLinks.map((link) => (
+                <a
+                  key={link.label}
+                  href={link.href}
+                  onClick={closeMobileMenu}
+                  className="text-[11px] font-bold uppercase tracking-widest block py-2 border-b text-[var(--text-main)] hover:text-teal-500"
+                  style={{ borderColor: "var(--card-border)" }}
+                >
+                  {link.label}
+                </a>
+              ))}
+              <Link
+                href={portfolioData.personalInfo.resumeUrl}
+                onClick={closeMobileMenu}
+                className="bg-teal-500 text-black px-5 py-3 text-[10px] font-bold uppercase tracking-widest block text-center mt-4 rounded-xl"
+              >
+                Resume
+              </Link>
+            </div>
+          </motion.div>
+        )}
       </AnimatePresence>
     </motion.nav>
   );

@@ -68,7 +68,7 @@ export const ContactSection: React.FC = () => {
             <WordReveal text="Let's" />
             <br />
             <WordReveal text="build something" delay={0.1} />{" "}
-            <span className="text-amber-500">
+            <span className="text-teal-500">
               <WordReveal text="great." delay={0.35} />
             </span>
           </h2>
@@ -80,7 +80,7 @@ export const ContactSection: React.FC = () => {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="GitHub"
-              className="text-[var(--text-muted)] hover:text-amber-500 text-2xl transition-transform hover:-translate-y-1"
+              className="text-[var(--text-muted)] hover:text-teal-500 text-2xl transition-transform hover:-translate-y-1"
             >
               <FaGithub className="w-6 h-6" />
             </a>
@@ -89,7 +89,7 @@ export const ContactSection: React.FC = () => {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="LinkedIn"
-              className="text-[var(--text-muted)] hover:text-amber-500 text-2xl transition-transform hover:-translate-y-1"
+              className="text-[var(--text-muted)] hover:text-teal-500 text-2xl transition-transform hover:-translate-y-1"
             >
               <FaLinkedinIn className="w-6 h-6" />
             </a>
@@ -98,55 +98,54 @@ export const ContactSection: React.FC = () => {
 
         {/* Right Form */}
         <Reveal direction="left" delay={0.2}>
-        <form
-          onSubmit={handleSubmit}
-          className="portfolio-card p-8 rounded-3xl space-y-4 shadow-xl"
-          style={{ background: "var(--card-bg)", borderColor: "var(--card-border)" }}
-        >
-          <input
-            type="text"
-            name="name"
-            placeholder="Full Name"
-            required
-            className="w-full bg-transparent border-b py-4 outline-none focus:border-amber-500 transition text-[var(--text-main)] placeholder-zinc-500 text-sm"
-            style={{ borderColor: "var(--card-border)" }}
-          />
-          <input
-            type="email"
-            name="email"
-            placeholder="Email Address"
-            required
-            className="w-full bg-transparent border-b py-4 outline-none focus:border-amber-500 transition text-[var(--text-main)] placeholder-zinc-500 text-sm"
-            style={{ borderColor: "var(--card-border)" }}
-          />
-          <textarea
-            name="message"
-            placeholder="Message"
-            rows={3}
-            required
-            className="w-full bg-transparent border-b py-4 outline-none focus:border-amber-500 transition text-[var(--text-main)] placeholder-zinc-500 text-sm resize-none"
-            style={{ borderColor: "var(--card-border)" }}
-          />
-
-          <button
-            type="submit"
-            disabled={isSubmitting}
-            className="bg-amber-500 text-black py-4 w-full font-bold uppercase text-xs tracking-[0.2em] hover:bg-amber-400 transition-all shadow-lg rounded-xl mt-4 flex items-center justify-center gap-2"
+          <form
+            onSubmit={handleSubmit}
+            className="portfolio-card p-8 rounded-3xl space-y-4 shadow-xl"
+            style={{ background: "var(--card-bg)", borderColor: "var(--card-border)" }}
           >
-            <Send className="w-4 h-4" />
-            {isSubmitting ? "Sending..." : "Send Message"}
-          </button>
+            <input
+              type="text"
+              name="name"
+              placeholder="Full Name"
+              required
+              className="w-full bg-transparent border-b py-4 outline-none focus:border-teal-500 transition text-[var(--text-main)] placeholder-zinc-500 text-sm"
+              style={{ borderColor: "var(--card-border)" }}
+            />
+            <input
+              type="email"
+              name="email"
+              placeholder="Email Address"
+              required
+              className="w-full bg-transparent border-b py-4 outline-none focus:border-teal-500 transition text-[var(--text-main)] placeholder-zinc-500 text-sm"
+              style={{ borderColor: "var(--card-border)" }}
+            />
+            <textarea
+              name="message"
+              placeholder="Message"
+              rows={3}
+              required
+              className="w-full bg-transparent border-b py-4 outline-none focus:border-teal-500 transition text-[var(--text-main)] placeholder-zinc-500 text-sm resize-none"
+              style={{ borderColor: "var(--card-border)" }}
+            />
 
-          {status && (
-            <p
-              className={`mt-4 text-center font-bold text-sm ${
-                status.type === "success" ? "text-green-500" : "text-red-500"
-              }`}
+            <button
+              type="submit"
+              disabled={isSubmitting}
+              className="bg-teal-500 text-black py-4 w-full font-bold uppercase text-xs tracking-[0.2em] hover:bg-teal-400 transition-all shadow-lg rounded-xl mt-4 flex items-center justify-center gap-2"
             >
-              {status.text}
-            </p>
-          )}
-        </form>
+              <Send className="w-4 h-4" />
+              {isSubmitting ? "Sending..." : "Send Message"}
+            </button>
+
+            {status && (
+              <p
+                className={`mt-4 text-center font-bold text-sm ${status.type === "success" ? "text-green-500" : "text-red-500"
+                  }`}
+              >
+                {status.text}
+              </p>
+            )}
+          </form>
         </Reveal>
       </div>
     </section>

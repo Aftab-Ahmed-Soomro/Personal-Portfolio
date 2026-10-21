@@ -15,7 +15,7 @@ export const ScrollProgressBar: React.FC = () => {
       className="fixed top-0 left-0 right-0 h-[3px] origin-left z-[60] pointer-events-none"
       style={{
         scaleX,
-        background: "linear-gradient(90deg, #f59e0b, #fbbf24, #fde68a)",
+        background: "linear-gradient(90deg, #0d9488, #14b8a6, #5eead4)",
       }}
     />
   );
@@ -76,7 +76,8 @@ export const BackToTop: React.FC = () => {
               cy="28"
               r="25"
               fill="none"
-              stroke="var(--accent)"
+              stroke="#14b8a6"
+              className="stroke-teal-500"
               strokeWidth="2.5"
               strokeLinecap="round"
               style={{ pathLength: progress }}
@@ -85,7 +86,7 @@ export const BackToTop: React.FC = () => {
           <motion.span
             animate={{ y: [0, -3, 0] }}
             transition={{ duration: 1.6, repeat: Infinity, ease: "easeInOut" }}
-            className="relative text-amber-500"
+            className="relative text-teal-500"
           >
             <ArrowUp className="w-5 h-5" strokeWidth={2.6} />
           </motion.span>

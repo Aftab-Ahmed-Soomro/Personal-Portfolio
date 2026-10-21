@@ -18,7 +18,7 @@ export default function ResumePage() {
       <nav className="h-20 flex items-center justify-between px-6 md:px-10 border-b border-white/10 bg-black/90 backdrop-blur-md relative z-20">
         <Link
           href="/"
-          className="flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-zinc-400 hover:text-amber-500 transition"
+          className="flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-zinc-400 hover:text-teal-500 transition"
         >
           <ArrowLeft className="w-4 h-4" />
           Back to Portfolio
@@ -31,7 +31,7 @@ export default function ResumePage() {
         <a
           href={personalInfo.resumePdfUrl}
           download="Aftab Ahmed - Full Stack Developer.pdf"
-          className="flex items-center gap-2 bg-amber-500 text-black px-6 py-2.5 text-xs font-bold uppercase tracking-widest hover:bg-white transition shadow-lg"
+          className="flex items-center gap-2 bg-teal-500 text-black px-6 py-2.5 text-xs font-bold uppercase tracking-widest hover:bg-white transition shadow-lg"
         >
           <Download className="w-3.5 h-3.5" />
           Download PDF
