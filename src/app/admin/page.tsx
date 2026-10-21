@@ -35,7 +35,7 @@ export default function AdminPage() {
     const [imageFile, setImageFile] = useState<File | null>(null);
     const [imagePreview, setImagePreview] = useState<string | null>(null);
 
-    // Projects fetch karna Supabase se
+    // Fetch projects from Supabase
     const fetchProjects = async () => {
         try {
             setLoading(true);
@@ -51,7 +51,7 @@ export default function AdminPage() {
             console.error("Fetch error:", error);
             setStatusMsg({
                 type: "error",
-                text: "Projects load karne mein masla hua: " + error.message,
+                text: "Failed to load projects: " + error.message,
             });
         } finally {
             setLoading(false);
@@ -62,7 +62,7 @@ export default function AdminPage() {
         fetchProjects();
     }, []);
 
-    // Image select karne par preview dikhana
+    // Handle image selection and preview
     const handleImageChange = (e: React.ChangeEvent<HTMLInputElement>) => {
         if (e.target.files && e.target.files[0]) {
             const file = e.target.files[0];
@@ -71,20 +71,20 @@ export default function AdminPage() {
         }
     };
 
-    // Naya Project submit karna
+    // Handle project submission
     const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
         if (!title.trim() || !description.trim()) {
             setStatusMsg({
                 type: "error",
-                text: "Title aur Description likhna zaroori hai!",
+                text: "Title and Description are required!",
             });
             return;
         }
         if (!imageFile) {
             setStatusMsg({
                 type: "error",
-                text: "Project ki image select karna zaroori hai!",
+                text: "Please select a project image!",
             });
             return;
         }
@@ -93,7 +93,7 @@ export default function AdminPage() {
             setSubmitting(true);
             setStatusMsg(null);
 
-            // 1. Image ko Supabase Storage mein upload karna
+            // 1. Upload image to Supabase Storage
             const fileExt = imageFile.name.split(".").pop();
             const fileName = `${Date.now()}-${Math.random().toString(36).substring(2)}.${fileExt}`;
             const filePath = `projects/${fileName}`;
@@ -104,14 +104,14 @@ export default function AdminPage() {
 
             if (uploadError) throw uploadError;
 
-            // 2. Image ka Public URL lena
+            // 2. Get public URL of uploaded image
             const { data: urlData } = supabase.storage
                 .from("project-images")
                 .getPublicUrl(filePath);
 
             const imageUrl = urlData.publicUrl;
 
-            // 3. Database mein record insert karna
+            // 3. Insert record into database
             const { error: insertError } = await supabase.from("projects").insert([
                 {
                     title: title.trim(),
@@ -125,7 +125,7 @@ export default function AdminPage() {
 
             if (insertError) throw insertError;
 
-            // Success! Form reset karein
+            // Success! Reset form
             setTitle("");
             setDescription("");
             setBadge("");
@@ -135,27 +135,27 @@ export default function AdminPage() {
             setImagePreview(null);
             setStatusMsg({
                 type: "success",
-                text: "Project kamyabi se upload ho gaya!",
+                text: "Project uploaded successfully!",
             });
 
-            // List refresh karein
+            // Refresh project list
             fetchProjects();
         } catch (err: unknown) {
             const error = err as Error;
             console.error("Submission error:", error);
             setStatusMsg({
                 type: "error",
-                text: "Upload karne mein masla hua: " + error.message,
+                text: "Failed to upload project: " + error.message,
             });
         } finally {
             setSubmitting(false);
         }
     };
 
-    // Project Delete karna
+    // Handle project deletion
     const handleDelete = async (id: string, titleName: string) => {
         const confirmDelete = window.confirm(
-            `Kya aap waqai "${titleName}" ko delete karna chahte hain?`
+            `Are you sure you want to delete "${titleName}"?`
         );
         if (!confirmDelete) return;
 
@@ -166,14 +166,14 @@ export default function AdminPage() {
             setProjects((prev) => prev.filter((p) => p.id !== id));
             setStatusMsg({
                 type: "success",
-                text: `"${titleName}" kamyabi se delete ho gaya!`,
+                text: `"${titleName}" was deleted successfully!`,
             });
         } catch (err: unknown) {
             const error = err as Error;
             console.error("Delete error:", error);
             setStatusMsg({
                 type: "error",
-                text: "Delete nahi ho saka: " + error.message,
+                text: "Failed to delete project: " + error.message,
             });
         }
     };
@@ -188,14 +188,13 @@ export default function AdminPage() {
                             href="/"
                             className="inline-flex items-center gap-2 text-sm text-zinc-400 hover:text-teal-400 transition-colors mb-2"
                         >
-                            <ArrowLeft className="w-4 h-4" /> Portfolio par wapas jayein
+                            <ArrowLeft className="w-4 h-4" /> Back to Portfolio
                         </Link>
                         <h1 className="text-3xl font-bold tracking-tight text-white">
                             Projects Admin Panel
                         </h1>
                         <p className="text-sm text-zinc-400 mt-1">
-                            Yahan se aap naye projects upload kar sakte hain aur purane manage
-                            kar sakte hain.
+                            Upload new projects and manage existing portfolio entries.
                         </p>
                     </div>
                 </div>
@@ -220,8 +219,7 @@ export default function AdminPage() {
                 {/* Upload Form */}
                 <div className="bg-zinc-900/60 border border-zinc-800 rounded-2xl p-6 md:p-8 backdrop-blur-sm">
                     <h2 className="text-xl font-semibold text-white mb-6 flex items-center gap-2">
-                        <PlusCircle className="w-5 h-5 text-teal-400" /> Naya Project Upload
-                        Karein
+                        <PlusCircle className="w-5 h-5 text-teal-400" /> Upload New Project
                     </h2>
 
                     <form onSubmit={handleSubmit} className="space-y-6">
@@ -234,7 +232,7 @@ export default function AdminPage() {
                                 <input
                                     type="text"
                                     required
-                                    placeholder="maslan: SaaS AI Platform"
+                                    placeholder="e.g. SaaS AI Platform"
                                     value={title}
                                     onChange={(e) => setTitle(e.target.value)}
                                     className="w-full px-4 py-2.5 rounded-xl bg-zinc-950 border border-zinc-800 focus:border-teal-400 focus:ring-1 focus:ring-teal-400 text-zinc-100 placeholder-zinc-500 outline-none transition"
@@ -248,7 +246,7 @@ export default function AdminPage() {
                                 </label>
                                 <input
                                     type="text"
-                                    placeholder="maslan: Full Stack / AI / Featured"
+                                    placeholder="e.g. Full Stack / AI / Featured"
                                     value={badge}
                                     onChange={(e) => setBadge(e.target.value)}
                                     className="w-full px-4 py-2.5 rounded-xl bg-zinc-950 border border-zinc-800 focus:border-teal-400 focus:ring-1 focus:ring-teal-400 text-zinc-100 placeholder-zinc-500 outline-none transition"
@@ -292,7 +290,7 @@ export default function AdminPage() {
                             <textarea
                                 required
                                 rows={3}
-                                placeholder="Project ke baray mein details likhein..."
+                                placeholder="Provide details about the project..."
                                 value={description}
                                 onChange={(e) => setDescription(e.target.value)}
                                 className="w-full px-4 py-2.5 rounded-xl bg-zinc-950 border border-zinc-800 focus:border-teal-400 focus:ring-1 focus:ring-teal-400 text-zinc-100 placeholder-zinc-500 outline-none transition resize-y"
@@ -307,7 +305,7 @@ export default function AdminPage() {
                             <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4">
                                 <label className="cursor-pointer inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-zinc-800 hover:bg-zinc-700 text-zinc-100 text-sm font-medium transition border border-zinc-700">
                                     <Upload className="w-4 h-4 text-teal-400" />
-                                    <span>Image Choose Karein</span>
+                                    <span>Choose Image</span>
                                     <input
                                         type="file"
                                         accept="image/*"
@@ -316,7 +314,7 @@ export default function AdminPage() {
                                     />
                                 </label>
                                 <span className="text-xs text-zinc-400">
-                                    {imageFile ? imageFile.name : "Koi image select nahi ki gayi"}
+                                    {imageFile ? imageFile.name : "No image selected"}
                                 </span>
                             </div>
 
@@ -365,12 +363,11 @@ export default function AdminPage() {
                     {loading ? (
                         <div className="flex items-center justify-center py-12 text-zinc-400">
                             <Loader2 className="w-6 h-6 animate-spin mr-2 text-teal-400" />{" "}
-                            Projects load ho rahe hain...
+                            Loading projects...
                         </div>
                     ) : projects.length === 0 ? (
                         <div className="text-center py-12 border border-dashed border-zinc-800 rounded-2xl text-zinc-500">
-                            Abhi tak koi project upload nahi hua. Upar diye gaye form se pehla
-                            project upload karein!
+                            No projects uploaded yet. Use the form above to add your first project!
                         </div>
                     ) : (
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -435,7 +432,7 @@ export default function AdminPage() {
 
                                         <button
                                             onClick={() => handleDelete(proj.id!, proj.title)}
-                                            className="p-2 text-zinc-500 hover:text-red-400 hover:bg-red-950/30 rounded-lg transition"
+                                            className="p-2 text-zinc-500 hover:text-red-400 hover:bg-red-950/30 rounded-lg transition cursor-pointer"
                                             title="Delete Project"
                                         >
                                             <Trash2 className="w-4 h-4" />
