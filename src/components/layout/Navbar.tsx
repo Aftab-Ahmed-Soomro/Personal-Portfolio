@@ -70,7 +70,7 @@ export const Navbar: React.FC = () => {
         </Link>
 
         {/* Desktop Navigation Links */}
-        <div className="hidden md:flex space-x-8 text-[14px] font-medium text-[var(--text-muted)]">
+        <div className="hidden md:flex space-x-8 text-[14px] font-medium">
           {portfolioData.navLinks.map((link) => {
             const sectionTarget = link.href.replace("#", "");
             const isActive = activeSection === sectionTarget;
@@ -78,8 +78,9 @@ export const Navbar: React.FC = () => {
               <a
                 key={link.label}
                 href={link.href}
-                className={`text-white duration-200 hover:text-teal-500 relative py-1 ${isActive ? "text-teal-500 font-semibold" : ""
-                  }`}
+                className={`transition-colors duration-200 hover:text-teal-500 relative py-1 ${
+                  isActive ? "text-teal-500 font-semibold" : "text-[var(--text-main)]"
+                }`}
               >
                 {link.label}
                 {isActive && (
